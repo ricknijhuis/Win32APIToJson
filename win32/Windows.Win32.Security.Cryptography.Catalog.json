@@ -1,0 +1,3702 @@
+{
+  "Name": "Windows.Win32.Security.Cryptography.Catalog",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CRYPTCAT_VERSION_1",
+          "Value": "256"
+        },
+        {
+          "Name": "CRYPTCAT_VERSION_2",
+          "Value": "512"
+        }
+      ],
+      "Name": "CRYPTCAT_VERSION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CRYPTCAT_OPEN_ALWAYS",
+          "Value": "2"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_CREATENEW",
+          "Value": "1"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_EXISTING",
+          "Value": "4"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_EXCLUDE_PAGE_HASHES",
+          "Value": "65536"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_INCLUDE_PAGE_HASHES",
+          "Value": "131072"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_VERIFYSIGHASH",
+          "Value": "268435456"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_NO_CONTENT_HCRYPTMSG",
+          "Value": "536870912"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_SORTED",
+          "Value": "1073741824"
+        },
+        {
+          "Name": "CRYPTCAT_OPEN_FLAGS_MASK",
+          "Value": "4294901760"
+        }
+      ],
+      "Name": "CRYPTCAT_OPEN_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "szOID_CATALOG_LIST",
+          "Value": "1.3.6.1.4.1.311.12.1.1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.NativeEncodingAttribute",
+              "FixedParameters": [
+                "ansi"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "szOID_CATALOG_LIST_MEMBER",
+          "Value": "1.3.6.1.4.1.311.12.1.2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.NativeEncodingAttribute",
+              "FixedParameters": [
+                "ansi"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "szOID_CATALOG_LIST_MEMBER2",
+          "Value": "1.3.6.1.4.1.311.12.1.3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.NativeEncodingAttribute",
+              "FixedParameters": [
+                "ansi"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_FILEEXT",
+          "Value": "CAT",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_MAX_MEMBERTAG",
+          "Value": "64",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_MEMBER_SORTED",
+          "Value": "1073741824",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_AUTHENTICATED",
+          "Value": "268435456",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_UNAUTHENTICATED",
+          "Value": "536870912",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_NAMEASCII",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_NAMEOBJID",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_DATAASCII",
+          "Value": "65536",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_DATABASE64",
+          "Value": "131072",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_DATAREPLACE",
+          "Value": "262144",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ATTR_NO_AUTO_COMPAT_ENTRY",
+          "Value": "16777216",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_AREA_HEADER",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_AREA_MEMBER",
+          "Value": "65536",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_AREA_ATTRIBUTE",
+          "Value": "131072",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_UNSUPPORTED",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_DUPLICATE",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_TAGNOTFOUND",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_MEMBER_FILE_PATH",
+          "Value": "65537",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_MEMBER_INDIRECTDATA",
+          "Value": "65538",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_MEMBER_FILENOTFOUND",
+          "Value": "65540",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_BAD_GUID_CONV",
+          "Value": "131073",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_ATTR_TOOFEWVALUES",
+          "Value": "131074",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_E_CDF_ATTR_TYPECOMBO",
+          "Value": "131076",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ADDCATALOG_NONE",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CRYPTCAT_ADDCATALOG_HARDLINK",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pwszFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fdwOpenFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCAT_OPEN_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hProv",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UIntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwPublicVersion",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCAT_VERSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwEncodingType",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATOpen",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatopen"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATClose",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatclose"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATStoreFromHandle",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatstorefromhandle"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCatStore",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATSTORE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATHandleFromStore",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcathandlefromstore"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATPersistStore",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatpersiststore"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATGetCatAttrInfo"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwAttrTypeAndAction",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbData",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATPutCatAttrInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatputcatattrinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pPrevAttr",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATATTRIBUTE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATEnumerateCatAttr",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatenumeratecatattr"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATGetMemberInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatgetmemberinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAllocSortedMemberInfo"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pCatMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATFreeSortedMemberInfo"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pCatMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATGetAttrInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatgetattrinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pgSubjectType",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "dwCertVersion",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbSIPIndirectData",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbSIPIndirectData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATPutMemberInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatputmemberinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pCatMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pwszReferenceTag",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwAttrTypeAndAction",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbData",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATPutAttrInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatputattrinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pPrevMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATEnumerateMember",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatenumeratemember"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatalog",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pCatMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pPrevAttr",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATATTRIBUTE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATEnumerateAttr",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatenumerateattr"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pwszFilePath",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pfnParseError",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "PFN_CDF_PARSE_ERROR_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCDFOpen",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatcdfopen"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCDF",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATCDF"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCDFClose",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatcdfclose"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCDF",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATCDF"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pPrevAttr",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATATTRIBUTE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pfnParseError",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "PFN_CDF_PARSE_ERROR_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCDFEnumCatAttributes",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatcdfenumcatattributes"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCDF",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATCDF"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pPrevMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pfnParseError",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "PFN_CDF_PARSE_ERROR_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCDFEnumMembers"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCDF",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATCDF"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pMember",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATMEMBER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pPrevAttr",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CRYPTCATATTRIBUTE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pfnParseError",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "PFN_CDF_PARSE_ERROR_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCDFEnumAttributes"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "IsCatalogFile",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-iscatalogfile"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "phCatAdmin",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pgSubsystem",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminAcquireContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminacquirecontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "phCatAdmin",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pgSubsystem",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pwszHashAlgorithm",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pStrongHashPolicy",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography",
+                "Type": "CERT_STRONG_SIGN_PARA"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminAcquireContext2",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminacquirecontext2"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminReleaseContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminreleasecontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hCatInfo",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminReleaseCatalogContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminreleasecatalogcontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbHash",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phPrevCatInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminEnumCatalogFromHash",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminenumcatalogfromhash"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pcbHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pbHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminCalcHashFromFileHandle",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadmincalchashfromfilehandle"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pcbHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pbHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminCalcHashFromFileHandle2",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadmincalchashfromfilehandle2"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszCatalogFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszSelectBaseName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminAddCatalog",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminaddcatalog"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszCatalogFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminRemoveCatalog",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminremovecatalog"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatInfo",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "psCatInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CATALOG_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATCatalogInfoFromContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatcataloginfofromcontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCatAdmin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "IntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszCatalogFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "psCatInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+                "Type": "CATALOG_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminResolveCatalogPath",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/mscat/nf-mscat-cryptcatadminresolvecatalogpath"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fResume",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CryptCATAdminPauseServiceForBackup"
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwPublicVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszP7File",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hProv",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fdwStoreFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+            "Type": "CRYPTCAT_OPEN_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hReserved",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hAttrs",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hCryptMsg",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hSorted",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CRYPTCATSTORE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mscat/ns-mscat-cryptcatstore"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszReferenceTag",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszFileName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "gSubjectType",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fdwMemberFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pIndirectData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security.Cryptography.Sip",
+            "Type": "SIP_INDIRECT_DATA"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwCertVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hReserved",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "sEncodedIndirectData",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Security.Cryptography",
+            "Type": "CRYPT_INTEGER_BLOB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "sEncodedMemberInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Security.Cryptography",
+            "Type": "CRYPT_INTEGER_BLOB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CRYPTCATMEMBER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mscat/ns-mscat-cryptcatmember"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszReferenceTag",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwAttrTypeAndAction",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "cbValue",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pbValue",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CRYPTCATATTRIBUTE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mscat/ns-mscat-cryptcatattribute"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hFile",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwCurFilePos",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwLastMemberOffset",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fEOF",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszResultDir",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hCATStore",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CRYPTCATCDF",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mscat/ns-mscat-cryptcatcdf"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "wszCatalogFile",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Char"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CATALOG_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mscat/ns-mscat-catalog_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwErrorArea",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwLocalError",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pwszLine",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PFN_CDF_PARSE_ERROR_CALLBACK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbStruct",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pStore",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+            "Type": "CRYPTCATSTORE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pMember",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security.Cryptography.Catalog",
+            "Type": "CRYPTCATMEMBER"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "MS_ADDINFO_CATALOGMEMBER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/mssip/ns-mssip-ms_addinfo_catalogmember"
+          ]
+        }
+      ]
+    }
+  ]
+}

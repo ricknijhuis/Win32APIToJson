@@ -1,0 +1,3219 @@
+{
+  "Name": "Windows.Win32.System.StationsAndDesktops",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "BSF_ALLOWSFW",
+          "Value": "128"
+        },
+        {
+          "Name": "BSF_FLUSHDISK",
+          "Value": "4"
+        },
+        {
+          "Name": "BSF_FORCEIFHUNG",
+          "Value": "32"
+        },
+        {
+          "Name": "BSF_IGNORECURRENTTASK",
+          "Value": "2"
+        },
+        {
+          "Name": "BSF_NOHANG",
+          "Value": "8"
+        },
+        {
+          "Name": "BSF_NOTIMEOUTIFNOTHUNG",
+          "Value": "64"
+        },
+        {
+          "Name": "BSF_POSTMESSAGE",
+          "Value": "16"
+        },
+        {
+          "Name": "BSF_QUERY",
+          "Value": "1"
+        },
+        {
+          "Name": "BSF_SENDNOTIFYMESSAGE",
+          "Value": "256"
+        },
+        {
+          "Name": "BSF_LUID",
+          "Value": "1024"
+        },
+        {
+          "Name": "BSF_RETURNHDESK",
+          "Value": "512"
+        }
+      ],
+      "Name": "BROADCAST_SYSTEM_MESSAGE_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "BSM_ALLCOMPONENTS",
+          "Value": "0"
+        },
+        {
+          "Name": "BSM_ALLDESKTOPS",
+          "Value": "16"
+        },
+        {
+          "Name": "BSM_APPLICATIONS",
+          "Value": "8"
+        }
+      ],
+      "Name": "BROADCAST_SYSTEM_MESSAGE_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "UOI_FLAGS",
+          "Value": "1"
+        },
+        {
+          "Name": "UOI_HEAPSIZE",
+          "Value": "5"
+        },
+        {
+          "Name": "UOI_IO",
+          "Value": "6"
+        },
+        {
+          "Name": "UOI_NAME",
+          "Value": "2"
+        },
+        {
+          "Name": "UOI_TYPE",
+          "Value": "3"
+        },
+        {
+          "Name": "UOI_USER_SID",
+          "Value": "4"
+        }
+      ],
+      "Name": "USER_OBJECT_INFORMATION_INDEX",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DF_ALLOWOTHERACCOUNTHOOK",
+          "Value": "1"
+        }
+      ],
+      "Name": "DESKTOP_CONTROL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DESKTOP_DELETE",
+          "Value": "65536"
+        },
+        {
+          "Name": "DESKTOP_READ_CONTROL",
+          "Value": "131072"
+        },
+        {
+          "Name": "DESKTOP_WRITE_DAC",
+          "Value": "262144"
+        },
+        {
+          "Name": "DESKTOP_WRITE_OWNER",
+          "Value": "524288"
+        },
+        {
+          "Name": "DESKTOP_SYNCHRONIZE",
+          "Value": "1048576"
+        },
+        {
+          "Name": "DESKTOP_READOBJECTS",
+          "Value": "1"
+        },
+        {
+          "Name": "DESKTOP_CREATEWINDOW",
+          "Value": "2"
+        },
+        {
+          "Name": "DESKTOP_CREATEMENU",
+          "Value": "4"
+        },
+        {
+          "Name": "DESKTOP_HOOKCONTROL",
+          "Value": "8"
+        },
+        {
+          "Name": "DESKTOP_JOURNALRECORD",
+          "Value": "16"
+        },
+        {
+          "Name": "DESKTOP_JOURNALPLAYBACK",
+          "Value": "32"
+        },
+        {
+          "Name": "DESKTOP_ENUMERATE",
+          "Value": "64"
+        },
+        {
+          "Name": "DESKTOP_WRITEOBJECTS",
+          "Value": "128"
+        },
+        {
+          "Name": "DESKTOP_SWITCHDESKTOP",
+          "Value": "256"
+        }
+      ],
+      "Name": "DESKTOP_ACCESS_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "param1",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "LPARAM"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "WINSTAENUMPROCA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "param1",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "LPARAM"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "WINSTAENUMPROCW",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "param1",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "LPARAM"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "DESKTOPENUMPROCA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "param1",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "LPARAM"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "DESKTOPENUMPROCW",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HWINSTA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.RAIIFreeAttribute",
+          "FixedParameters": [
+            "CloseWindowStation"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HDESK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.RAIIFreeAttribute",
+          "FixedParameters": [
+            "CloseDesktop"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "fInherit",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fReserved",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "USEROBJECTFLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winuser/ns-winuser-userobjectflags"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cbSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hdesk",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.StationsAndDesktops",
+            "Type": "HDESK"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "hwnd",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HWND"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "luid",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "LUID"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "BSMINFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winuser/ns-winuser-bsminfo"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.StructSizeFieldAttribute",
+          "FixedParameters": [
+            "cbSize"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpszDevice",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pDevmode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "DEVMODEA"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDesktopA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createdesktopa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpszDevice",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pDevmode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "DEVMODEW"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDesktopW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createdesktopw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpszDevice",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pDevmode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "DEVMODEA"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ulHeapSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvoid",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDesktopExA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createdesktopexa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpszDevice",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pDevmode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "DEVMODEW"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ulHeapSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvoid",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDesktopExW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createdesktopexw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fInherit",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenDesktopA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-opendesktopa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fInherit",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenDesktopW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-opendesktopw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_CONTROL_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fInherit",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOP_ACCESS_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenInputDesktop",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-openinputdesktop"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hwinsta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HWINSTA"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpEnumFunc",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOPENUMPROCA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "EnumDesktopsA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-enumdesktopsa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hwinsta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HWINSTA"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpEnumFunc",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "DESKTOPENUMPROCW"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "EnumDesktopsW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-enumdesktopsw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HDESK"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpfn",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.UI.WindowsAndMessaging",
+                "Type": "WNDENUMPROC"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "EnumDesktopWindows",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-enumdesktopwindows"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HDESK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SwitchDesktop",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-switchdesktop"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HDESK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetThreadDesktop",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-setthreaddesktop"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hDesktop",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HDESK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CloseDesktop",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-closedesktop"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dwThreadId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetThreadDesktop",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-getthreaddesktop"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpwinsta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateWindowStationA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createwindowstationa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpwinsta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpsa",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateWindowStationW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-createwindowstationw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszWinSta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fInherit",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenWindowStationA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-openwindowstationa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpszWinSta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fInherit",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenWindowStationW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-openwindowstationw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpEnumFunc",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "WINSTAENUMPROCA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "EnumWindowStationsA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-enumwindowstationsa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpEnumFunc",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "WINSTAENUMPROCW"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "EnumWindowStationsW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-enumwindowstationsw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hWinSta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HWINSTA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CloseWindowStation",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-closewindowstation"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hWinSta",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "HWINSTA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetProcessWindowStation",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-setprocesswindowstation"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetProcessWindowStation",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-getprocesswindowstation"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hObj",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nIndex",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "USER_OBJECT_INFORMATION_INDEX"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpnLengthNeeded",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetUserObjectInformationA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-getuserobjectinformationa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hObj",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nIndex",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "USER_OBJECT_INFORMATION_INDEX"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpnLengthNeeded",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetUserObjectInformationW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-getuserobjectinformationw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hObj",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetUserObjectInformationA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-setuserobjectinformationa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hObj",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pvInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetUserObjectInformationW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-setuserobjectinformationw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "Msg",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "WPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbsmInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BSMINFO"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BroadcastSystemMessageExA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-broadcastsystemmessageexa"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "Msg",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "WPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbsmInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BSMINFO"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BroadcastSystemMessageExW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-broadcastsystemmessageexw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "Msg",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "WPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BroadcastSystemMessageA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-broadcastsystemmessagea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.StationsAndDesktops",
+                "Type": "BROADCAST_SYSTEM_MESSAGE_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "Msg",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "WPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lParam",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "LPARAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BroadcastSystemMessageW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-broadcastsystemmessagew"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

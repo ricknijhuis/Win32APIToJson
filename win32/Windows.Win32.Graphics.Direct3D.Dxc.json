@@ -1,0 +1,7007 @@
+{
+  "Name": "Windows.Win32.Graphics.Direct3D.Dxc",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DXC_CP_ACP",
+          "Value": "0"
+        },
+        {
+          "Name": "DXC_CP_UTF16",
+          "Value": "1200"
+        },
+        {
+          "Name": "DXC_CP_UTF8",
+          "Value": "65001"
+        }
+      ],
+      "Name": "DXC_CP",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "DXC_HASHFLAG_INCLUDES_SOURCE",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_DEBUG",
+          "Value": "-Zi",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_SKIP_VALIDATION",
+          "Value": "-Vd",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_SKIP_OPTIMIZATIONS",
+          "Value": "-Od",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_PACK_MATRIX_ROW_MAJOR",
+          "Value": "-Zpr",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_PACK_MATRIX_COLUMN_MAJOR",
+          "Value": "-Zpc",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_AVOID_FLOW_CONTROL",
+          "Value": "-Gfa",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_PREFER_FLOW_CONTROL",
+          "Value": "-Gfp",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_ENABLE_STRICTNESS",
+          "Value": "-Ges",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_ENABLE_BACKWARDS_COMPATIBILITY",
+          "Value": "-Gec",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_IEEE_STRICTNESS",
+          "Value": "-Gis",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_OPTIMIZATION_LEVEL0",
+          "Value": "-O0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_OPTIMIZATION_LEVEL1",
+          "Value": "-O1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_OPTIMIZATION_LEVEL2",
+          "Value": "-O2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_OPTIMIZATION_LEVEL3",
+          "Value": "-O3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_WARNINGS_ARE_ERRORS",
+          "Value": "-WX",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_RESOURCES_MAY_ALIAS",
+          "Value": "-res_may_alias",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_ALL_RESOURCES_BOUND",
+          "Value": "-all_resources_bound",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_DEBUG_NAME_FOR_SOURCE",
+          "Value": "-Zss",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_ARG_DEBUG_NAME_FOR_BINARY",
+          "Value": "-Zsb",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_EXTRA_OUTPUT_NAME_STDOUT",
+          "Value": "*stdout*",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DXC_EXTRA_OUTPUT_NAME_STDERR",
+          "Value": "*stderr*",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcValidatorFlags_Default",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcValidatorFlags_InPlaceEdit",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcValidatorFlags_RootSignatureOnly",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcValidatorFlags_ModuleOnly",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcValidatorFlags_ValidMask",
+          "Value": "7",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcVersionInfoFlags_None",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcVersionInfoFlags_Debug",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DxcVersionInfoFlags_Internal",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CLSID_DxcCompiler",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1944202643,
+                59086,
+                18419,
+                181,
+                191,
+                240,
+                102,
+                79,
+                57,
+                193,
+                176
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcLinker",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                4016734343,
+                45290,
+                19798,
+                158,
+                69,
+                208,
+                126,
+                26,
+                139,
+                120,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcDiaDataSource",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                3441388403,
+                10928,
+                18509,
+                142,
+                220,
+                235,
+                231,
+                164,
+                60,
+                160,
+                159
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcCompilerArgs",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1045868162,
+                8781,
+                18191,
+                161,
+                161,
+                254,
+                48,
+                22,
+                238,
+                159,
+                157
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcLibrary",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1648744111,
+                26336,
+                18685,
+                128,
+                180,
+                77,
+                39,
+                23,
+                150,
+                116,
+                140
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcValidator",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                2359550485,
+                63272,
+                19699,
+                140,
+                221,
+                136,
+                175,
+                145,
+                117,
+                135,
+                161
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcAssembler",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                3609779048,
+                63747,
+                20352,
+                148,
+                205,
+                220,
+                207,
+                118,
+                236,
+                113,
+                81
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcContainerReflection",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                3119858825,
+                21944,
+                16396,
+                186,
+                58,
+                22,
+                117,
+                228,
+                114,
+                139,
+                145
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcOptimizer",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                2922174367,
+                52258,
+                17727,
+                155,
+                107,
+                177,
+                36,
+                231,
+                165,
+                32,
+                76
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcContainerBuilder",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                2484290196,
+                16671,
+                17780,
+                180,
+                208,
+                135,
+                65,
+                226,
+                82,
+                64,
+                210
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "CLSID_DxcPdbUtils",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1415716347,
+                62158,
+                17790,
+                174,
+                140,
+                236,
+                53,
+                95,
+                174,
+                236,
+                124
+              ]
+            }
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "rclsid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DxcCreateInstance"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pMalloc",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IMalloc"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "rclsid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DxcCreateInstance2"
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "riid",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "ppv",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "DxcCreateInstanceProc",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pMalloc",
+          "Type": {
+            "Kind": "ComType",
+            "Namespace": "Windows.Win32.System.Com",
+            "Type": "IMalloc"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "rclsid",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "riid",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "ppv",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "DxcCreateInstance2Proc",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "HashDigest",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DxcShaderHash",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBufferPointer"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBufferSize"
+        }
+      ],
+      "Name": "IDxcBlob",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2342910728,
+            20885,
+            16610,
+            172,
+            88,
+            13,
+            152,
+            156,
+            58,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pKnown",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pCodePage",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetEncoding"
+        }
+      ],
+      "Name": "IDxcBlobEncoding",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1916916772,
+            9798,
+            16785,
+            151,
+            192,
+            152,
+            233,
+            110,
+            66,
+            252,
+            104
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStringPointer"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStringLength"
+        }
+      ],
+      "Name": "IDxcBlobUtf16",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2750959275,
+            4010,
+            18814,
+            163,
+            156,
+            238,
+            110,
+            214,
+            11,
+            45,
+            132
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStringPointer"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStringLength"
+        }
+      ],
+      "Name": "IDxcBlobUtf8",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1034303177,
+            47729,
+            16420,
+            163,
+            1,
+            48,
+            203,
+            241,
+            37,
+            48,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pFilename",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppIncludeSource",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "LoadSource"
+        }
+      ],
+      "Name": "IDxcIncludeHandler",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2137128061,
+            38157,
+            18047,
+            179,
+            227,
+            60,
+            2,
+            251,
+            73,
+            24,
+            124
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Ptr",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "Size",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Encoding",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DxcBuffer",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Name",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "DxcDefine",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetArguments"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddArguments"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddArgumentsUTF8"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pDefines",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcDefine"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defineCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddDefines"
+        }
+      ],
+      "Name": "IDxcCompilerArgs",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1945108010,
+            28892,
+            17912,
+            150,
+            144,
+            239,
+            246,
+            76,
+            2,
+            66,
+            157
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pMalloc",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IMalloc"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetMalloc"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "offset",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "length",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobFromBlob"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobFromFile"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pText",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobWithEncodingFromPinned"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pText",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobWithEncodingOnHeapCopy"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pText",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIMalloc",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IMalloc"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobWithEncodingOnMalloc"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateIncludeHandler"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppStream",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IStream"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateStreamFromBlobReadOnly"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBlobAsUtf8"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBlobAsUtf16"
+        }
+      ],
+      "Name": "IDxcLibrary",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3844099527,
+            53644,
+            19516,
+            189,
+            251,
+            133,
+            22,
+            115,
+            152,
+            15,
+            231
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pStatus",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HRESULT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStatus"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetResult"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppErrors",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetErrorBuffer"
+        }
+      ],
+      "Name": "IDxcOperationResult",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3470477386,
+            54505,
+            17498,
+            185,
+            145,
+            202,
+            33,
+            202,
+            21,
+            125,
+            194
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pSourceName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pEntryPoint",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pTargetProfile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pDefines",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcDefine"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defineCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIncludeHandler",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Compile"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pSourceName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pDefines",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcDefine"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defineCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIncludeHandler",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Preprocess"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppDisassembly",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Disassemble"
+        }
+      ],
+      "Name": "IDxcCompiler",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2350975987,
+            287,
+            17442,
+            141,
+            112,
+            111,
+            154,
+            203,
+            141,
+            182,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pSourceName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pEntryPoint",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pTargetProfile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pDefines",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcDefine"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defineCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIncludeHandler",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppDebugBlobName",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppDebugBlob",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CompileWithDebug"
+        }
+      ],
+      "Name": "IDxcCompiler2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2684725721,
+            47291,
+            17812,
+            181,
+            201,
+            14,
+            99,
+            59,
+            236,
+            77,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pLibName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pLib",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RegisterLibrary"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pEntryName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pTargetProfile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pLibNames",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "libCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Link"
+        }
+      ],
+      "Name": "IDxcLinker",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            4055219754,
+            25309,
+            17191,
+            161,
+            194,
+            66,
+            172,
+            30,
+            30,
+            120,
+            230
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "offset",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "length",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobFromBlob"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlobFromPinned"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIMalloc",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IMalloc"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MoveToBlob"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "codePage",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateBlob"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pCodePage",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_CP"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "LoadFile"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppStream",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IStream"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateReadOnlyStreamFromBlob"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDefaultIncludeHandler"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobUtf8"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBlobAsUtf8"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pBlobEncoding",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobUtf16"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBlobAsUtf16"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pShader",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcBuffer"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "DxcPart",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppPartData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pPartSizeInBytes",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetDxilContainerPart"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pData",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcBuffer"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "iid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvReflection",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateReflection"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pSourceName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pEntryPoint",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pTargetProfile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pDefines",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcDefine"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defineCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppArgs",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcCompilerArgs"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BuildArguments"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pPDBBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppContainer",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPDBContents"
+        }
+      ],
+      "Name": "IDxcUtils",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1174783179,
+            8217,
+            18730,
+            173,
+            164,
+            101,
+            242,
+            11,
+            183,
+            214,
+            127
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DXC_OUT_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "DXC_OUT_OBJECT",
+          "Value": "1"
+        },
+        {
+          "Name": "DXC_OUT_ERRORS",
+          "Value": "2"
+        },
+        {
+          "Name": "DXC_OUT_PDB",
+          "Value": "3"
+        },
+        {
+          "Name": "DXC_OUT_SHADER_HASH",
+          "Value": "4"
+        },
+        {
+          "Name": "DXC_OUT_DISASSEMBLY",
+          "Value": "5"
+        },
+        {
+          "Name": "DXC_OUT_HLSL",
+          "Value": "6"
+        },
+        {
+          "Name": "DXC_OUT_TEXT",
+          "Value": "7"
+        },
+        {
+          "Name": "DXC_OUT_REFLECTION",
+          "Value": "8"
+        },
+        {
+          "Name": "DXC_OUT_ROOT_SIGNATURE",
+          "Value": "9"
+        },
+        {
+          "Name": "DXC_OUT_EXTRA_OUTPUTS",
+          "Value": "10"
+        }
+      ],
+      "Name": "DXC_OUT_KIND",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "dxcOutKind",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_OUT_KIND"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "HasOutput"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dxcOutKind",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DXC_OUT_KIND"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "iid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvObject",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppOutputName",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobUtf16"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOutput"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNumOutputs"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOutputByIndex"
+        },
+        {
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrimaryOutput"
+        }
+      ],
+      "Name": "IDxcResult",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1479830746,
+            56807,
+            17559,
+            148,
+            97,
+            111,
+            135,
+            175,
+            94,
+            6,
+            89
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOutputCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "iid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvObject",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppOutputType",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobUtf16"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppOutputName",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobUtf16"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOutput"
+        }
+      ],
+      "Name": "IDxcExtraOutputs",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            832255906,
+            42434,
+            18762,
+            165,
+            222,
+            72,
+            1,
+            178,
+            250,
+            249,
+            137
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcBuffer"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "argCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pIncludeHandler",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcIncludeHandler"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Compile"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pObject",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcBuffer"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Disassemble"
+        }
+      ],
+      "Name": "IDxcCompiler3",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            579552903,
+            23146,
+            18224,
+            144,
+            12,
+            151,
+            2,
+            178,
+            32,
+            63,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pShader",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Flags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Validate"
+        }
+      ],
+      "Name": "IDxcValidator",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2800233426,
+            8151,
+            18470,
+            152,
+            17,
+            40,
+            87,
+            231,
+            151,
+            244,
+            154
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pShader",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Flags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pOptDebugBitcode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcBuffer"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ValidateWithDebug"
+        }
+      ],
+      "Name": "IDxcValidator2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1166942161,
+            45490,
+            18256,
+            166,
+            225,
+            156,
+            16,
+            240,
+            59,
+            237,
+            146
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pDxilContainerHeader",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Load"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fourCC",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddPart"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fourCC",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RemovePart"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SerializeContainer"
+        }
+      ],
+      "Name": "IDxcContainerBuilder",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            860561232,
+            8850,
+            19253,
+            153,
+            161,
+            37,
+            88,
+            141,
+            140,
+            23,
+            254
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pShader",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOperationResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AssembleToContainer"
+        }
+      ],
+      "Name": "IDxcAssembler",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            153057830,
+            7199,
+            18760,
+            144,
+            75,
+            230,
+            227,
+            168,
+            167,
+            113,
+            213
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pContainer",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Load"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPartCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "idx",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPartKind"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "idx",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPartContent"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "kind",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "FindFirstPartKind"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "idx",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "iid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvObject",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPartReflection"
+        }
+      ],
+      "Name": "IDxcContainerReflection",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3535936294,
+            33616,
+            19420,
+            151,
+            106,
+            51,
+            28,
+            230,
+            244,
+            197,
+            76
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOptionName"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetDescription"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOptionArgCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "argIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOptionArgName"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "argIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOptionArgDescription"
+        }
+      ],
+      "Name": "IDxcOptimizerPass",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2922174367,
+            52258,
+            17727,
+            155,
+            107,
+            177,
+            36,
+            231,
+            165,
+            32,
+            76
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetAvailablePassCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcOptimizerPass"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetAvailablePass"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pBlob",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppOptions",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "optionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pOutputModule",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppOutputText",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RunOptimizer"
+        }
+      ],
+      "Name": "IDxcOptimizer",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            628362798,
+            40122,
+            16411,
+            145,
+            25,
+            79,
+            180,
+            47,
+            57,
+            242,
+            112
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pMajor",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pMinor",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetVersion"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pFlags",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetFlags"
+        }
+      ],
+      "Name": "IDxcVersionInfo",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2957990736,
+            8281,
+            20242,
+            168,
+            255,
+            161,
+            224,
+            205,
+            225,
+            204,
+            126
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pCommitCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pCommitHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "SByte"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCommitInfo"
+        }
+      ],
+      "Name": "IDxcVersionInfo2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            4217963716,
+            17136,
+            19298,
+            156,
+            70,
+            152,
+            58,
+            247,
+            218,
+            124,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pVersionString",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "SByte"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCustomVersionString"
+        }
+      ],
+      "Name": "IDxcVersionInfo3",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1578362947,
+            40229,
+            18236,
+            154,
+            210,
+            3,
+            178,
+            208,
+            180,
+            75,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "pValue",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "DxcArgPair",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pPdbOrDxil",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Load"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetSourceCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlobEncoding"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetSource"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetSourceName"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetFlagCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetFlag"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetArgCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetArg"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetArgPairCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pName",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pValue",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetArgPair"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetDefineCount"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetDefine"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetTargetProfile"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetEntryPoint"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetMainFileName"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetHash"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetName"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "IsFullPDB"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppFullPDB",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcBlob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetFullPDB"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppVersionInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcVersionInfo"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetVersionInfo"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pCompiler",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcCompiler3"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetCompiler"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ppResult",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "IDxcResult"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CompileForFullPDB"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pArgPairs",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct3D.Dxc",
+                "Type": "DxcArgPair"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "uNumArgPairs",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OverrideArgs"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pRootSignature",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OverrideRootSignature"
+        }
+      ],
+      "Name": "IDxcPdbUtils",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3871958142,
+            40298,
+            19515,
+            185,
+            76,
+            82,
+            75,
+            90,
+            108,
+            52,
+            61
+          ]
+        }
+      ]
+    }
+  ]
+}

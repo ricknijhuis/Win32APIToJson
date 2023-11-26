@@ -1,0 +1,1439 @@
+{
+  "Name": "Windows.Win32.Storage.Xps.Printing",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "ID_DOCUMENTPACKAGETARGET_MSXPS",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                2628665512,
+                57041,
+                16841,
+                169,
+                253,
+                215,
+                53,
+                239,
+                51,
+                174,
+                218
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "ID_DOCUMENTPACKAGETARGET_OPENXPS",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                5684082,
+                35996,
+                17938,
+                189,
+                15,
+                147,
+                1,
+                42,
+                135,
+                9,
+                157
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "ID_DOCUMENTPACKAGETARGET_OPENXPS_WITH_3D",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1675351840,
+                35604,
+                17783,
+                176,
+                116,
+                123,
+                177,
+                27,
+                89,
+                109,
+                40
+              ]
+            }
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "printerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "jobName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "outputFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "progressEvent",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "completionEvent",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "printablePagesOn",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "printablePagesOnCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "xpsPrintJob",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "IXpsPrintJob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "documentStream",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "IXpsPrintJobStream"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "printTicketStream",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "IXpsPrintJobStream"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "StartXpsPrintJob",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "printerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "jobName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "outputFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "progressEvent",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "completionEvent",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "xpsPrintJob",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "IXpsPrintJob"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "printContentReceiver",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps",
+                "Type": "IXpsOMPackageTarget"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "StartXpsPrintJob1",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob1"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "XPS_JOB_IN_PROGRESS",
+          "Value": "0"
+        },
+        {
+          "Name": "XPS_JOB_COMPLETED",
+          "Value": "1"
+        },
+        {
+          "Name": "XPS_JOB_CANCELLED",
+          "Value": "2"
+        },
+        {
+          "Name": "XPS_JOB_FAILED",
+          "Value": "3"
+        }
+      ],
+      "Name": "XPS_JOB_COMPLETION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/xpsprint/ne-xpsprint-xps_job_completion"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "jobId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentDocument",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentPage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentPageTotal",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "completion",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.Xps.Printing",
+            "Type": "XPS_JOB_COMPLETION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "jobStatus",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "XPS_JOB_STATUS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/xpsprint/ns-xpsprint-xps_job_status"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Close",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/xpsprint/nf-xpsprint-ixpsprintjobstream-close"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IXpsPrintJobStream",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2054675551,
+            17878,
+            19967,
+            147,
+            7,
+            216,
+            203,
+            132,
+            99,
+            71,
+            202
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/xpsprint/nn-xpsprint-ixpsprintjobstream"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Cancel",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/xpsprint/nf-xpsprint-ixpsprintjob-cancel"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "jobStatus",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "XPS_JOB_STATUS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetJobStatus",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/xpsprint/nf-xpsprint-ixpsprintjob-getjobstatus"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IXpsPrintJob",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1522047750,
+            33172,
+            16991,
+            171,
+            59,
+            215,
+            169,
+            110,
+            53,
+            1,
+            97
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/xpsprint/nn-xpsprint-ixpsprintjob"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "targetCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "targetTypes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPackageTargetTypes",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/documenttarget/nf-documenttarget-iprintdocumentpackagetarget-getpackagetargettypes"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "guidTargetType",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvTarget",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPackageTarget",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/documenttarget/nf-documenttarget-iprintdocumentpackagetarget-getpackagetarget"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Cancel",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/documenttarget/nf-documenttarget-iprintdocumentpackagetarget-cancel"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IPrintDocumentPackageTarget",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            462356164,
+            12313,
+            19495,
+            150,
+            78,
+            54,
+            114,
+            2,
+            21,
+            105,
+            6
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows8.0"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/documenttarget/nn-documenttarget-iprintdocumentpackagetarget"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "isIppPrinter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetIsTargetIppPrinter"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppvTarget",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetTargetIppPrintDevice"
+        }
+      ],
+      "Name": "IPrintDocumentPackageTarget2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3311413642,
+            21340,
+            18681,
+            134,
+            106,
+            99,
+            37,
+            64,
+            102,
+            12,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PrintDocumentPackageCompletion_InProgress",
+          "Value": "0"
+        },
+        {
+          "Name": "PrintDocumentPackageCompletion_Completed",
+          "Value": "1"
+        },
+        {
+          "Name": "PrintDocumentPackageCompletion_Canceled",
+          "Value": "2"
+        },
+        {
+          "Name": "PrintDocumentPackageCompletion_Failed",
+          "Value": "3"
+        }
+      ],
+      "Name": "PrintDocumentPackageCompletion",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/documenttarget/ne-documenttarget-printdocumentpackagecompletion"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "JobId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CurrentDocument",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CurrentPage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CurrentPageTotal",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Completion",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.Xps.Printing",
+            "Type": "PrintDocumentPackageCompletion"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PackageStatus",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PrintDocumentPackageStatus",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/documenttarget/ns-documenttarget-printdocumentpackagestatus"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "packageStatus",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "PrintDocumentPackageStatus"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PackageStatusUpdated",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/documenttarget/nf-documenttarget-iprintdocumentpackagestatusevent-packagestatusupdated"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IPrintDocumentPackageStatusEvent",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3985688749,
+            23604,
+            19717,
+            161,
+            236,
+            14,
+            138,
+            155,
+            58,
+            215,
+            175
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows8.0"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/documenttarget/nn-documenttarget-iprintdocumentpackagestatusevent"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "printerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "jobName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "jobOutputStream",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IStream"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "jobPrintTicketStream",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IStream"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "docPackageTarget",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.Xps.Printing",
+                "Type": "IPrintDocumentPackageTarget"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDocumentPackageTargetForPrintJob",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/documenttarget/nf-documenttarget-iprintdocumentpackagetargetfactory-createdocumentpackagetargetforprintjob"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IPrintDocumentPackageTargetFactory",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3533020151,
+            45851,
+            19005,
+            150,
+            0,
+            113,
+            46,
+            177,
+            51,
+            91,
+            164
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows8.0"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/documenttarget/nn-documenttarget-iprintdocumentpackagetargetfactory"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "PrintDocumentPackageTarget",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1212311198,
+            39239,
+            18154,
+            139,
+            162,
+            216,
+            204,
+            228,
+            50,
+            194,
+            202
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "PrintDocumentPackageTargetFactory",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            881783165,
+            27777,
+            18818,
+            146,
+            180,
+            238,
+            24,
+            138,
+            67,
+            134,
+            122
+          ]
+        }
+      ]
+    }
+  ]
+}

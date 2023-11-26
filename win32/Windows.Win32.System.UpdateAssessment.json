@@ -1,0 +1,481 @@
+{
+  "Name": "Windows.Win32.System.UpdateAssessment",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "UpdateImpactLevel_None",
+          "Value": "0"
+        },
+        {
+          "Name": "UpdateImpactLevel_Low",
+          "Value": "1"
+        },
+        {
+          "Name": "UpdateImpactLevel_Medium",
+          "Value": "2"
+        },
+        {
+          "Name": "UpdateImpactLevel_High",
+          "Value": "3"
+        }
+      ],
+      "Name": "UpdateImpactLevel",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/SysInfo/updateimpactlevel"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "UpdateAssessmentStatus_Latest",
+          "Value": "0"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestSoftRestriction",
+          "Value": "1"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestHardRestriction",
+          "Value": "2"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestEndOfSupport",
+          "Value": "3"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestServicingTrain",
+          "Value": "4"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestDeferredFeature",
+          "Value": "5"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestDeferredQuality",
+          "Value": "6"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestPausedFeature",
+          "Value": "7"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestPausedQuality",
+          "Value": "8"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestManaged",
+          "Value": "9"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestUnknown",
+          "Value": "10"
+        },
+        {
+          "Name": "UpdateAssessmentStatus_NotLatestTargetedVersion",
+          "Value": "11"
+        }
+      ],
+      "Name": "UpdateAssessmentStatus",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/SysInfo/updateassessmentstatus"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "status",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.UpdateAssessment",
+            "Type": "UpdateAssessmentStatus"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "impact",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.UpdateAssessment",
+            "Type": "UpdateImpactLevel"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "daysOutOfDate",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "UpdateAssessment",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/waasapitypes/ns-waasapitypes-updateassessment"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "isEndOfSupport",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "assessmentForCurrent",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.UpdateAssessment",
+            "Type": "UpdateAssessment"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "assessmentForUpToDate",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.UpdateAssessment",
+            "Type": "UpdateAssessment"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "securityStatus",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.UpdateAssessment",
+            "Type": "UpdateAssessmentStatus"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "assessmentTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "releaseInfoTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentOSBuild",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentOSReleaseTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "upToDateOSBuild",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "upToDateOSReleaseTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "OSUpdateAssessment",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/waasapitypes/ns-waasapitypes-osupdateassessment"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.UpdateAssessment",
+                "Type": "OSUpdateAssessment"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetOSUpdateAssessment",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/waasapi/nf-waasapi-iwaasassessor-getosupdateassessment"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IWaaSAssessor",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            591903727,
+            6715,
+            17828,
+            144,
+            45,
+            62,
+            9,
+            194,
+            105,
+            180,
+            94
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows10.0.15063"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/waasapi/nn-waasapi-iwaasassessor"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "WaaSAssessor",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            160364657,
+            64159,
+            18095,
+            137,
+            88,
+            192,
+            131,
+            81,
+            93,
+            124,
+            156
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

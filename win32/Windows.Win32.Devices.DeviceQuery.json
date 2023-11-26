@@ -1,0 +1,2342 @@
+{
+  "Name": "Windows.Win32.Devices.DeviceQuery",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HDEVQUERY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DEVPROP_OPERATOR_MODIFIER_NOT",
+          "Value": "65536"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MODIFIER_IGNORE_CASE",
+          "Value": "131072"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_EXISTS",
+          "Value": "1"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NOT_EXISTS",
+          "Value": "65537"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_EQUALS",
+          "Value": "2"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NOT_EQUALS",
+          "Value": "65538"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_GREATER_THAN",
+          "Value": "3"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LESS_THAN",
+          "Value": "4"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_GREATER_THAN_EQUALS",
+          "Value": "5"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LESS_THAN_EQUALS",
+          "Value": "6"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_EQUALS_IGNORE_CASE",
+          "Value": "131074"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NOT_EQUALS_IGNORE_CASE",
+          "Value": "196610"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_BITWISE_AND",
+          "Value": "7"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_BITWISE_OR",
+          "Value": "8"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_BEGINS_WITH",
+          "Value": "9"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_ENDS_WITH",
+          "Value": "10"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_CONTAINS",
+          "Value": "11"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_BEGINS_WITH_IGNORE_CASE",
+          "Value": "131081"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_ENDS_WITH_IGNORE_CASE",
+          "Value": "131082"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_CONTAINS_IGNORE_CASE",
+          "Value": "131083"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_CONTAINS",
+          "Value": "4096"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_BEGINS_WITH",
+          "Value": "8192"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_ENDS_WITH",
+          "Value": "12288"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_CONTAINS",
+          "Value": "16384"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_CONTAINS_IGNORE_CASE",
+          "Value": "135168"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_BEGINS_WITH_IGNORE_CASE",
+          "Value": "139264"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_ENDS_WITH_IGNORE_CASE",
+          "Value": "143360"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_LIST_ELEMENT_CONTAINS_IGNORE_CASE",
+          "Value": "147456"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_AND_OPEN",
+          "Value": "1048576"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_AND_CLOSE",
+          "Value": "2097152"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_OR_OPEN",
+          "Value": "3145728"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_OR_CLOSE",
+          "Value": "4194304"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NOT_OPEN",
+          "Value": "5242880"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_NOT_CLOSE",
+          "Value": "6291456"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_ARRAY_CONTAINS",
+          "Value": "268435456"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_EVAL",
+          "Value": "4095"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_LIST",
+          "Value": "61440"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_MODIFIER",
+          "Value": "983040"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_NOT_LOGICAL",
+          "Value": "4027580415"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_LOGICAL",
+          "Value": "267386880"
+        },
+        {
+          "Name": "DEVPROP_OPERATOR_MASK_ARRAY",
+          "Value": "4026531840"
+        }
+      ],
+      "Name": "DEVPROP_OPERATOR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Operator",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceQuery",
+            "Type": "DEVPROP_OPERATOR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Property",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Devices.Properties",
+            "Type": "DEVPROPERTY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DEVPROP_FILTER_EXPRESSION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DevObjectTypeUnknown",
+          "Value": "0"
+        },
+        {
+          "Name": "DevObjectTypeDeviceInterface",
+          "Value": "1"
+        },
+        {
+          "Name": "DevObjectTypeDeviceContainer",
+          "Value": "2"
+        },
+        {
+          "Name": "DevObjectTypeDevice",
+          "Value": "3"
+        },
+        {
+          "Name": "DevObjectTypeDeviceInterfaceClass",
+          "Value": "4"
+        },
+        {
+          "Name": "DevObjectTypeAEP",
+          "Value": "5"
+        },
+        {
+          "Name": "DevObjectTypeAEPContainer",
+          "Value": "6"
+        },
+        {
+          "Name": "DevObjectTypeDeviceInstallerClass",
+          "Value": "7"
+        },
+        {
+          "Name": "DevObjectTypeDeviceInterfaceDisplay",
+          "Value": "8"
+        },
+        {
+          "Name": "DevObjectTypeDeviceContainerDisplay",
+          "Value": "9"
+        },
+        {
+          "Name": "DevObjectTypeAEPService",
+          "Value": "10"
+        },
+        {
+          "Name": "DevObjectTypeDevicePanel",
+          "Value": "11"
+        }
+      ],
+      "Name": "DEV_OBJECT_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DevQueryFlagNone",
+          "Value": "0"
+        },
+        {
+          "Name": "DevQueryFlagUpdateResults",
+          "Value": "1"
+        },
+        {
+          "Name": "DevQueryFlagAllProperties",
+          "Value": "2"
+        },
+        {
+          "Name": "DevQueryFlagLocalize",
+          "Value": "4"
+        },
+        {
+          "Name": "DevQueryFlagAsyncClose",
+          "Value": "8"
+        }
+      ],
+      "Name": "DEV_QUERY_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DevQueryStateInitialized",
+          "Value": "0"
+        },
+        {
+          "Name": "DevQueryStateEnumCompleted",
+          "Value": "1"
+        },
+        {
+          "Name": "DevQueryStateAborted",
+          "Value": "2"
+        },
+        {
+          "Name": "DevQueryStateClosed",
+          "Value": "3"
+        }
+      ],
+      "Name": "DEV_QUERY_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DevQueryResultStateChange",
+          "Value": "0"
+        },
+        {
+          "Name": "DevQueryResultAdd",
+          "Value": "1"
+        },
+        {
+          "Name": "DevQueryResultUpdate",
+          "Value": "2"
+        },
+        {
+          "Name": "DevQueryResultRemove",
+          "Value": "3"
+        }
+      ],
+      "Name": "DEV_QUERY_RESULT_ACTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ObjectType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceQuery",
+            "Type": "DEV_OBJECT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pszObjectId",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "cPropertyCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pProperties",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Devices.Properties",
+            "Type": "DEVPROPERTY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "DEV_OBJECT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Action",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceQuery",
+            "Type": "DEV_QUERY_RESULT_ACTION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Data",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_DEV_QUERY_RESULT_UPDATE_PAYLOAD"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "State",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_STATE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "DeviceObject",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_DEV_QUERY_RESULT_UPDATE_PAYLOAD"
+        }
+      ],
+      "Name": "DEV_QUERY_RESULT_ACTION_DATA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Key",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Devices.Properties",
+            "Type": "DEVPROPKEY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Type",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.Properties",
+            "Type": "DEVPROPTYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BufferSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Buffer",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DEV_QUERY_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "hDevQuery",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Devices.DeviceQuery",
+            "Type": "HDEVQUERY"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pContext",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "pActionData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Devices.DeviceQuery",
+            "Type": "DEV_QUERY_RESULT_ACTION_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PDEV_QUERY_RESULT_CALLBACK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQuery"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cExtendedParameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pExtendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQueryEx"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszObjectId",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQueryFromId"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszObjectId",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cExtendedParameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pExtendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQueryFromIdEx"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszzObjectIds",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQueryFromIds"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszzObjectIds",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cExtendedParameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pExtendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "PDEV_QUERY_RESULT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "phDevQuery",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCreateObjectQueryFromIdsEx"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hDevQuery",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "HDEVQUERY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevCloseObjectQuery"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pcObjectCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppObjects",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevGetObjects"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cFilterExpressionCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pFilter",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEVPROP_FILTER_EXPRESSION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "cExtendedParameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pExtendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pcObjectCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppObjects",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevGetObjectsEx"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "cObjectCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pObjects",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevFreeObjects"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszObjectId",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pcPropertyCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevGetObjectProperties"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ObjectType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_OBJECT_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszObjectId",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "QueryFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cRequestedProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRequestedProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPCOMPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cExtendedParameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pExtendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.DeviceQuery",
+                "Type": "DEV_QUERY_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pcPropertyCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ppProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevGetObjectPropertiesEx"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "cPropertyCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevFreeObjectProperties"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pKey",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPKEY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Store",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPSTORE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pszLocaleName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cProperties",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pProperties",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Devices.Properties",
+                "Type": "DEVPROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DevFindProperty"
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

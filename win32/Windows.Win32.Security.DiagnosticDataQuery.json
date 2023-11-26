@@ -1,0 +1,3583 @@
+{
+  "Name": "Windows.Win32.Security.DiagnosticDataQuery",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "NoData",
+          "Value": "0"
+        },
+        {
+          "Name": "CurrentUserData",
+          "Value": "1"
+        },
+        {
+          "Name": "AllUserData",
+          "Value": "2"
+        }
+      ],
+      "Name": "DdqAccessLevel",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ne-diagnosticdataquerytypes-ddqaccesslevel"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "rowId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "timestamp",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "eventKeywords",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fullEventName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "providerGroupGuid",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "producerName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "privacyTags",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "privacyTagCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "categoryIds",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "categoryIdCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "isCoreData",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "extra1",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "extra2",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "extra3",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_RECORD",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_record"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "producerNames",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "producerNameCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "textToMatch",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "categoryIds",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "categoryIdCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "privacyTags",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "privacyTagCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "coreDataOnly",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_SEARCH_CRITERIA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_search_criteria"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "privacyTag",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "name",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "description",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_tag_description"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "name",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_producer_description"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "id",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "name",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_category_description"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "privacyTag",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "eventCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_TAG_STATS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_tag_stats"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "moduleName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "friendlyModuleName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "eventCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "uploadSizeBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_BINARY_STATS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_binary_stats"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "optInLevel",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "transcriptSizeBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "oldestEventTimestamp",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "totalEventCountLast24Hours",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "averageDailyEvents",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_GENERAL_STATS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_general_stats"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "hoursOfHistoryToKeep",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "maxStoreMegabytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "requestedMaxStoreMegabytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_data_event_transcript_configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "name",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Char"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "value",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Char"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_REPORT_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_report_parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "eventName",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Char"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "parameters",
+          "Type": {
+            "Kind": "ArrayType",
+            "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+            "Type": "DIAGNOSTIC_REPORT_PARAMETER"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_REPORT_SIGNATURE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_report_signature"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "signature",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+            "Type": "DIAGNOSTIC_REPORT_SIGNATURE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "bucketId",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "reportId",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "creationTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "sizeInBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "cabId",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "reportStatus",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "reportIntegratorId",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fileNames",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "fileCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "friendlyEventName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "applicationName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "applicationPath",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "description",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "bucketIdString",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "legacyBucketId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "reportKey",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DIAGNOSTIC_REPORT_DATA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/diagnosticdataquerytypes/ns-diagnosticdataquerytypes-diagnostic_report_data"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "accessLevel",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DdqAccessLevel"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqCreateSession",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqcreatesession"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqCloseSession",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqclosesession"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "accessLevel",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DdqAccessLevel"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetSessionAccessLevel",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetsessionaccesslevel"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "accessLevel",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DdqAccessLevel"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticDataAccessLevelAllowed",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticdataaccesslevelallowed"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "searchCriteria",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_SEARCH_CRITERIA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "recordCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "minRowId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int64"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "maxRowId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int64"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordStats",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordstats"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "rowId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int64"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "payload",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordPayload",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordpayload"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "locale",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hTagDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordLocaleTags",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordlocaletags"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hTagDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqFreeDiagnosticRecordLocaleTags",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqfreediagnosticrecordlocaletags"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hTagDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "tagDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordLocaleTagAtIndex",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordlocaletagatindex"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hTagDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "tagDescriptionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordLocaleTagCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordlocaletagcount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hProducerDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordProducers",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordproducers"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hProducerDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqFreeDiagnosticRecordProducers",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqfreediagnosticrecordproducers"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hProducerDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordProducerAtIndex",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordproduceratindex"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hProducerDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerDescriptionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordProducerCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordproducercount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hCategoryDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordProducerCategories",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordproducercategories"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCategoryDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqFreeDiagnosticRecordProducerCategories",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqfreediagnosticrecordproducercategories"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCategoryDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "categoryDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordCategoryAtIndex",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordcategoryatindex"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hCategoryDescription",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "categoryDescriptionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordCategoryCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordcategorycount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "providerGroup",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "providerId",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "providerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "eventId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "eventName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "eventVersion",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "eventKeywords",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "isSampledIn",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqIsDiagnosticRecordSampledIn",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqisdiagnosticrecordsampledin"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "searchCriteria",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_SEARCH_CRITERIA"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "offset",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pageRecordCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "baseRowId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int64"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hRecord",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_RECORD"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordPage",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordpage"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hRecord",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_RECORD"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqFreeDiagnosticRecordPage",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqfreediagnosticrecordpage"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hRecord",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_RECORD"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "record",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_RECORD"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordAtIndex",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordatindex"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hRecord",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_RECORD"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "recordCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordcount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportStoreType",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticReportStoreReportCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticreportstorereportcount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqCancelDiagnosticRecordOperation",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqcanceldiagnosticrecordoperation"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportStoreType",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hReport",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_REPORT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticReport",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticreport"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hReport",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_REPORT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqFreeDiagnosticReport",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqfreediagnosticreport"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hReport",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_REPORT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "index",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "report",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_REPORT_DATA"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticReportAtIndex",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticreportatindex"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hReport",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_REPORT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticReportCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticreportcount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportStoreType",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "reportKey",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "destinationPath",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqExtractDiagnosticReport",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqextractdiagnosticreport"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNames",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNameCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "tagStats",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_TAG_STATS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "statCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordTagDistribution",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordtagdistribution"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNames",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNameCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "topNBinaries",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "binaryStats",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_BINARY_STATS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "statCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordBinaryDistribution",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordbinarydistribution"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNames",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "producerNameCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "generalStats",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_GENERAL_STATS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetDiagnosticRecordSummary",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgetdiagnosticrecordsummary"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "desiredConfig",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqSetTranscriptConfiguration",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqsettranscriptconfiguration"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hSession",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "HDIAGNOSTIC_DATA_QUERY_SESSION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "currentConfig",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security.DiagnosticDataQuery",
+                "Type": "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DdqGetTranscriptConfiguration",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/diagnosticdataquery/nf-diagnosticdataquery-ddqgettranscriptconfiguration"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

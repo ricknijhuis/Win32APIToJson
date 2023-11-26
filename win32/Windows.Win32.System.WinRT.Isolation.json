@@ -1,0 +1,93 @@
+{
+  "Name": "Windows.Win32.System.WinRT.Isolation",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "containerHwnd",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HWND"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hostHwnd",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HWND"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetHostHwndInterop"
+        }
+      ],
+      "Name": "IIsolatedEnvironmentInterop",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2238790702,
+            36450,
+            18117,
+            141,
+            226,
+            198,
+            71,
+            225,
+            213,
+            70,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

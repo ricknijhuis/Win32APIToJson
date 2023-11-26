@@ -1,0 +1,2054 @@
+{
+  "Name": "Windows.Win32.System.Pipes",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PIPE_WAIT",
+          "Value": "0"
+        },
+        {
+          "Name": "PIPE_NOWAIT",
+          "Value": "1"
+        },
+        {
+          "Name": "PIPE_READMODE_BYTE",
+          "Value": "0"
+        },
+        {
+          "Name": "PIPE_READMODE_MESSAGE",
+          "Value": "2"
+        },
+        {
+          "Name": "PIPE_CLIENT_END",
+          "Value": "0"
+        },
+        {
+          "Name": "PIPE_SERVER_END",
+          "Value": "1"
+        },
+        {
+          "Name": "PIPE_TYPE_BYTE",
+          "Value": "0"
+        },
+        {
+          "Name": "PIPE_TYPE_MESSAGE",
+          "Value": "4"
+        },
+        {
+          "Name": "PIPE_ACCEPT_REMOTE_CLIENTS",
+          "Value": "0"
+        },
+        {
+          "Name": "PIPE_REJECT_REMOTE_CLIENTS",
+          "Value": "8"
+        }
+      ],
+      "Name": "NAMED_PIPE_MODE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "PIPE_UNLIMITED_INSTANCES",
+          "Value": "255",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NMPWAIT_WAIT_FOREVER",
+          "Value": "4294967295",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NMPWAIT_NOWAIT",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NMPWAIT_USE_DEFAULT_WAIT",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "hReadPipe",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "hWritePipe",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "lpPipeAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreatePipe",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpOverlapped",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.IO",
+                "Type": "OVERLAPPED"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ConnectNamedPipe",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DisconnectNamedPipe",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-disconnectnamedpipe"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpMode",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpMaxCollectionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpCollectDataTimeout",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetNamedPipeHandleState",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpBytesRead",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpTotalBytesAvail",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpBytesLeftThisMessage",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PeekNamedPipe",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-peeknamedpipe"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nInBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpOutBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nOutBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpBytesRead",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "lpOverlapped",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.IO",
+                "Type": "OVERLAPPED"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "TransactNamedPipe",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwOpenMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.FileSystem",
+                "Type": "FILE_FLAGS_AND_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwPipeMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nMaxInstances",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nOutBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nInBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nDefaultTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpSecurityAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateNamedPipeW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-createnamedpipew"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpNamedPipeName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "WaitNamedPipeW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-waitnamedpipew"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ClientComputerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ClientComputerNameLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeClientComputerNameW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-getnamedpipeclientcomputernamew"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ImpersonateNamedPipeClient",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-impersonatenamedpipeclient"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpFlags",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpOutBufferSize",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpInBufferSize",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpMaxInstances",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-getnamedpipeinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpState",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpCurInstances",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpMaxCollectionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpCollectDataTimeout",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpUserName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nMaxUserNameSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeHandleStateW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-getnamedpipehandlestatew"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpNamedPipeName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nInBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpOutBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nOutBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpBytesRead",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "nTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CallNamedPipeW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/namedpipeapi/nf-namedpipeapi-callnamedpipew"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwOpenMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.FileSystem",
+                "Type": "FILE_FLAGS_AND_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwPipeMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nMaxInstances",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nOutBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nInBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nDefaultTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpSecurityAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateNamedPipeA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-createnamedpipea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hNamedPipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpState",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Pipes",
+                "Type": "NAMED_PIPE_MODE"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpCurInstances",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpMaxCollectionCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpCollectDataTimeout",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpUserName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nMaxUserNameSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeHandleStateA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipehandlestatea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpNamedPipeName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpInBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nInBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpOutBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "nOutBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpBytesRead",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "nTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CallNamedPipeA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-callnamedpipea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpNamedPipeName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "nTimeOut",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "WaitNamedPipeA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-waitnamedpipea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ClientComputerName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "ClientComputerNameLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeClientComputerNameA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipeclientcomputernamea"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ClientProcessId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeClientProcessId",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipeclientprocessid"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ClientSessionId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeClientSessionId",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipeclientsessionid"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ServerProcessId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeServerProcessId",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipeserverprocessid"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Pipe",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ServerSessionId",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNamedPipeServerSessionId",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows6.0.6000"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-getnamedpipeserversessionid"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

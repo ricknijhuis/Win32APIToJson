@@ -1,0 +1,3887 @@
+{
+  "Name": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "WCN_E_PEER_NOT_FOUND",
+          "Value": "-2147206143",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_E_AUTHENTICATION_FAILED",
+          "Value": "-2147206142",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_E_CONNECTION_REJECTED",
+          "Value": "-2147206141",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_E_SESSION_TIMEDOUT",
+          "Value": "-2147206140",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_E_PROTOCOL_ERROR",
+          "Value": "-2147206139",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HRESULT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_QUERY_CONSTRAINT_USE_SOFTAP",
+          "Value": "WCN.Discovery.SoftAP",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_COMPUTER",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_INPUT_DEVICE",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_PRINTER",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_CAMERA",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_STORAGE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_NETWORK_INFRASTRUCTURE",
+          "Value": "6",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_DISPLAY",
+          "Value": "7",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_MULTIMEDIA_DEVICE",
+          "Value": "8",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_GAMING_DEVICE",
+          "Value": "9",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_TELEPHONE",
+          "Value": "10",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_AUDIO_DEVICE",
+          "Value": "11",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_CATEGORY_OTHER",
+          "Value": "255",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_WIFI_OUI",
+          "Value": "5304836",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__PC",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__SERVER",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__MEDIACENTER",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__ULTRAMOBILEPC",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__NOTEBOOK",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__DESKTOP",
+          "Value": "6",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__MID",
+          "Value": "7",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_COMPUTER__NETBOOK",
+          "Value": "8",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__KEYBOARD",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__MOUSE",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__JOYSTICK",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__TRACKBALL",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__GAMECONTROLLER",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__REMOTE",
+          "Value": "6",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__TOUCHSCREEN",
+          "Value": "7",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__BIOMETRICREADER",
+          "Value": "8",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_INPUT_DEVICE__BARCODEREADER",
+          "Value": "9",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_PRINTER__PRINTER",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_PRINTER__SCANNER",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_PRINTER__FAX",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_PRINTER__COPIER",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_PRINTER__ALLINONE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_CAMERA__STILL_CAMERA",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_CAMERA__VIDEO_CAMERA",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_CAMERA__WEB_CAMERA",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_CAMERA__SECURITY_CAMERA",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_STORAGE__NAS",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_NETWORK_INFRASTRUCUTURE__AP",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_NETWORK_INFRASTRUCUTURE__ROUTER",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_NETWORK_INFRASTRUCUTURE__SWITCH",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_NETWORK_INFRASTRUCUTURE__GATEWAY",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_NETWORK_INFRASTRUCUTURE__BRIDGE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_DISPLAY__TELEVISION",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_DISPLAY__PICTURE_FRAME",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_DISPLAY__PROJECTOR",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_DISPLAY__MONITOR",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__DAR",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__PVR",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__MCX",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__SETTOPBOX",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__MEDIA_SERVER_ADAPT_EXT",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_MULTIMEDIA_DEVICE__PVP",
+          "Value": "6",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_GAMING_DEVICE__XBOX",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_GAMING_DEVICE__XBOX360",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_GAMING_DEVICE__PLAYSTATION",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_GAMING_DEVICE__CONSOLE_ADAPT",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_GAMING_DEVICE__PORTABLE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_TELEPHONE__WINDOWS_MOBILE",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_TELEPHONE__PHONE_SINGLEMODE",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_TELEPHONE__PHONE_DUALMODE",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_TELEPHONE__SMARTPHONE_SINGLEMODE",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_TELEPHONE__SMARTPHONE_DUALMODE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__TUNER_RECEIVER",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__SPEAKERS",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__PMP",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__HEADSET",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__HEADPHONES",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__MICROPHONE",
+          "Value": "6",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_VALUE_DT_SUBTYPE_AUDIO_DEVICE__HOMETHEATER",
+          "Value": "7",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_API_MAX_BUFFER_SIZE",
+          "Value": "2096",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_MICROSOFT_VENDOR_ID",
+          "Value": "311",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_NO_SUBTYPE",
+          "Value": "4294967294",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_FLAG_DISCOVERY_VE",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_FLAG_AUTHENTICATED_VE",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WCN_FLAG_ENCRYPTED_VE",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "SID_WcnProvider",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                3238051530,
+                54074,
+                19019,
+                191,
+                35,
+                187,
+                239,
+                70,
+                99,
+                208,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "PKEY_WCN_DeviceType_Category",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.PropertiesSystem",
+            "Type": "PROPERTYKEY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "{2283342731, 18052, 4570, 162, 106, 0, 2, 179, 152, 142, 129}, 16"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "PKEY_WCN_DeviceType_SubCategoryOUI",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.PropertiesSystem",
+            "Type": "PROPERTYKEY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "{2283342731, 18052, 4570, 162, 106, 0, 2, 179, 152, 142, 129}, 17"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "PKEY_WCN_DeviceType_SubCategory",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.PropertiesSystem",
+            "Type": "PROPERTYKEY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "{2283342731, 18052, 4570, 162, 106, 0, 2, 179, 152, 142, 129}, 18"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "PKEY_WCN_SSID",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.PropertiesSystem",
+            "Type": "PROPERTYKEY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "{2283342731, 18052, 4570, 162, 106, 0, 2, 179, 152, 142, 129}, 32"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_TYPE_AP_CHANNEL",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_TYPE_ASSOCIATION_STATE",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_TYPE_AUTHENTICATION_TYPE",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_TYPE_AUTHENTICATION_TYPE_FLAGS",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_TYPE_AUTHENTICATOR",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_TYPE_CONFIG_METHODS",
+          "Value": "5"
+        },
+        {
+          "Name": "WCN_TYPE_CONFIGURATION_ERROR",
+          "Value": "6"
+        },
+        {
+          "Name": "WCN_TYPE_CONFIRMATION_URL4",
+          "Value": "7"
+        },
+        {
+          "Name": "WCN_TYPE_CONFIRMATION_URL6",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_TYPE_CONNECTION_TYPE",
+          "Value": "9"
+        },
+        {
+          "Name": "WCN_TYPE_CONNECTION_TYPE_FLAGS",
+          "Value": "10"
+        },
+        {
+          "Name": "WCN_TYPE_CREDENTIAL",
+          "Value": "11"
+        },
+        {
+          "Name": "WCN_TYPE_DEVICE_NAME",
+          "Value": "12"
+        },
+        {
+          "Name": "WCN_TYPE_DEVICE_PASSWORD_ID",
+          "Value": "13"
+        },
+        {
+          "Name": "WCN_TYPE_E_HASH1",
+          "Value": "14"
+        },
+        {
+          "Name": "WCN_TYPE_E_HASH2",
+          "Value": "15"
+        },
+        {
+          "Name": "WCN_TYPE_E_SNONCE1",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_TYPE_E_SNONCE2",
+          "Value": "17"
+        },
+        {
+          "Name": "WCN_TYPE_ENCRYPTED_SETTINGS",
+          "Value": "18"
+        },
+        {
+          "Name": "WCN_TYPE_ENCRYPTION_TYPE",
+          "Value": "19"
+        },
+        {
+          "Name": "WCN_TYPE_ENCRYPTION_TYPE_FLAGS",
+          "Value": "20"
+        },
+        {
+          "Name": "WCN_TYPE_ENROLLEE_NONCE",
+          "Value": "21"
+        },
+        {
+          "Name": "WCN_TYPE_FEATURE_ID",
+          "Value": "22"
+        },
+        {
+          "Name": "WCN_TYPE_IDENTITY",
+          "Value": "23"
+        },
+        {
+          "Name": "WCN_TYPE_IDENTITY_PROOF",
+          "Value": "24"
+        },
+        {
+          "Name": "WCN_TYPE_KEY_WRAP_AUTHENTICATOR",
+          "Value": "25"
+        },
+        {
+          "Name": "WCN_TYPE_KEY_IDENTIFIER",
+          "Value": "26"
+        },
+        {
+          "Name": "WCN_TYPE_MAC_ADDRESS",
+          "Value": "27"
+        },
+        {
+          "Name": "WCN_TYPE_MANUFACTURER",
+          "Value": "28"
+        },
+        {
+          "Name": "WCN_TYPE_MESSAGE_TYPE",
+          "Value": "29"
+        },
+        {
+          "Name": "WCN_TYPE_MODEL_NAME",
+          "Value": "30"
+        },
+        {
+          "Name": "WCN_TYPE_MODEL_NUMBER",
+          "Value": "31"
+        },
+        {
+          "Name": "WCN_TYPE_NETWORK_INDEX",
+          "Value": "32"
+        },
+        {
+          "Name": "WCN_TYPE_NETWORK_KEY",
+          "Value": "33"
+        },
+        {
+          "Name": "WCN_TYPE_NETWORK_KEY_INDEX",
+          "Value": "34"
+        },
+        {
+          "Name": "WCN_TYPE_NEW_DEVICE_NAME",
+          "Value": "35"
+        },
+        {
+          "Name": "WCN_TYPE_NEW_PASSWORD",
+          "Value": "36"
+        },
+        {
+          "Name": "WCN_TYPE_OOB_DEVICE_PASSWORD",
+          "Value": "37"
+        },
+        {
+          "Name": "WCN_TYPE_OS_VERSION",
+          "Value": "38"
+        },
+        {
+          "Name": "WCN_TYPE_POWER_LEVEL",
+          "Value": "39"
+        },
+        {
+          "Name": "WCN_TYPE_PSK_CURRENT",
+          "Value": "40"
+        },
+        {
+          "Name": "WCN_TYPE_PSK_MAX",
+          "Value": "41"
+        },
+        {
+          "Name": "WCN_TYPE_PUBLIC_KEY",
+          "Value": "42"
+        },
+        {
+          "Name": "WCN_TYPE_RADIO_ENABLED",
+          "Value": "43"
+        },
+        {
+          "Name": "WCN_TYPE_REBOOT",
+          "Value": "44"
+        },
+        {
+          "Name": "WCN_TYPE_REGISTRAR_CURRENT",
+          "Value": "45"
+        },
+        {
+          "Name": "WCN_TYPE_REGISTRAR_ESTABLISHED",
+          "Value": "46"
+        },
+        {
+          "Name": "WCN_TYPE_REGISTRAR_LIST",
+          "Value": "47"
+        },
+        {
+          "Name": "WCN_TYPE_REGISTRAR_MAX",
+          "Value": "48"
+        },
+        {
+          "Name": "WCN_TYPE_REGISTRAR_NONCE",
+          "Value": "49"
+        },
+        {
+          "Name": "WCN_TYPE_REQUEST_TYPE",
+          "Value": "50"
+        },
+        {
+          "Name": "WCN_TYPE_RESPONSE_TYPE",
+          "Value": "51"
+        },
+        {
+          "Name": "WCN_TYPE_RF_BANDS",
+          "Value": "52"
+        },
+        {
+          "Name": "WCN_TYPE_R_HASH1",
+          "Value": "53"
+        },
+        {
+          "Name": "WCN_TYPE_R_HASH2",
+          "Value": "54"
+        },
+        {
+          "Name": "WCN_TYPE_R_SNONCE1",
+          "Value": "55"
+        },
+        {
+          "Name": "WCN_TYPE_R_SNONCE2",
+          "Value": "56"
+        },
+        {
+          "Name": "WCN_TYPE_SELECTED_REGISTRAR",
+          "Value": "57"
+        },
+        {
+          "Name": "WCN_TYPE_SERIAL_NUMBER",
+          "Value": "58"
+        },
+        {
+          "Name": "WCN_TYPE_WI_FI_PROTECTED_SETUP_STATE",
+          "Value": "59"
+        },
+        {
+          "Name": "WCN_TYPE_SSID",
+          "Value": "60"
+        },
+        {
+          "Name": "WCN_TYPE_TOTAL_NETWORKS",
+          "Value": "61"
+        },
+        {
+          "Name": "WCN_TYPE_UUID_E",
+          "Value": "62"
+        },
+        {
+          "Name": "WCN_TYPE_UUID_R",
+          "Value": "63"
+        },
+        {
+          "Name": "WCN_TYPE_VENDOR_EXTENSION",
+          "Value": "64"
+        },
+        {
+          "Name": "WCN_TYPE_VERSION",
+          "Value": "65"
+        },
+        {
+          "Name": "WCN_TYPE_X_509_CERTIFICATE_REQUEST",
+          "Value": "66"
+        },
+        {
+          "Name": "WCN_TYPE_X_509_CERTIFICATE",
+          "Value": "67"
+        },
+        {
+          "Name": "WCN_TYPE_EAP_IDENTITY",
+          "Value": "68"
+        },
+        {
+          "Name": "WCN_TYPE_MESSAGE_COUNTER",
+          "Value": "69"
+        },
+        {
+          "Name": "WCN_TYPE_PUBLIC_KEY_HASH",
+          "Value": "70"
+        },
+        {
+          "Name": "WCN_TYPE_REKEY_KEY",
+          "Value": "71"
+        },
+        {
+          "Name": "WCN_TYPE_KEY_LIFETIME",
+          "Value": "72"
+        },
+        {
+          "Name": "WCN_TYPE_PERMITTED_CONFIG_METHODS",
+          "Value": "73"
+        },
+        {
+          "Name": "WCN_TYPE_SELECTED_REGISTRAR_CONFIG_METHODS",
+          "Value": "74"
+        },
+        {
+          "Name": "WCN_TYPE_PRIMARY_DEVICE_TYPE",
+          "Value": "75"
+        },
+        {
+          "Name": "WCN_TYPE_SECONDARY_DEVICE_TYPE_LIST",
+          "Value": "76"
+        },
+        {
+          "Name": "WCN_TYPE_PORTABLE_DEVICE",
+          "Value": "77"
+        },
+        {
+          "Name": "WCN_TYPE_AP_SETUP_LOCKED",
+          "Value": "78"
+        },
+        {
+          "Name": "WCN_TYPE_APPLICATION_EXTENSION",
+          "Value": "79"
+        },
+        {
+          "Name": "WCN_TYPE_EAP_TYPE",
+          "Value": "80"
+        },
+        {
+          "Name": "WCN_TYPE_INITIALIZATION_VECTOR",
+          "Value": "81"
+        },
+        {
+          "Name": "WCN_TYPE_KEY_PROVIDED_AUTOMATICALLY",
+          "Value": "82"
+        },
+        {
+          "Name": "WCN_TYPE_802_1X_ENABLED",
+          "Value": "83"
+        },
+        {
+          "Name": "WCN_TYPE_APPSESSIONKEY",
+          "Value": "84"
+        },
+        {
+          "Name": "WCN_TYPE_WEPTRANSMITKEY",
+          "Value": "85"
+        },
+        {
+          "Name": "WCN_TYPE_UUID",
+          "Value": "86"
+        },
+        {
+          "Name": "WCN_TYPE_PRIMARY_DEVICE_TYPE_CATEGORY",
+          "Value": "87"
+        },
+        {
+          "Name": "WCN_TYPE_PRIMARY_DEVICE_TYPE_SUBCATEGORY_OUI",
+          "Value": "88"
+        },
+        {
+          "Name": "WCN_TYPE_PRIMARY_DEVICE_TYPE_SUBCATEGORY",
+          "Value": "89"
+        },
+        {
+          "Name": "WCN_TYPE_CURRENT_SSID",
+          "Value": "90"
+        },
+        {
+          "Name": "WCN_TYPE_BSSID",
+          "Value": "91"
+        },
+        {
+          "Name": "WCN_TYPE_DOT11_MAC_ADDRESS",
+          "Value": "92"
+        },
+        {
+          "Name": "WCN_TYPE_AUTHORIZED_MACS",
+          "Value": "93"
+        },
+        {
+          "Name": "WCN_TYPE_NETWORK_KEY_SHAREABLE",
+          "Value": "94"
+        },
+        {
+          "Name": "WCN_TYPE_REQUEST_TO_ENROLL",
+          "Value": "95"
+        },
+        {
+          "Name": "WCN_TYPE_REQUESTED_DEVICE_TYPE",
+          "Value": "96"
+        },
+        {
+          "Name": "WCN_TYPE_SETTINGS_DELAY_TIME",
+          "Value": "97"
+        },
+        {
+          "Name": "WCN_TYPE_VERSION2",
+          "Value": "98"
+        },
+        {
+          "Name": "WCN_TYPE_VENDOR_EXTENSION_WFA",
+          "Value": "99"
+        },
+        {
+          "Name": "WCN_NUM_ATTRIBUTE_TYPES",
+          "Value": "100"
+        }
+      ],
+      "Name": "WCN_ATTRIBUTE_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_attribute_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_VERSION_1_0",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_VALUE_VERSION_2_0",
+          "Value": "32"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_VERSION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_version"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_FALSE",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_TRUE",
+          "Value": "1"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_BOOLEAN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_AS_NOT_ASSOCIATED",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_AS_CONNECTION_SUCCESS",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_AS_CONFIGURATION_FAILURE",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_AS_ASSOCIATION_FAILURE",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_VALUE_AS_IP_FAILURE",
+          "Value": "4"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_ASSOCIATION_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_association_state"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_AT_OPEN",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_AT_WPAPSK",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_AT_SHARED",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_AT_WPA",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_AT_WPA2",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_VALUE_AT_WPA2PSK",
+          "Value": "32"
+        },
+        {
+          "Name": "WCN_VALUE_AT_WPAWPA2PSK_MIXED",
+          "Value": "34"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_AUTHENTICATION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_authentication_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_CM_USBA",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_CM_ETHERNET",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_CM_LABEL",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_CM_DISPLAY",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_CM_EXTERNAL_NFC",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_VALUE_CM_INTEGRATED_NFC",
+          "Value": "32"
+        },
+        {
+          "Name": "WCN_VALUE_CM_NFC_INTERFACE",
+          "Value": "64"
+        },
+        {
+          "Name": "WCN_VALUE_CM_PUSHBUTTON",
+          "Value": "128"
+        },
+        {
+          "Name": "WCN_VALUE_CM_KEYPAD",
+          "Value": "256"
+        },
+        {
+          "Name": "WCN_VALUE_CM_VIRT_PUSHBUTTON",
+          "Value": "640"
+        },
+        {
+          "Name": "WCN_VALUE_CM_PHYS_PUSHBUTTON",
+          "Value": "1152"
+        },
+        {
+          "Name": "WCN_VALUE_CM_VIRT_DISPLAY",
+          "Value": "8200"
+        },
+        {
+          "Name": "WCN_VALUE_CM_PHYS_DISPLAY",
+          "Value": "16392"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_CONFIG_METHODS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_config_methods"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_CE_NO_ERROR",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_CE_OOB_INTERFACE_READ_ERROR",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_CE_DECRYPTION_CRC_FAILURE",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_CE_2_4_CHANNEL_NOT_SUPPORTED",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_VALUE_CE_5_0_CHANNEL_NOT_SUPPORTED",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_CE_SIGNAL_TOO_WEAK",
+          "Value": "5"
+        },
+        {
+          "Name": "WCN_VALUE_CE_NETWORK_AUTHENTICATION_FAILURE",
+          "Value": "6"
+        },
+        {
+          "Name": "WCN_VALUE_CE_NETWORK_ASSOCIATION_FAILURE",
+          "Value": "7"
+        },
+        {
+          "Name": "WCN_VALUE_CE_NO_DHCP_RESPONSE",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_CE_FAILED_DHCP_CONFIG",
+          "Value": "9"
+        },
+        {
+          "Name": "WCN_VALUE_CE_IP_ADDRESS_CONFLICT",
+          "Value": "10"
+        },
+        {
+          "Name": "WCN_VALUE_CE_COULD_NOT_CONNECT_TO_REGISTRAR",
+          "Value": "11"
+        },
+        {
+          "Name": "WCN_VALUE_CE_MULTIPLE_PBC_SESSIONS_DETECTED",
+          "Value": "12"
+        },
+        {
+          "Name": "WCN_VALUE_CE_ROGUE_ACTIVITY_SUSPECTED",
+          "Value": "13"
+        },
+        {
+          "Name": "WCN_VALUE_CE_DEVICE_BUSY",
+          "Value": "14"
+        },
+        {
+          "Name": "WCN_VALUE_CE_SETUP_LOCKED",
+          "Value": "15"
+        },
+        {
+          "Name": "WCN_VALUE_CE_MESSAGE_TIMEOUT",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_VALUE_CE_REGISTRATION_SESSION_TIMEOUT",
+          "Value": "17"
+        },
+        {
+          "Name": "WCN_VALUE_CE_DEVICE_PASSWORD_AUTH_FAILURE",
+          "Value": "18"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_CONFIGURATION_ERROR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_configuration_error"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_CT_ESS",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_CT_IBSS",
+          "Value": "2"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_CONNECTION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_connection_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_DP_DEFAULT",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_DP_USER_SPECIFIED",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_DP_MACHINE_SPECIFIED",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_DP_REKEY",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_VALUE_DP_PUSHBUTTON",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_DP_REGISTRAR_SPECIFIED",
+          "Value": "5"
+        },
+        {
+          "Name": "WCN_VALUE_DP_NFC_CONNECTION_HANDOVER",
+          "Value": "7"
+        },
+        {
+          "Name": "WCN_VALUE_DP_WFD_SERVICES",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_DP_OUTOFBAND_MIN",
+          "Value": "16"
+        },
+        {
+          "Name": "WCN_VALUE_DP_OUTOFBAND_MAX",
+          "Value": "65535"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_DEVICE_PASSWORD_ID",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_device_password_id"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_ET_NONE",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_ET_WEP",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_ET_TKIP",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_ET_AES",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_ET_TKIP_AES_MIXED",
+          "Value": "12"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_ENCRYPTION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_encryption_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_MT_BEACON",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_MT_PROBE_REQUEST",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_MT_PROBE_RESPONSE",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M1",
+          "Value": "4"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M2",
+          "Value": "5"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M2D",
+          "Value": "6"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M3",
+          "Value": "7"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M4",
+          "Value": "8"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M5",
+          "Value": "9"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M6",
+          "Value": "10"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M7",
+          "Value": "11"
+        },
+        {
+          "Name": "WCN_VALUE_MT_M8",
+          "Value": "12"
+        },
+        {
+          "Name": "WCN_VALUE_MT_ACK",
+          "Value": "13"
+        },
+        {
+          "Name": "WCN_VALUE_MT_NACK",
+          "Value": "14"
+        },
+        {
+          "Name": "WCN_VALUE_MT_DONE",
+          "Value": "15"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_MESSAGE_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_ReqT_ENROLLEE_INFO",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_ReqT_ENROLLEE_OPEN_1X",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_ReqT_REGISTRAR",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_ReqT_MANAGER_REGISTRAR",
+          "Value": "3"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_REQUEST_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_RspT_ENROLLEE_INFO",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_RspT_ENROLLEE_OPEN_1X",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_RspT_REGISTRAR",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_VALUE_RspT_AP",
+          "Value": "3"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_RESPONSE_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_RB_24GHZ",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_RB_50GHZ",
+          "Value": "2"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_RF_BANDS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_rf_bands"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_VALUE_SS_RESERVED00",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_VALUE_SS_NOT_CONFIGURED",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_VALUE_SS_CONFIGURED",
+          "Value": "2"
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_WI_FI_PROTECTED_SETUP_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_wi_fi_protected_setup_state"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Category",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SubCategoryOUI",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SubCategory",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WCN_VALUE_TYPE_PRIMARY_DEVICE_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcntypes/ns-wcntypes-wcn_value_type_primary_device_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_PASSWORD_TYPE_PUSH_BUTTON",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_PASSWORD_TYPE_PIN",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_PASSWORD_TYPE_PIN_REGISTRAR_SPECIFIED",
+          "Value": "2"
+        },
+        {
+          "Name": "WCN_PASSWORD_TYPE_OOB_SPECIFIED",
+          "Value": "3"
+        },
+        {
+          "Name": "WCN_PASSWORD_TYPE_WFDS",
+          "Value": "4"
+        }
+      ],
+      "Name": "WCN_PASSWORD_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcndevice/ne-wcndevice-wcn_password_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WCN_SESSION_STATUS_SUCCESS",
+          "Value": "0"
+        },
+        {
+          "Name": "WCN_SESSION_STATUS_FAILURE_GENERIC",
+          "Value": "1"
+        },
+        {
+          "Name": "WCN_SESSION_STATUS_FAILURE_TIMEOUT",
+          "Value": "2"
+        }
+      ],
+      "Name": "WCN_SESSION_STATUS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcndevice/ne-wcndevice-wcn_session_status"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "VendorId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SubType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Index",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WCN_VENDOR_EXTENSION_SPEC",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcndevice/ns-wcndevice-wcn_vendor_extension_spec"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "Type",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_PASSWORD_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwPasswordLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPassword",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetPassword",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-setpassword"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pNotify",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "IWCNConnectNotify"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Connect",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-connect"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "AttributeType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_ATTRIBUTE_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwMaxBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pdwBufferUsed",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetAttribute",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-getattribute"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "AttributeType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_ATTRIBUTE_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "puInteger",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetIntegerAttribute",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-getintegerattribute"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "AttributeType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_ATTRIBUTE_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cchMaxString",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wszString",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStringAttribute",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-getstringattribute"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "cchMaxStringLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "wszProfile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetNetworkProfile",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-getnetworkprofile"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pszProfileXml",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetNetworkProfile",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-setnetworkprofile"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pVendorExtSpec",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_VENDOR_EXTENSION_SPEC"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwMaxBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pdwBufferUsed",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetVendorExtension",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-getvendorextension"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pVendorExtSpec",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_VENDOR_EXTENSION_SPEC"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbBuffer",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbBuffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetVendorExtension",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-setvendorextension"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Unadvise",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcndevice-unadvise"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Type",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsConnectNow",
+                "Type": "WCN_PASSWORD_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwOOBPasswordID",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwPasswordLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPassword",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwRemotePublicKeyHashLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbRemotePublicKeyHash",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwDHKeyBlobLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbDHKeyBlob",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetNFCPasswordParams"
+        }
+      ],
+      "Name": "IWCNDevice",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3238051484,
+            54074,
+            19019,
+            191,
+            35,
+            187,
+            239,
+            70,
+            99,
+            208,
+            23
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcndevice/nn-wcndevice-iwcndevice"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ConnectSucceeded",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcnconnectnotify-connectsucceeded"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hrFailure",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HRESULT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ConnectFailed",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wcndevice/nf-wcndevice-iwcnconnectnotify-connectfailed"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IWCNConnectNotify",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3238051487,
+            54074,
+            19019,
+            191,
+            35,
+            187,
+            239,
+            70,
+            99,
+            208,
+            23
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wcndevice/nn-wcndevice-iwcnconnectnotify"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "WCNDeviceObject",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            3238051495,
+            54074,
+            19019,
+            191,
+            35,
+            187,
+            239,
+            70,
+            99,
+            208,
+            23
+          ]
+        }
+      ]
+    }
+  ]
+}

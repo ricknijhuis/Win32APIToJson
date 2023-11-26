@@ -1,0 +1,2629 @@
+{
+  "Name": "Windows.Win32.NetworkManagement.NetShell",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "NETSH_ERROR_BASE",
+          "Value": "15000",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_NO_ENTRIES",
+          "Value": "15000",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_INVALID_SYNTAX",
+          "Value": "15001",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_PROTOCOL_NOT_IN_TRANSPORT",
+          "Value": "15002",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_NO_CHANGE",
+          "Value": "15003",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_CMD_NOT_FOUND",
+          "Value": "15004",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_ENTRY_PT_NOT_FOUND",
+          "Value": "15005",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_DLL_LOAD_FAILED",
+          "Value": "15006",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_INIT_DISPLAY",
+          "Value": "15007",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_TAG_ALREADY_PRESENT",
+          "Value": "15008",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_INVALID_OPTION_TAG",
+          "Value": "15009",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_NO_TAG",
+          "Value": "15010",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_MISSING_OPTION",
+          "Value": "15011",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_TRANSPORT_NOT_PRESENT",
+          "Value": "15012",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_SHOW_USAGE",
+          "Value": "15013",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_INVALID_OPTION_VALUE",
+          "Value": "15014",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_OKAY",
+          "Value": "15015",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_CONTINUE_IN_PARENT_CONTEXT",
+          "Value": "15016",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_SUPPRESS_OUTPUT",
+          "Value": "15017",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_HELPER_ALREADY_REGISTERED",
+          "Value": "15018",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_CONTEXT_ALREADY_REGISTERED",
+          "Value": "15019",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "ERROR_PARSING_FAILURE",
+          "Value": "15020",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_ERROR_END",
+          "Value": "15019",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NS_GET_EVENT_IDS_FN_NAME",
+          "Value": "GetEventIds",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.NativeEncodingAttribute",
+              "FixedParameters": [
+                "ansi"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "MAX_NAME_LEN",
+          "Value": "48",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_VERSION_50",
+          "Value": "20480",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_ARG_DELIMITER",
+          "Value": "=",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_CMD_DELIMITER",
+          "Value": " ",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_MAX_TOKEN_LENGTH",
+          "Value": "64",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "NETSH_MAX_CMD_TOKEN_LENGTH",
+          "Value": "128",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DEFAULT_CONTEXT_PRIORITY",
+          "Value": "100",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "GET_RESOURCE_STRING_FN_NAME",
+          "Value": "GetResourceString",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.NativeEncodingAttribute",
+              "FixedParameters": [
+                "ansi"
+              ]
+            }
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "hModule",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwcArg",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwNumArg",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pEnumTable",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+                "Type": "TOKEN_VALUE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pdwValue",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MatchEnumTag",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-matchenumtag"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pwszUserToken",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pwszCmdToken",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MatchToken",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-matchtoken"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hModule",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "ppwcArguments",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "dwCurrentIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwArgCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pttTags",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+                "Type": "TAG_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dwTagCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwMinArgs",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwMaxArgs",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pdwTagType",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PreprocessCommand",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-preprocesscommand"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hModule",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwErrId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionCDecl"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrintError",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-printerror"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hModule",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dwMsgId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionCDecl"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrintMessageFromModule",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-printmessagefrommodule"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pwszFormat",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionCDecl"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrintMessage",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-printmessage"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pChildContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+                "Type": "NS_CONTEXT_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RegisterContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-registercontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pguidParentContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pfnRegisterSubContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+                "Type": "NS_HELPER_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RegisterHelper",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/netsh/nf-netsh-registerhelper"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CMD_FLAG_PRIVATE",
+          "Value": "1"
+        },
+        {
+          "Name": "CMD_FLAG_INTERACTIVE",
+          "Value": "2"
+        },
+        {
+          "Name": "CMD_FLAG_LOCAL",
+          "Value": "8"
+        },
+        {
+          "Name": "CMD_FLAG_ONLINE",
+          "Value": "16"
+        },
+        {
+          "Name": "CMD_FLAG_HIDDEN",
+          "Value": "32"
+        },
+        {
+          "Name": "CMD_FLAG_LIMIT_MASK",
+          "Value": "65535"
+        },
+        {
+          "Name": "CMD_FLAG_PRIORITY",
+          "Value": "-2147483648"
+        }
+      ],
+      "Name": "NS_CMD_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ne-netsh-ns_cmd_flags"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "NS_REQ_ZERO",
+          "Value": "0"
+        },
+        {
+          "Name": "NS_REQ_PRESENT",
+          "Value": "1"
+        },
+        {
+          "Name": "NS_REQ_ALLOW_MULTIPLE",
+          "Value": "2"
+        },
+        {
+          "Name": "NS_REQ_ONE_OR_MORE",
+          "Value": "3"
+        }
+      ],
+      "Name": "NS_REQS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ne-netsh-ns_reqs"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "NS_EVENT_LOOP",
+          "Value": "65536"
+        },
+        {
+          "Name": "NS_EVENT_LAST_N",
+          "Value": "1"
+        },
+        {
+          "Name": "NS_EVENT_LAST_SECS",
+          "Value": "2"
+        },
+        {
+          "Name": "NS_EVENT_FROM_N",
+          "Value": "4"
+        },
+        {
+          "Name": "NS_EVENT_FROM_START",
+          "Value": "8"
+        }
+      ],
+      "Name": "NS_EVENTS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "NETSH_COMMIT",
+          "Value": "0"
+        },
+        {
+          "Name": "NETSH_UNCOMMIT",
+          "Value": "1"
+        },
+        {
+          "Name": "NETSH_FLUSH",
+          "Value": "2"
+        },
+        {
+          "Name": "NETSH_COMMIT_STATE",
+          "Value": "3"
+        },
+        {
+          "Name": "NETSH_SAVE",
+          "Value": "4"
+        }
+      ],
+      "Name": "NS_MODE_CHANGE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pwszToken",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "dwValue",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "TOKEN_VALUE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwMsgID",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "nBufferMax",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PGET_RESOURCE_STRING_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwAction",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_CONTEXT_COMMIT_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pwszMachine",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_CONTEXT_CONNECT_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pwszRouter",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "ppwcArguments",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwArgCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pvData",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_CONTEXT_DUMP_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_DLL_STOP_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pguidParent",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_HELPER_START_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_HELPER_STOP_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pwszMachine",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "ppwcArguments",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Out"
+          ]
+        },
+        {
+          "Name": "dwCurrentIndex",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwArgCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pvData",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pbDone",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "PFN_HANDLE_CMD",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "hModule",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pwszCmdToken",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PFN_CUSTOM_HELP",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "CIMOSType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "CIMOSProductSuite",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "CIMOSVersion",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "CIMOSBuildNumber",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "CIMServicePackMajorVersion",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "CIMServicePackMinorVersion",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "uiReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "dwReserved",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PNS_OSVERSIONCHECK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "guidHelper",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnStart",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_HELPER_START_FN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnStop",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_HELPER_STOP_FN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Anonymous",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Anonymous_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "_ullAlign",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "dwVersion",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "dwReserved",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Anonymous_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "NS_HELPER_ATTRIBUTES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ns-netsh-ns_helper_attributes"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pwszCmdToken",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "pfnCmdHandler",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PFN_HANDLE_CMD"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwShortCmdHelpToken",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwCmdHlpToken",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pOsVersionCheck",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_OSVERSIONCHECK"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnCustomHelpFn",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PFN_CUSTOM_HELP"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CMD_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ns-netsh-cmd_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pwszCmdGroupToken",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "dwShortCmdHelpToken",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ulCmdGroupSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pCmdGroup",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "CMD_ENTRY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pOsVersionCheck",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_OSVERSIONCHECK"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CMD_GROUP_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ns-netsh-cmd_group_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pwszContext",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "guidHelper",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dwFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ulPriority",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ulNumTopCmds",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pTopCmds",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "CMD_ENTRY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ulNumGroups",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pCmdGroups",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "CMD_GROUP_ENTRY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnCommitFn",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_CONTEXT_COMMIT_FN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnDumpFn",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_CONTEXT_DUMP_FN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnConnectFn",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_CONTEXT_CONNECT_FN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pReserved",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pfnOsVersionCheck",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.NetShell",
+            "Type": "PNS_OSVERSIONCHECK"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Anonymous",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Anonymous_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "_ullAlign",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "dwVersion",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "dwReserved",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Anonymous_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "NS_CONTEXT_ATTRIBUTES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ns-netsh-ns_context_attributes"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pwszTag",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "dwRequired",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "bPresent",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "TAG_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/netsh/ns-netsh-tag_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "dwNetshVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "pReserved",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "PNS_DLL_INIT_FN",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

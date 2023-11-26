@@ -1,0 +1,3615 @@
+{
+  "Name": "Windows.Win32.Storage.ProjectedFileSystem",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_DIR_ENTRY_BUFFER_HANDLE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_NOTIFY_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PRJ_NOTIFY_SUPPRESS_NOTIFICATIONS",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_OPENED",
+          "Value": "2"
+        },
+        {
+          "Name": "PRJ_NOTIFY_NEW_FILE_CREATED",
+          "Value": "4"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_OVERWRITTEN",
+          "Value": "8"
+        },
+        {
+          "Name": "PRJ_NOTIFY_PRE_DELETE",
+          "Value": "16"
+        },
+        {
+          "Name": "PRJ_NOTIFY_PRE_RENAME",
+          "Value": "32"
+        },
+        {
+          "Name": "PRJ_NOTIFY_PRE_SET_HARDLINK",
+          "Value": "64"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_RENAMED",
+          "Value": "128"
+        },
+        {
+          "Name": "PRJ_NOTIFY_HARDLINK_CREATED",
+          "Value": "256"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_HANDLE_CLOSED_NO_MODIFICATION",
+          "Value": "512"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_HANDLE_CLOSED_FILE_MODIFIED",
+          "Value": "1024"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_HANDLE_CLOSED_FILE_DELETED",
+          "Value": "2048"
+        },
+        {
+          "Name": "PRJ_NOTIFY_FILE_PRE_CONVERT_TO_FULL",
+          "Value": "4096"
+        },
+        {
+          "Name": "PRJ_NOTIFY_USE_EXISTING_MASK",
+          "Value": "4294967295"
+        }
+      ],
+      "Name": "PRJ_NOTIFY_TYPES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_notify_types"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_OPENED",
+          "Value": "2"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_NEW_FILE_CREATED",
+          "Value": "4"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_OVERWRITTEN",
+          "Value": "8"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_PRE_DELETE",
+          "Value": "16"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_PRE_RENAME",
+          "Value": "32"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_PRE_SET_HARDLINK",
+          "Value": "64"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_RENAMED",
+          "Value": "128"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_HARDLINK_CREATED",
+          "Value": "256"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_NO_MODIFICATION",
+          "Value": "512"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_FILE_MODIFIED",
+          "Value": "1024"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_FILE_DELETED",
+          "Value": "2048"
+        },
+        {
+          "Name": "PRJ_NOTIFICATION_FILE_PRE_CONVERT_TO_FULL",
+          "Value": "4096"
+        }
+      ],
+      "Name": "PRJ_NOTIFICATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_notification"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_EXT_INFO_TYPE_SYMLINK",
+          "Value": "1"
+        }
+      ],
+      "Name": "PRJ_EXT_INFO_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_ext_info_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "InfoType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_EXT_INFO_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NextInfoOffset",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Symlink",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Symlink_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "TargetName",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Foundation",
+                    "Type": "PWSTR"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ],
+                  "CustomAttributes": [
+                    {
+                      "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+                    }
+                  ]
+                }
+              ],
+              "Name": "_Symlink_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "PRJ_EXTENDED_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_extended_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "NotificationBitMask",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NOTIFY_TYPES"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationRoot",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "PRJ_NOTIFICATION_MAPPING",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_mapping"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_FLAG_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PRJ_FLAG_USE_NEGATIVE_PATH_CACHE",
+          "Value": "1"
+        }
+      ],
+      "Name": "PRJ_STARTVIRTUALIZING_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_startvirtualizing_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_STARTVIRTUALIZING_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PoolThreadCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ConcurrentThreadCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationMappings",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NOTIFICATION_MAPPING"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationMappingsCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_STARTVIRTUALIZING_OPTIONS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_startvirtualizing_options"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "InstanceID",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "WriteAlignment",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_VIRTUALIZATION_INSTANCE_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_virtualization_instance_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_PLACEHOLDER_ID_LENGTH",
+          "Value": "128"
+        }
+      ],
+      "Name": "PRJ_PLACEHOLDER_ID",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_placeholder_id"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ProviderID",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ContentID",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_PLACEHOLDER_VERSION_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_version_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IsDirectory",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOLEAN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FileSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CreationTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LastAccessTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LastWriteTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ChangeTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FileAttributes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_FILE_BASIC_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_file_basic_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "FileBasicInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_FILE_BASIC_INFO"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "EaInformation",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_EaInformation_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SecurityInformation",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_SecurityInformation_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "StreamsInformation",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_StreamsInformation_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VersionInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_PLACEHOLDER_VERSION_INFO"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VariableData",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.FlexibleArrayAttribute"
+            }
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "EaBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "OffsetToFirstEa",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_EaInformation_e__Struct"
+        },
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "SecurityBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "OffsetToSecurityDescriptor",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_SecurityInformation_e__Struct"
+        },
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "StreamsInfoBufferSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "OffsetToFirstStreamInfo",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_StreamsInformation_e__Struct"
+        }
+      ],
+      "Name": "PRJ_PLACEHOLDER_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_UPDATE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PRJ_UPDATE_ALLOW_DIRTY_METADATA",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_UPDATE_ALLOW_DIRTY_DATA",
+          "Value": "2"
+        },
+        {
+          "Name": "PRJ_UPDATE_ALLOW_TOMBSTONE",
+          "Value": "4"
+        },
+        {
+          "Name": "PRJ_UPDATE_RESERVED1",
+          "Value": "8"
+        },
+        {
+          "Name": "PRJ_UPDATE_RESERVED2",
+          "Value": "16"
+        },
+        {
+          "Name": "PRJ_UPDATE_ALLOW_READ_ONLY",
+          "Value": "32"
+        },
+        {
+          "Name": "PRJ_UPDATE_MAX_VAL",
+          "Value": "64"
+        }
+      ],
+      "Name": "PRJ_UPDATE_TYPES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_update_types"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_UPDATE_FAILURE_CAUSE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PRJ_UPDATE_FAILURE_CAUSE_DIRTY_METADATA",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_UPDATE_FAILURE_CAUSE_DIRTY_DATA",
+          "Value": "2"
+        },
+        {
+          "Name": "PRJ_UPDATE_FAILURE_CAUSE_TOMBSTONE",
+          "Value": "4"
+        },
+        {
+          "Name": "PRJ_UPDATE_FAILURE_CAUSE_READ_ONLY",
+          "Value": "8"
+        }
+      ],
+      "Name": "PRJ_UPDATE_FAILURE_CAUSES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_update_failure_causes"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_FILE_STATE_PLACEHOLDER",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_FILE_STATE_HYDRATED_PLACEHOLDER",
+          "Value": "2"
+        },
+        {
+          "Name": "PRJ_FILE_STATE_DIRTY_PLACEHOLDER",
+          "Value": "4"
+        },
+        {
+          "Name": "PRJ_FILE_STATE_FULL",
+          "Value": "8"
+        },
+        {
+          "Name": "PRJ_FILE_STATE_TOMBSTONE",
+          "Value": "16"
+        }
+      ],
+      "Name": "PRJ_FILE_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_file_state"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_CB_DATA_FLAG_ENUM_RESTART_SCAN",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_CB_DATA_FLAG_ENUM_RETURN_SINGLE_ENTRY",
+          "Value": "2"
+        }
+      ],
+      "Name": "PRJ_CALLBACK_DATA_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_callback_data_flags"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Size",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NamespaceVirtualizationContext",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CommandId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FileId",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "DataStreamId",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FilePathName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "VersionInfo",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_PLACEHOLDER_VERSION_INFO"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TriggeringProcessId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TriggeringProcessImageFileName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "InstanceContext",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_CALLBACK_DATA",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callback_data"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "enumerationId",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "enumerationId",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "searchExpression",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "dirEntryBufferHandle",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_DIR_ENTRY_BUFFER_HANDLE"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "enumerationId",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_GET_PLACEHOLDER_INFO_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "byteOffset",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "length",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_GET_FILE_DATA_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_QUERY_FILE_NAME_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "UnionType",
+      "Fields": [
+        {
+          "Name": "PostCreate",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_PostCreate_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FileRenamed",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_FileRenamed_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FileDeletedOnHandleClose",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_FileDeletedOnHandleClose_e__Struct"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "NotificationMask",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NOTIFY_TYPES"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_PostCreate_e__Struct"
+        },
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "NotificationMask",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NOTIFY_TYPES"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_FileRenamed_e__Struct"
+        },
+        {
+          "Kind": "StructType",
+          "Fields": [
+            {
+              "Name": "IsFileModified",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOLEAN"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_FileDeletedOnHandleClose_e__Struct"
+        }
+      ],
+      "Name": "PRJ_NOTIFICATION_PARAMETERS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ExplicitLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_parameters"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "isDirectory",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOLEAN"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "notification",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NOTIFICATION"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "destinationFileName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "operationParameters",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NOTIFICATION_PARAMETERS"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "PRJ_NOTIFICATION_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "callbackData",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CALLBACK_DATA"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "PRJ_CANCEL_COMMAND_CB",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "StartDirectoryEnumerationCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_START_DIRECTORY_ENUMERATION_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "EndDirectoryEnumerationCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_END_DIRECTORY_ENUMERATION_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "GetDirectoryEnumerationCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_GET_DIRECTORY_ENUMERATION_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "GetPlaceholderInfoCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_GET_PLACEHOLDER_INFO_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "GetFileDataCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_GET_FILE_DATA_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "QueryFileNameCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_QUERY_FILE_NAME_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_NOTIFICATION_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CancelCommandCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_CANCEL_COMMAND_CB"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PRJ_CALLBACKS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callbacks"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PRJ_COMPLETE_COMMAND_TYPE_NOTIFICATION",
+          "Value": "1"
+        },
+        {
+          "Name": "PRJ_COMPLETE_COMMAND_TYPE_ENUMERATION",
+          "Value": "2"
+        }
+      ],
+      "Name": "PRJ_COMPLETE_COMMAND_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ne-projectedfslib-prj_complete_command_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "CommandType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+            "Type": "PRJ_COMPLETE_COMMAND_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Notification",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Notification_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Enumeration",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Enumeration_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "NotificationMask",
+                  "Type": {
+                    "Kind": "EnumType",
+                    "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                    "Type": "PRJ_NOTIFY_TYPES"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Notification_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "DirEntryBufferHandle",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                    "Type": "PRJ_DIR_ENTRY_BUFFER_HANDLE"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Enumeration_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/projectedfslib/ns-projectedfslib-prj_complete_command_extended_parameters"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "virtualizationRootPath",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "callbacks",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_CALLBACKS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "instanceContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "options",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_STARTVIRTUALIZING_OPTIONS"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjStartVirtualizing",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjStopVirtualizing",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjstopvirtualizing"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "totalEntryNumber",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjClearNegativePathCache",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjclearnegativepathcache"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "virtualizationInstanceInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_VIRTUALIZATION_INSTANCE_INFO"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjGetVirtualizationInstanceInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjgetvirtualizationinstanceinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "rootPathName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "targetPathName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "versionInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_PLACEHOLDER_VERSION_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "virtualizationInstanceID",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjMarkDirectoryAsPlaceholder",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjmarkdirectoryasplaceholder"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "destinationFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_PLACEHOLDER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfoSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjWritePlaceholderInfo",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "destinationFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_PLACEHOLDER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfoSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ExtendedInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_EXTENDED_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjWritePlaceholderInfo2",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo2"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "destinationFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_PLACEHOLDER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "placeholderInfoSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "updateFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_UPDATE_TYPES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "failureReason",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_UPDATE_FAILURE_CAUSES"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjUpdateFileIfNeeded",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjupdatefileifneeded"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "destinationFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "updateFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_UPDATE_TYPES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "failureReason",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_UPDATE_FAILURE_CAUSES"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjDeleteFile",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjdeletefile"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "dataStreamId",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "buffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "byteOffset",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "length",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjWriteFileData",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjwritefiledata"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "destinationFileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fileState",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_FILE_STATE"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjGetOnDiskFileState",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjgetondiskfilestate"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "size",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UIntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjAllocateAlignedBuffer",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjallocatealignedbuffer"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjFreeAlignedBuffer",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjfreealignedbuffer"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "namespaceVirtualizationContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "commandId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "completionResult",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HRESULT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "extendedParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjCompleteCommand",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjcompletecommand"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fileBasicInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_FILE_BASIC_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "dirEntryBufferHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_DIR_ENTRY_BUFFER_HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjFillDirEntryBuffer",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dirEntryBufferHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_DIR_ENTRY_BUFFER_HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fileBasicInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_FILE_BASIC_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "extendedInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Storage.ProjectedFileSystem",
+                "Type": "PRJ_EXTENDED_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjFillDirEntryBuffer2",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.19041"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer2"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileNameToCheck",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pattern",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjFileNameMatch",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilenamematch"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileName1",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fileName2",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjFileNameCompare",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilenamecompare"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PrjDoesNameContainWildCards",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.17763"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/projectedfslib/nf-projectedfslib-prjdoesnamecontainwildcards"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

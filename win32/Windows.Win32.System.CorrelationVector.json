@@ -1,0 +1,310 @@
+{
+  "Name": "Windows.Win32.System.CorrelationVector",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "RTL_CORRELATION_VECTOR_STRING_LENGTH",
+          "Value": "129",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CORRELATION_VECTOR_V1_PREFIX_LENGTH",
+          "Value": "16",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CORRELATION_VECTOR_V1_LENGTH",
+          "Value": "64",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CORRELATION_VECTOR_V2_PREFIX_LENGTH",
+          "Value": "22",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CORRELATION_VECTOR_V2_LENGTH",
+          "Value": "128",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "CorrelationVector",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.CorrelationVector",
+                "Type": "CORRELATION_VECTOR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "Version",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Guid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RtlInitializeCorrelationVector"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "CorrelationVector",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.CorrelationVector",
+                "Type": "CORRELATION_VECTOR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RtlIncrementCorrelationVector"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "CorrelationVector",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.CorrelationVector",
+                "Type": "CORRELATION_VECTOR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RtlExtendCorrelationVector"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Vector",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.CorrelationVector",
+                "Type": "CORRELATION_VECTOR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RtlValidateCorrelationVector"
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Version",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "CHAR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Vector",
+          "Type": {
+            "Kind": "ArrayType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "CHAR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CORRELATION_VECTOR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

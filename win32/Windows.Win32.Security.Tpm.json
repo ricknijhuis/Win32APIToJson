@@ -1,0 +1,1210 @@
+{
+  "Name": "Windows.Win32.Security.Tpm",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "TPMVSC_DEFAULT_ADMIN_ALGORITHM_ID",
+          "Value": "130",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "TPMVSC_ATTESTATION_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "TPMVSC_ATTESTATION_AIK_ONLY",
+          "Value": "1"
+        },
+        {
+          "Name": "TPMVSC_ATTESTATION_AIK_AND_CERTIFICATE",
+          "Value": "2"
+        }
+      ],
+      "Name": "TPMVSC_ATTESTATION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "TPMVSCMGR_STATUS_VTPMSMARTCARD_INITIALIZING",
+          "Value": "0"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VTPMSMARTCARD_CREATING",
+          "Value": "1"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VTPMSMARTCARD_DESTROYING",
+          "Value": "2"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VGIDSSIMULATOR_INITIALIZING",
+          "Value": "3"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VGIDSSIMULATOR_CREATING",
+          "Value": "4"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VGIDSSIMULATOR_DESTROYING",
+          "Value": "5"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VREADER_INITIALIZING",
+          "Value": "6"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VREADER_CREATING",
+          "Value": "7"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_VREADER_DESTROYING",
+          "Value": "8"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_GENERATE_WAITING",
+          "Value": "9"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_GENERATE_AUTHENTICATING",
+          "Value": "10"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_GENERATE_RUNNING",
+          "Value": "11"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_CARD_CREATED",
+          "Value": "12"
+        },
+        {
+          "Name": "TPMVSCMGR_STATUS_CARD_DESTROYED",
+          "Value": "13"
+        }
+      ],
+      "Name": "TPMVSCMGR_STATUS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/ne-tpmvscmgr-tpmvscmgr_status"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "TPMVSCMGR_ERROR_IMPERSONATION",
+          "Value": "0"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_PIN_COMPLEXITY",
+          "Value": "1"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_READER_COUNT_LIMIT",
+          "Value": "2"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_TERMINAL_SERVICES_SESSION",
+          "Value": "3"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VTPMSMARTCARD_INITIALIZE",
+          "Value": "4"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VTPMSMARTCARD_CREATE",
+          "Value": "5"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VTPMSMARTCARD_DESTROY",
+          "Value": "6"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VGIDSSIMULATOR_INITIALIZE",
+          "Value": "7"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VGIDSSIMULATOR_CREATE",
+          "Value": "8"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VGIDSSIMULATOR_DESTROY",
+          "Value": "9"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VGIDSSIMULATOR_WRITE_PROPERTY",
+          "Value": "10"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VGIDSSIMULATOR_READ_PROPERTY",
+          "Value": "11"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VREADER_INITIALIZE",
+          "Value": "12"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VREADER_CREATE",
+          "Value": "13"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_VREADER_DESTROY",
+          "Value": "14"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_GENERATE_LOCATE_READER",
+          "Value": "15"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_GENERATE_FILESYSTEM",
+          "Value": "16"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_CARD_CREATE",
+          "Value": "17"
+        },
+        {
+          "Name": "TPMVSCMGR_ERROR_CARD_DESTROY",
+          "Value": "18"
+        }
+      ],
+      "Name": "TPMVSCMGR_ERROR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/ne-tpmvscmgr-tpmvscmgr_error"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "Status",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "TPMVSCMGR_STATUS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ReportProgress",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nf-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback-reportprogress"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Error",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "TPMVSCMGR_ERROR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ReportError",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nf-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback-reporterror"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "ITpmVirtualSmartCardManagerStatusCallback",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            438023007,
+            43960,
+            17692,
+            161,
+            174,
+            51,
+            217,
+            143,
+            27,
+            239,
+            74
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows8.0"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pszFriendlyName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bAdminAlgId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKey",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKey",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKcv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKcv",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPuk",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPuk",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPin",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fGenerate",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pStatusCallback",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "ITpmVirtualSmartCardManagerStatusCallback"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppszInstanceId",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pfNeedReboot",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateVirtualSmartCard",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nf-tpmvscmgr-itpmvirtualsmartcardmanager-createvirtualsmartcard"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pszInstanceId",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pStatusCallback",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "ITpmVirtualSmartCardManagerStatusCallback"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pfNeedReboot",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DestroyVirtualSmartCard",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nf-tpmvscmgr-itpmvirtualsmartcardmanager-destroyvirtualsmartcard"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "ITpmVirtualSmartCardManager",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            288038399,
+            55772,
+            16887,
+            134,
+            159,
+            214,
+            127,
+            238,
+            124,
+            181,
+            145
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows8.0"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanager"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pszFriendlyName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bAdminAlgId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKey",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKey",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKcv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKcv",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPuk",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPuk",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPin",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPinPolicy",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPinPolicy",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fGenerate",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pStatusCallback",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "ITpmVirtualSmartCardManagerStatusCallback"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppszInstanceId",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pfNeedReboot",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateVirtualSmartCardWithPinPolicy"
+        }
+      ],
+      "Name": "ITpmVirtualSmartCardManager2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            4260930233,
+            734,
+            18420,
+            188,
+            38,
+            170,
+            133,
+            171,
+            94,
+            82,
+            103
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pszFriendlyName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bAdminAlgId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKey",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKey",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbAdminKcv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbAdminKcv",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPuk",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPuk",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPin",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPin",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pbPinPolicy",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbPinPolicy",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "attestationType",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "TPMVSC_ATTESTATION_TYPE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "fGenerate",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pStatusCallback",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Security.Tpm",
+                "Type": "ITpmVirtualSmartCardManagerStatusCallback"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppszInstanceId",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateVirtualSmartCardWithAttestation"
+        }
+      ],
+      "Name": "ITpmVirtualSmartCardManager3",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1014258327,
+            62325,
+            16720,
+            190,
+            23,
+            89,
+            80,
+            246,
+            148,
+            198,
+            153
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "TpmVirtualSmartCardManager",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            379686534,
+            32622,
+            19488,
+            173,
+            137,
+            79,
+            252,
+            13,
+            183,
+            169,
+            106
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "RemoteTpmVirtualSmartCardManager",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            355377832,
+            28892,
+            19545,
+            139,
+            42,
+            50,
+            170,
+            60,
+            160,
+            220,
+            172
+          ]
+        }
+      ]
+    }
+  ]
+}

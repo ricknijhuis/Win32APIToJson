@@ -1,0 +1,380 @@
+{
+  "Name": "Windows.Win32.System.WinRT.Pdf",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": {
+            "Kind": "ComType",
+            "Namespace": "Windows.Win32.Graphics.Dxgi",
+            "Type": "IDXGIDevice"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "param1",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.System.WinRT.Pdf",
+            "Type": "IPdfRendererNative"
+          },
+          "Attributes": [
+            "None",
+            "Out"
+          ]
+        }
+      ],
+      "Name": "PFN_PDF_CREATE_RENDERER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "SourceRect",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+            "Type": "D2D_RECT_F"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "DestinationWidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "DestinationHeight",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BackgroundColor",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+            "Type": "D2D_COLOR_F"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IgnoreHighContrast",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOLEAN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PDF_RENDER_PARAMS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/windows.data.pdf.interop/ns-windows-data-pdf-interop-pdf_render_params"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pdfPage",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IUnknown"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pSurface",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Dxgi",
+                "Type": "IDXGISurface"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "offset",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "POINT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRenderParams",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.WinRT.Pdf",
+                "Type": "PDF_RENDER_PARAMS"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RenderPageToSurface",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/windows.data.pdf.interop/nf-windows-data-pdf-interop-ipdfrenderernative-renderpagetosurface"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pdfPage",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IUnknown"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pD2DDeviceContext",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1DeviceContext"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pRenderParams",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.WinRT.Pdf",
+                "Type": "PDF_RENDER_PARAMS"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RenderPageToDeviceContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/windows.data.pdf.interop/nf-windows-data-pdf-interop-ipdfrenderernative-renderpagetodevicecontext"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IPdfRendererNative",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2107493777,
+            53879,
+            18759,
+            133,
+            39,
+            7,
+            160,
+            218,
+            237,
+            169,
+            74
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/windows.data.pdf.interop/nn-windows-data-pdf-interop-ipdfrenderernative"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pDevice",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Dxgi",
+                "Type": "IDXGIDevice"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppRenderer",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.WinRT.Pdf",
+                "Type": "IPdfRendererNative"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PdfCreateRenderer",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/windows.data.pdf.interop/nf-windows-data-pdf-interop-pdfcreaterenderer"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

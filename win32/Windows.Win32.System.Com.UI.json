@@ -1,0 +1,233 @@
+{
+  "Name": "Windows.Win32.System.Com.UI",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pStg",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "IStorage"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ulLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ulHeight",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pulOutputLength",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pulOutputHeight",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "phOutputBitmap",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "HBITMAP"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ExtractThumbnail"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pStg",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "IStorage"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OnFileUpdated"
+        }
+      ],
+      "Name": "IThumbnailExtractor",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2526922504,
+            23670,
+            4561,
+            141,
+            134,
+            0,
+            0,
+            248,
+            4,
+            176,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "h1",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.WindowsAndMessaging",
+                "Type": "HICON"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "h2",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.Gdi",
+                "Type": "HDC"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Dummy"
+        }
+      ],
+      "Name": "IDummyHICONIncluder",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2490994910,
+            52264,
+            4562,
+            160,
+            247,
+            0,
+            128,
+            95,
+            133,
+            143,
+            177
+          ]
+        }
+      ]
+    }
+  ]
+}

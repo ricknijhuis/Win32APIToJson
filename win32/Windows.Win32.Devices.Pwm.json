@@ -1,0 +1,878 @@
+{
+  "Name": "Windows.Win32.Devices.Pwm",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "GUID_DEVINTERFACE_PWM_CONTROLLER",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                1619151692,
+                61137,
+                19612,
+                180,
+                156,
+                27,
+                150,
+                20,
+                97,
+                168,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "GUID_DEVINTERFACE_PWM_CONTROLLER_WSZ",
+          "Value": "{60824B4C-EED1-4C9C-B49C-1B961461A819}",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "String"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_CONTROLLER_GET_INFO",
+          "Value": "262144",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_info"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD",
+          "Value": "262148",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD",
+          "Value": "294920",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE",
+          "Value": "262544",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE",
+          "Value": "295316",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_GET_POLARITY",
+          "Value": "262552",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_SET_POLARITY",
+          "Value": "295324",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_START",
+          "Value": "295331",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_start"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_STOP",
+          "Value": "295335",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_stop"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "IOCTL_PWM_PIN_IS_STARTED",
+          "Value": "262568",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/pwm/ni-pwm-ioctl_pwm_pin_is_started"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_CONTROLLER_GET_INFO",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_CONTROLLER_GET_ACTUAL_PERIOD",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_CONTROLLER_SET_DESIRED_PERIOD",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE",
+          "Value": "100",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE",
+          "Value": "101",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_GET_POLARITY",
+          "Value": "102",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_SET_POLARITY",
+          "Value": "103",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_START",
+          "Value": "104",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_STOP",
+          "Value": "105",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PWM_IOCTL_ID_PIN_IS_STARTED",
+          "Value": "106",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Size",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PinCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MinimumPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaximumPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_CONTROLLER_INFO",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/pwm/ns-pwm-pwm_controller_info"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ActualPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_CONTROLLER_GET_ACTUAL_PERIOD_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/DevIO/pwm-controller-get-actual-period-output"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "DesiredPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_CONTROLLER_SET_DESIRED_PERIOD_INPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/pwm/ns-pwm-pwm_controller_set_desired_period_input"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ActualPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_CONTROLLER_SET_DESIRED_PERIOD_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/pwm/ns-pwm-pwm_controller_set_desired_period_output"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Percentage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/DevIO/pwm-pin-get-active-duty-cycle-percentage-output"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Percentage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE_INPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/DevIO/pwm-pin-set-active-duty-cycle-percentage-input"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PWM_ACTIVE_HIGH",
+          "Value": "0"
+        },
+        {
+          "Name": "PWM_ACTIVE_LOW",
+          "Value": "1"
+        }
+      ],
+      "Name": "PWM_POLARITY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/pwm/ne-pwm-pwm_polarity"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Polarity",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.Pwm",
+            "Type": "PWM_POLARITY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_PIN_GET_POLARITY_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/DevIO/pwm-pin-get-polarity-output"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Polarity",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.Pwm",
+            "Type": "PWM_POLARITY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_PIN_SET_POLARITY_INPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/pwm/ns-pwm-pwm_pin_set_polarity_input"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IsStarted",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "BOOLEAN"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PWM_PIN_IS_STARTED_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/DevIO/pwm-pin-is-started-output"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3423 @@
+{
+  "Name": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "PSS_PERF_RESOLUTION",
+          "Value": "1000000",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "ProcessHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "CaptureFlags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "PSS_CAPTURE_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ThreadContextFlags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "SnapshotHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssCaptureSnapshot",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psscapturesnapshot"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "ProcessHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "SnapshotHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssFreeSnapshot",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-pssfreesnapshot"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "SnapshotHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "InformationClass",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "PSS_QUERY_INFORMATION_CLASS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Buffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "BufferLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssQuerySnapshot",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-pssquerysnapshot"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "SnapshotHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "InformationClass",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "PSS_WALK_INFORMATION_CLASS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Buffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "BufferLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkSnapshot",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalksnapshot"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "SourceProcessHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "SnapshotHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "TargetProcessHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "TargetSnapshotHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSS"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "Flags",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "PSS_DUPLICATE_FLAGS"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssDuplicateSnapshot",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-pssduplicatesnapshot"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Allocator",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "PSS_ALLOCATOR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkMarkerCreate",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalkmarkercreate"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkMarkerFree",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalkmarkerfree"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Position",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UIntPtr"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkMarkerGetPosition",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalkmarkergetposition"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Position",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UIntPtr"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkMarkerSetPosition",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalkmarkersetposition"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "WalkMarkerHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+                "Type": "HPSSWALK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "PssWalkMarkerSeekToBeginning",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.1"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/processsnapshot/nf-processsnapshot-psswalkmarkerseektobeginning"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HPSS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HPSSWALK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_HANDLE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_HANDLE_HAVE_TYPE",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_HANDLE_HAVE_NAME",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_HANDLE_HAVE_BASIC_INFORMATION",
+          "Value": "4"
+        },
+        {
+          "Name": "PSS_HANDLE_HAVE_TYPE_SPECIFIC_INFORMATION",
+          "Value": "8"
+        }
+      ],
+      "Name": "PSS_HANDLE_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_handle_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_OBJECT_TYPE_UNKNOWN",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_PROCESS",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_THREAD",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_MUTANT",
+          "Value": "3"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_EVENT",
+          "Value": "4"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_SECTION",
+          "Value": "5"
+        },
+        {
+          "Name": "PSS_OBJECT_TYPE_SEMAPHORE",
+          "Value": "6"
+        }
+      ],
+      "Name": "PSS_OBJECT_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_object_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_CAPTURE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_CAPTURE_VA_CLONE",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_CAPTURE_RESERVED_00000002",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_CAPTURE_HANDLES",
+          "Value": "4"
+        },
+        {
+          "Name": "PSS_CAPTURE_HANDLE_NAME_INFORMATION",
+          "Value": "8"
+        },
+        {
+          "Name": "PSS_CAPTURE_HANDLE_BASIC_INFORMATION",
+          "Value": "16"
+        },
+        {
+          "Name": "PSS_CAPTURE_HANDLE_TYPE_SPECIFIC_INFORMATION",
+          "Value": "32"
+        },
+        {
+          "Name": "PSS_CAPTURE_HANDLE_TRACE",
+          "Value": "64"
+        },
+        {
+          "Name": "PSS_CAPTURE_THREADS",
+          "Value": "128"
+        },
+        {
+          "Name": "PSS_CAPTURE_THREAD_CONTEXT",
+          "Value": "256"
+        },
+        {
+          "Name": "PSS_CAPTURE_THREAD_CONTEXT_EXTENDED",
+          "Value": "512"
+        },
+        {
+          "Name": "PSS_CAPTURE_RESERVED_00000400",
+          "Value": "1024"
+        },
+        {
+          "Name": "PSS_CAPTURE_VA_SPACE",
+          "Value": "2048"
+        },
+        {
+          "Name": "PSS_CAPTURE_VA_SPACE_SECTION_INFORMATION",
+          "Value": "4096"
+        },
+        {
+          "Name": "PSS_CAPTURE_IPT_TRACE",
+          "Value": "8192"
+        },
+        {
+          "Name": "PSS_CAPTURE_RESERVED_00004000",
+          "Value": "16384"
+        },
+        {
+          "Name": "PSS_CREATE_BREAKAWAY_OPTIONAL",
+          "Value": "67108864"
+        },
+        {
+          "Name": "PSS_CREATE_BREAKAWAY",
+          "Value": "134217728"
+        },
+        {
+          "Name": "PSS_CREATE_FORCE_BREAKAWAY",
+          "Value": "268435456"
+        },
+        {
+          "Name": "PSS_CREATE_USE_VM_ALLOCATIONS",
+          "Value": "536870912"
+        },
+        {
+          "Name": "PSS_CREATE_MEASURE_PERFORMANCE",
+          "Value": "1073741824"
+        },
+        {
+          "Name": "PSS_CREATE_RELEASE_SECTION",
+          "Value": "2147483648"
+        }
+      ],
+      "Name": "PSS_CAPTURE_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_capture_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_QUERY_PROCESS_INFORMATION",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_QUERY_VA_CLONE_INFORMATION",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_QUERY_AUXILIARY_PAGES_INFORMATION",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_QUERY_VA_SPACE_INFORMATION",
+          "Value": "3"
+        },
+        {
+          "Name": "PSS_QUERY_HANDLE_INFORMATION",
+          "Value": "4"
+        },
+        {
+          "Name": "PSS_QUERY_THREAD_INFORMATION",
+          "Value": "5"
+        },
+        {
+          "Name": "PSS_QUERY_HANDLE_TRACE_INFORMATION",
+          "Value": "6"
+        },
+        {
+          "Name": "PSS_QUERY_PERFORMANCE_COUNTERS",
+          "Value": "7"
+        }
+      ],
+      "Name": "PSS_QUERY_INFORMATION_CLASS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_query_information_class"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_WALK_AUXILIARY_PAGES",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_WALK_VA_SPACE",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_WALK_HANDLES",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_WALK_THREADS",
+          "Value": "3"
+        }
+      ],
+      "Name": "PSS_WALK_INFORMATION_CLASS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_walk_information_class"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_DUPLICATE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_DUPLICATE_CLOSE_SOURCE",
+          "Value": "1"
+        }
+      ],
+      "Name": "PSS_DUPLICATE_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_duplicate_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_PROCESS_FLAGS_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_PROCESS_FLAGS_PROTECTED",
+          "Value": "1"
+        },
+        {
+          "Name": "PSS_PROCESS_FLAGS_WOW64",
+          "Value": "2"
+        },
+        {
+          "Name": "PSS_PROCESS_FLAGS_RESERVED_03",
+          "Value": "4"
+        },
+        {
+          "Name": "PSS_PROCESS_FLAGS_RESERVED_04",
+          "Value": "8"
+        },
+        {
+          "Name": "PSS_PROCESS_FLAGS_FROZEN",
+          "Value": "16"
+        }
+      ],
+      "Name": "PSS_PROCESS_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_process_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ExitStatus",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PebBaseAddress",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AffinityMask",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BasePriority",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ProcessId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ParentProcessId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+            "Type": "PSS_PROCESS_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CreateTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ExitTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "KernelTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "UserTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PriorityClass",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PeakVirtualSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VirtualSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PageFaultCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PeakWorkingSetSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "WorkingSetSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "QuotaPeakPagedPoolUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "QuotaPagedPoolUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "QuotaPeakNonPagedPoolUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "QuotaNonPagedPoolUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PagefileUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PeakPagefileUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PrivateUsage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ExecuteFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ImageFileName",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Char"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_PROCESS_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_process_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "VaCloneHandle",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_VA_CLONE_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_va_clone_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "AuxPagesCaptured",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_AUXILIARY_PAGES_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_auxiliary_pages_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "RegionCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_VA_SPACE_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_va_space_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "HandlesCaptured",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_HANDLE_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_handle_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ThreadsCaptured",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ContextLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_THREAD_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_thread_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "SectionHandle",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Size",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_HANDLE_TRACE_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_handle_trace_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "TotalCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VaCloneCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VaCloneWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VaSpaceCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VaSpaceWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AuxPagesCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AuxPagesWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "HandlesCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "HandlesWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ThreadsCycleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ThreadsWallClockPeriod",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_PERFORMANCE_COUNTERS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_performance_counters"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Address",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BasicInformation",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.Memory",
+            "Type": "MEMORY_BASIC_INFORMATION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CaptureTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PageContents",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PageSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_AUXILIARY_PAGE_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_auxiliary_page_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "BaseAddress",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AllocationBase",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AllocationProtect",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RegionSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "State",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Protect",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Type",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TimeDateStamp",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SizeOfImage",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ImageBase",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CheckSum",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MappedFileNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MappedFileName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "PSS_VA_SPACE_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_va_space_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Handle",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+            "Type": "PSS_HANDLE_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ObjectType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+            "Type": "PSS_OBJECT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CaptureTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Attributes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "GrantedAccess",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "HandleCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PointerCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PagedPoolCharge",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NonPagedPoolCharge",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CreationTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TypeNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TypeName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "ObjectNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ObjectName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "TypeSpecificInformation",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_TypeSpecificInformation_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Process",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Process_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Thread",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Thread_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Mutant",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Mutant_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Event",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Event_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Section",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Section_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Semaphore",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Semaphore_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "ExitStatus",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "PebBaseAddress",
+                  "Type": {
+                    "Kind": "PointerType",
+                    "Type": "Void"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "AffinityMask",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UIntPtr"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "BasePriority",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "ProcessId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "ParentProcessId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "Flags",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Process_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "ExitStatus",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "TebBaseAddress",
+                  "Type": {
+                    "Kind": "PointerType",
+                    "Type": "Void"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "ProcessId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "ThreadId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "AffinityMask",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UIntPtr"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "Priority",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "BasePriority",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "Win32StartAddress",
+                  "Type": {
+                    "Kind": "PointerType",
+                    "Type": "Void"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Thread_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "CurrentCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "Abandoned",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Foundation",
+                    "Type": "BOOL"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "OwnerProcessId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "OwnerThreadId",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Mutant_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "ManualReset",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Foundation",
+                    "Type": "BOOL"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "Signaled",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Foundation",
+                    "Type": "BOOL"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Event_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "BaseAddress",
+                  "Type": {
+                    "Kind": "PointerType",
+                    "Type": "Void"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "AllocationAttributes",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "MaximumSize",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int64"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Section_e__Struct"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "CurrentCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "MaximumCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Int32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Semaphore_e__Struct"
+            }
+          ],
+          "Name": "_TypeSpecificInformation_e__Union"
+        }
+      ],
+      "Name": "PSS_HANDLE_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_handle_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PSS_THREAD_FLAGS_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "PSS_THREAD_FLAGS_TERMINATED",
+          "Value": "1"
+        }
+      ],
+      "Name": "PSS_THREAD_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ne-processsnapshot-pss_thread_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ExitStatus",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TebBaseAddress",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ProcessId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ThreadId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AffinityMask",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Priority",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BasePriority",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LastSyscallFirstArgument",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LastSyscallNumber",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CreateTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ExitTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "KernelTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "UserTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Win32StartAddress",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CaptureTime",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "FILETIME"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.Diagnostics.ProcessSnapshotting",
+            "Type": "PSS_THREAD_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SuspendCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SizeOfContextRecord",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ContextRecord",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.System.Diagnostics.Debug",
+            "Type": "CONTEXT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_THREAD_ENTRY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_thread_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Context",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AllocRoutine",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "FreeRoutine",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "PSS_ALLOCATOR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/processsnapshot/ns-processsnapshot-pss_allocator"
+          ]
+        }
+      ]
+    }
+  ]
+}

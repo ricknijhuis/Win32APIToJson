@@ -1,0 +1,4446 @@
+{
+  "Name": "Windows.Win32.System.JobObjects",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_LIMIT_WORKINGSET",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_PROCESS_TIME",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_TIME",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_ACTIVE_PROCESS",
+          "Value": "8"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_AFFINITY",
+          "Value": "16"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_PRIORITY_CLASS",
+          "Value": "32"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_PRESERVE_JOB_TIME",
+          "Value": "64"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_SCHEDULING_CLASS",
+          "Value": "128"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_PROCESS_MEMORY",
+          "Value": "256"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_MEMORY",
+          "Value": "512"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH",
+          "Value": "512"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_DIE_ON_UNHANDLED_EXCEPTION",
+          "Value": "1024"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_BREAKAWAY_OK",
+          "Value": "2048"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_SILENT_BREAKAWAY_OK",
+          "Value": "4096"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE",
+          "Value": "8192"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_SUBSET_AFFINITY",
+          "Value": "16384"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_MEMORY_LOW",
+          "Value": "32768"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_READ_BYTES",
+          "Value": "65536"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_JOB_WRITE_BYTES",
+          "Value": "131072"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_RATE_CONTROL",
+          "Value": "262144"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_CPU_RATE_CONTROL",
+          "Value": "262144"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_IO_RATE_CONTROL",
+          "Value": "524288"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_NET_RATE_CONTROL",
+          "Value": "1048576"
+        },
+        {
+          "Name": "JOB_OBJECT_LIMIT_VALID_FLAGS",
+          "Value": "524287"
+        },
+        {
+          "Name": "JOB_OBJECT_BASIC_LIMIT_VALID_FLAGS",
+          "Value": "255"
+        },
+        {
+          "Name": "JOB_OBJECT_EXTENDED_LIMIT_VALID_FLAGS",
+          "Value": "32767"
+        },
+        {
+          "Name": "JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS",
+          "Value": "2064900"
+        }
+      ],
+      "Name": "JOB_OBJECT_LIMIT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_UILIMIT_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_HANDLES",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_READCLIPBOARD",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_WRITECLIPBOARD",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_SYSTEMPARAMETERS",
+          "Value": "8"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_DISPLAYSETTINGS",
+          "Value": "16"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_GLOBALATOMS",
+          "Value": "32"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_DESKTOP",
+          "Value": "64"
+        },
+        {
+          "Name": "JOB_OBJECT_UILIMIT_EXITWINDOWS",
+          "Value": "128"
+        }
+      ],
+      "Name": "JOB_OBJECT_UILIMIT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_SECURITY_NO_ADMIN",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_SECURITY_RESTRICTED_TOKEN",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_SECURITY_ONLY_TOKEN",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_SECURITY_FILTER_TOKENS",
+          "Value": "8"
+        },
+        {
+          "Name": "JOB_OBJECT_SECURITY_VALID_FLAGS",
+          "Value": "15"
+        }
+      ],
+      "Name": "JOB_OBJECT_SECURITY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_ENABLE",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_WEIGHT_BASED",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_HARD_CAP",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_NOTIFY",
+          "Value": "8"
+        },
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_MIN_MAX_RATE",
+          "Value": "16"
+        },
+        {
+          "Name": "JOB_OBJECT_CPU_RATE_CONTROL_VALID_FLAGS",
+          "Value": "31"
+        }
+      ],
+      "Name": "JOB_OBJECT_CPU_RATE_CONTROL",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_TERMINATE_AT_END_OF_JOB",
+          "Value": "0"
+        },
+        {
+          "Name": "JOB_OBJECT_POST_AT_END_OF_JOB",
+          "Value": "1"
+        }
+      ],
+      "Name": "JOB_OBJECT_TERMINATE_AT_END_ACTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MaxIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "BaseIoSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AssociatedEnumAttribute",
+              "FixedParameters": [
+                "JOB_OBJECT_IO_RATE_CONTROL_FLAGS"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/jobapi2/ns-jobapi2-jobobject_io_rate_control_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "ProcessHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "JobHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "Result",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "IsProcessInJob",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi/nf-jobapi-isprocessinjob"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpJobAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateJobObjectW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-createjobobjectw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Buffer",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "FreeMemoryJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.10240"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-freememoryjobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bInheritHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenJobObjectW",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-openjobobjectw"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hProcess",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AssignProcessToJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-assignprocesstojobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "uExitCode",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "TerminateJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-terminatejobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "JobObjectInformationClass",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECTINFOCLASS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpJobObjectInformation",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cbJobObjectInformationLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetInformationJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-setinformationjobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "IoRateControlInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetIoRateControlInformationJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.10240"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-setioratecontrolinformationjobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "JobObjectInformationClass",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECTINFOCLASS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpJobObjectInformation",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "cbJobObjectInformationLength",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpReturnLength",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "QueryInformationJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-queryinformationjobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "VolumeName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "InfoBlocks",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "InfoBlockCount",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "QueryIoRateControlInformationJobObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows10.0.10240"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/jobapi2/nf-jobapi2-queryioratecontrolinformationjobobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hUserHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "hJob",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bGrant",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "UserHandleGrantAccess",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-userhandlegrantaccess"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "lpJobAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Security",
+                "Type": "SECURITY_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateJobObjectA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-createjobobjecta"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "dwDesiredAccess",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bInheritHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BOOL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lpName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "SetLastError",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OpenJobObjectA",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows5.1.2600"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/winbase/nf-winbase-openjobobjecta"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "NumJob",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "UserJobSet",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOB_SET_ARRAY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "Flags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateJobSet"
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "JobHandle",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MemberLevel",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOB_SET_ARRAY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "TotalUserTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalKernelTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ThisPeriodTotalUserTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ThisPeriodTotalKernelTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalPageFaultCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalProcesses",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ActiveProcesses",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalTerminatedProcesses",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_BASIC_ACCOUNTING_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_accounting_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "PerProcessUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MinimumWorkingSetSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaximumWorkingSetSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ActiveProcessLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Affinity",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PriorityClass",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SchedulingClass",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_BASIC_LIMIT_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "BasicLimitInformation",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_BASIC_LIMIT_INFORMATION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.Threading",
+            "Type": "IO_COUNTERS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ProcessMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PeakProcessMemoryUsed",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PeakJobMemoryUsed",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_EXTENDED_LIMIT_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_extended_limit_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "NumberOfAssignedProcesses",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NumberOfProcessIdsInList",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ProcessIdList",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.FlexibleArrayAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_BASIC_PROCESS_ID_LIST",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_process_id_list"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "UIRestrictionsClass",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_UILIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_BASIC_UI_RESTRICTIONS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_ui_restrictions"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "SecurityLimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_SECURITY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobToken",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SidsToDisable",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security",
+            "Type": "TOKEN_GROUPS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PrivilegesToDelete",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security",
+            "Type": "TOKEN_PRIVILEGES"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RestrictedSids",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.Security",
+            "Type": "TOKEN_GROUPS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_SECURITY_LIMIT_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_security_limit_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "EndOfJobTimeAction",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_TERMINATE_AT_END_ACTION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_END_OF_JOB_TIME_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_end_of_job_time_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "CompletionKey",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CompletionPort",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "HANDLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_ASSOCIATE_COMPLETION_PORT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_associate_completion_port"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "BasicInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_BASIC_ACCOUNTING_INFORMATION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoInfo",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.Threading",
+            "Type": "IO_COUNTERS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_and_io_accounting_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MemberLevel",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_JOBSET_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "ToleranceLow",
+          "Value": "1"
+        },
+        {
+          "Name": "ToleranceMedium",
+          "Value": "2"
+        },
+        {
+          "Name": "ToleranceHigh",
+          "Value": "3"
+        }
+      ],
+      "Name": "JOBOBJECT_RATE_CONTROL_TOLERANCE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "ToleranceIntervalShort",
+          "Value": "1"
+        },
+        {
+          "Name": "ToleranceIntervalMedium",
+          "Value": "2"
+        },
+        {
+          "Name": "ToleranceIntervalLong",
+          "Value": "3"
+        }
+      ],
+      "Name": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IoReadBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RateControlToleranceInterval",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_notification_limit_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IoReadBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous1",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous1_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous2",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous2_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous3",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous3_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoRateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobLowMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoRateControlToleranceInterval",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NetRateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NetRateControlToleranceInterval",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "JobHighMemoryLimit",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "JobMemoryLimit",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous1_e__Union"
+        },
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "RateControlTolerance",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "CpuRateControlTolerance",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous2_e__Union"
+        },
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "RateControlToleranceInterval",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "CpuRateControlToleranceInterval",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous3_e__Union"
+        }
+      ],
+      "Name": "JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_notification_limit_information_2"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "LimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ViolationLimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoReadBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoReadBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobMemory",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "RateControlToleranceLimit",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_LIMIT_VIOLATION_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_limit_violation_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "LimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ViolationLimitFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_LIMIT"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoReadBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoReadBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytes",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoWriteBytesLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PerJobUserTimeLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobMemory",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous1",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous1_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous2",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous2_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous3",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous3_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "JobLowMemoryLimit",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoRateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "IoRateControlToleranceLimit",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NetRateControlTolerance",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NetRateControlToleranceLimit",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "JobHighMemoryLimit",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "JobMemoryLimit",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt64"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous1_e__Union"
+        },
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "RateControlTolerance",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "CpuRateControlTolerance",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous2_e__Union"
+        },
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "RateControlToleranceLimit",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "CpuRateControlToleranceLimit",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.System.JobObjects",
+                "Type": "JOBOBJECT_RATE_CONTROL_TOLERANCE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous3_e__Union"
+        }
+      ],
+      "Name": "JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_limit_violation_information_2"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_CPU_RATE_CONTROL"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "CpuRate",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Weight",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Anonymous",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Anonymous_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "MinRate",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt16"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "MaxRate",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt16"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "_Anonymous_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "JOBOBJECT_CPU_RATE_CONTROL_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_cpu_rate_control_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_NET_RATE_CONTROL_ENABLE",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_NET_RATE_CONTROL_MAX_BANDWIDTH",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_NET_RATE_CONTROL_DSCP_TAG",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_NET_RATE_CONTROL_VALID_FLAGS",
+          "Value": "7"
+        }
+      ],
+      "Name": "JOB_OBJECT_NET_RATE_CONTROL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ne-winnt-job_object_net_rate_control_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_NET_RATE_CONTROL_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "DscpTag",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_NET_RATE_CONTROL_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_net_rate_control_information"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOB_OBJECT_IO_RATE_CONTROL_ENABLE",
+          "Value": "1"
+        },
+        {
+          "Name": "JOB_OBJECT_IO_RATE_CONTROL_STANDALONE_VOLUME",
+          "Value": "2"
+        },
+        {
+          "Name": "JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ALL",
+          "Value": "4"
+        },
+        {
+          "Name": "JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ON_SOFT_CAP",
+          "Value": "8"
+        },
+        {
+          "Name": "JOB_OBJECT_IO_RATE_CONTROL_VALID_FLAGS",
+          "Value": "15"
+        }
+      ],
+      "Name": "JOB_OBJECT_IO_RATE_CONTROL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MaxIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BaseIoSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_IO_RATE_CONTROL_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V1",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MaxIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BaseIoSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_IO_RATE_CONTROL_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MaxIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "BaseIoSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOB_OBJECT_IO_RATE_CONTROL_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VolumeNameLength",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MaxTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReservationTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CriticalReservationTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SoftMaxIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SoftMaxBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "SoftMaxTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitExcessNotifyIops",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitExcessNotifyBandwidth",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "LimitExcessNotifyTimePercent",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JOBOBJECT_IO_ATTRIBUTION_CONTROL_ENABLE",
+          "Value": "1"
+        },
+        {
+          "Name": "JOBOBJECT_IO_ATTRIBUTION_CONTROL_DISABLE",
+          "Value": "2"
+        },
+        {
+          "Name": "JOBOBJECT_IO_ATTRIBUTION_CONTROL_VALID_FLAGS",
+          "Value": "3"
+        }
+      ],
+      "Name": "JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IoCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UIntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalNonOverlappedQueueTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalNonOverlappedServiceTime",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "TotalSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_ATTRIBUTION_STATS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ControlFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ReadStats",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_IO_ATTRIBUTION_STATS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "WriteStats",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.JobObjects",
+            "Type": "JOBOBJECT_IO_ATTRIBUTION_STATS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "JOBOBJECT_IO_ATTRIBUTION_INFORMATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "JobObjectBasicAccountingInformation",
+          "Value": "1"
+        },
+        {
+          "Name": "JobObjectBasicLimitInformation",
+          "Value": "2"
+        },
+        {
+          "Name": "JobObjectBasicProcessIdList",
+          "Value": "3"
+        },
+        {
+          "Name": "JobObjectBasicUIRestrictions",
+          "Value": "4"
+        },
+        {
+          "Name": "JobObjectSecurityLimitInformation",
+          "Value": "5"
+        },
+        {
+          "Name": "JobObjectEndOfJobTimeInformation",
+          "Value": "6"
+        },
+        {
+          "Name": "JobObjectAssociateCompletionPortInformation",
+          "Value": "7"
+        },
+        {
+          "Name": "JobObjectBasicAndIoAccountingInformation",
+          "Value": "8"
+        },
+        {
+          "Name": "JobObjectExtendedLimitInformation",
+          "Value": "9"
+        },
+        {
+          "Name": "JobObjectJobSetInformation",
+          "Value": "10"
+        },
+        {
+          "Name": "JobObjectGroupInformation",
+          "Value": "11"
+        },
+        {
+          "Name": "JobObjectNotificationLimitInformation",
+          "Value": "12"
+        },
+        {
+          "Name": "JobObjectLimitViolationInformation",
+          "Value": "13"
+        },
+        {
+          "Name": "JobObjectGroupInformationEx",
+          "Value": "14"
+        },
+        {
+          "Name": "JobObjectCpuRateControlInformation",
+          "Value": "15"
+        },
+        {
+          "Name": "JobObjectCompletionFilter",
+          "Value": "16"
+        },
+        {
+          "Name": "JobObjectCompletionCounter",
+          "Value": "17"
+        },
+        {
+          "Name": "JobObjectReserved1Information",
+          "Value": "18"
+        },
+        {
+          "Name": "JobObjectReserved2Information",
+          "Value": "19"
+        },
+        {
+          "Name": "JobObjectReserved3Information",
+          "Value": "20"
+        },
+        {
+          "Name": "JobObjectReserved4Information",
+          "Value": "21"
+        },
+        {
+          "Name": "JobObjectReserved5Information",
+          "Value": "22"
+        },
+        {
+          "Name": "JobObjectReserved6Information",
+          "Value": "23"
+        },
+        {
+          "Name": "JobObjectReserved7Information",
+          "Value": "24"
+        },
+        {
+          "Name": "JobObjectReserved8Information",
+          "Value": "25"
+        },
+        {
+          "Name": "JobObjectReserved9Information",
+          "Value": "26"
+        },
+        {
+          "Name": "JobObjectReserved10Information",
+          "Value": "27"
+        },
+        {
+          "Name": "JobObjectReserved11Information",
+          "Value": "28"
+        },
+        {
+          "Name": "JobObjectReserved12Information",
+          "Value": "29"
+        },
+        {
+          "Name": "JobObjectReserved13Information",
+          "Value": "30"
+        },
+        {
+          "Name": "JobObjectReserved14Information",
+          "Value": "31"
+        },
+        {
+          "Name": "JobObjectNetRateControlInformation",
+          "Value": "32"
+        },
+        {
+          "Name": "JobObjectNotificationLimitInformation2",
+          "Value": "33"
+        },
+        {
+          "Name": "JobObjectLimitViolationInformation2",
+          "Value": "34"
+        },
+        {
+          "Name": "JobObjectCreateSilo",
+          "Value": "35"
+        },
+        {
+          "Name": "JobObjectSiloBasicInformation",
+          "Value": "36"
+        },
+        {
+          "Name": "JobObjectReserved15Information",
+          "Value": "37"
+        },
+        {
+          "Name": "JobObjectReserved16Information",
+          "Value": "38"
+        },
+        {
+          "Name": "JobObjectReserved17Information",
+          "Value": "39"
+        },
+        {
+          "Name": "JobObjectReserved18Information",
+          "Value": "40"
+        },
+        {
+          "Name": "JobObjectReserved19Information",
+          "Value": "41"
+        },
+        {
+          "Name": "JobObjectReserved20Information",
+          "Value": "42"
+        },
+        {
+          "Name": "JobObjectReserved21Information",
+          "Value": "43"
+        },
+        {
+          "Name": "JobObjectReserved22Information",
+          "Value": "44"
+        },
+        {
+          "Name": "JobObjectReserved23Information",
+          "Value": "45"
+        },
+        {
+          "Name": "JobObjectReserved24Information",
+          "Value": "46"
+        },
+        {
+          "Name": "JobObjectReserved25Information",
+          "Value": "47"
+        },
+        {
+          "Name": "JobObjectReserved26Information",
+          "Value": "48"
+        },
+        {
+          "Name": "JobObjectReserved27Information",
+          "Value": "49"
+        },
+        {
+          "Name": "MaxJobObjectInfoClass",
+          "Value": "50"
+        }
+      ],
+      "Name": "JOBOBJECTINFOCLASS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    }
+  ]
+}

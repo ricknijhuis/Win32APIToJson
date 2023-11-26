@@ -1,0 +1,1123 @@
+{
+  "Name": "Windows.Win32.UI.Shell.Common",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "PERCEIVEDFLAG_UNDEFINED",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_SOFTCODED",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_HARDCODED",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_NATIVESUPPORT",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_GDIPLUS",
+          "Value": "16",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_WMSDK",
+          "Value": "32",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERCEIVEDFLAG_ZIPFOLDER",
+          "Value": "64",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "cb",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "abID",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.FlexibleArrayAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "SHITEMID",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ns-shtypes-shitemid"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "mkid",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.Common",
+            "Type": "SHITEMID"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "ITEMIDLIST",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ns-shtypes-itemidlist"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "STRRET_WSTR",
+          "Value": "0"
+        },
+        {
+          "Name": "STRRET_OFFSET",
+          "Value": "1"
+        },
+        {
+          "Name": "STRRET_CSTR",
+          "Value": "2"
+        }
+      ],
+      "Name": "STRRET_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "uType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "pOleStr",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "uOffset",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "cStr",
+              "Type": {
+                "Kind": "ArrayType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "STRRET",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ns-shtypes-strret"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "fmt",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "cxChar",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "str",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.Shell.Common",
+            "Type": "STRRET"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "SHELLDETAILS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ns-shtypes-shelldetails"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "PERCEIVED_TYPE_FIRST",
+          "Value": "-3"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_CUSTOM",
+          "Value": "-3"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_UNSPECIFIED",
+          "Value": "-2"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_FOLDER",
+          "Value": "-1"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_UNKNOWN",
+          "Value": "0"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_TEXT",
+          "Value": "1"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_IMAGE",
+          "Value": "2"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_AUDIO",
+          "Value": "3"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_VIDEO",
+          "Value": "4"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_COMPRESSED",
+          "Value": "5"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_DOCUMENT",
+          "Value": "6"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_SYSTEM",
+          "Value": "7"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_APPLICATION",
+          "Value": "8"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_GAMEMEDIA",
+          "Value": "9"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_CONTACTS",
+          "Value": "10"
+        },
+        {
+          "Name": "PERCEIVED_TYPE_LAST",
+          "Value": "10"
+        }
+      ],
+      "Name": "PERCEIVED",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ne-shtypes-perceived"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "pszName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        },
+        {
+          "Name": "pszSpec",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstAttribute"
+            }
+          ]
+        }
+      ],
+      "Name": "COMDLG_FILTERSPEC",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ns-shtypes-comdlg_filterspec"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "SHCOLSTATE_DEFAULT",
+          "Value": "0"
+        },
+        {
+          "Name": "SHCOLSTATE_TYPE_STR",
+          "Value": "1"
+        },
+        {
+          "Name": "SHCOLSTATE_TYPE_INT",
+          "Value": "2"
+        },
+        {
+          "Name": "SHCOLSTATE_TYPE_DATE",
+          "Value": "3"
+        },
+        {
+          "Name": "SHCOLSTATE_TYPEMASK",
+          "Value": "15"
+        },
+        {
+          "Name": "SHCOLSTATE_ONBYDEFAULT",
+          "Value": "16"
+        },
+        {
+          "Name": "SHCOLSTATE_SLOW",
+          "Value": "32"
+        },
+        {
+          "Name": "SHCOLSTATE_EXTENDED",
+          "Value": "64"
+        },
+        {
+          "Name": "SHCOLSTATE_SECONDARYUI",
+          "Value": "128"
+        },
+        {
+          "Name": "SHCOLSTATE_HIDDEN",
+          "Value": "256"
+        },
+        {
+          "Name": "SHCOLSTATE_PREFER_VARCMP",
+          "Value": "512"
+        },
+        {
+          "Name": "SHCOLSTATE_PREFER_FMTCMP",
+          "Value": "1024"
+        },
+        {
+          "Name": "SHCOLSTATE_NOSORTBYFOLDERNESS",
+          "Value": "2048"
+        },
+        {
+          "Name": "SHCOLSTATE_VIEWONLY",
+          "Value": "65536"
+        },
+        {
+          "Name": "SHCOLSTATE_BATCHREAD",
+          "Value": "131072"
+        },
+        {
+          "Name": "SHCOLSTATE_NO_GROUPBY",
+          "Value": "262144"
+        },
+        {
+          "Name": "SHCOLSTATE_FIXED_WIDTH",
+          "Value": "4096"
+        },
+        {
+          "Name": "SHCOLSTATE_NODPISCALE",
+          "Value": "8192"
+        },
+        {
+          "Name": "SHCOLSTATE_FIXED_RATIO",
+          "Value": "16384"
+        },
+        {
+          "Name": "SHCOLSTATE_DISPLAYMASK",
+          "Value": "61440"
+        }
+      ],
+      "Name": "SHCOLSTATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ne-shtypes-shcolstate"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DEVICE_SCALE_FACTOR_INVALID",
+          "Value": "0"
+        },
+        {
+          "Name": "SCALE_100_PERCENT",
+          "Value": "100"
+        },
+        {
+          "Name": "SCALE_120_PERCENT",
+          "Value": "120"
+        },
+        {
+          "Name": "SCALE_125_PERCENT",
+          "Value": "125"
+        },
+        {
+          "Name": "SCALE_140_PERCENT",
+          "Value": "140"
+        },
+        {
+          "Name": "SCALE_150_PERCENT",
+          "Value": "150"
+        },
+        {
+          "Name": "SCALE_160_PERCENT",
+          "Value": "160"
+        },
+        {
+          "Name": "SCALE_175_PERCENT",
+          "Value": "175"
+        },
+        {
+          "Name": "SCALE_180_PERCENT",
+          "Value": "180"
+        },
+        {
+          "Name": "SCALE_200_PERCENT",
+          "Value": "200"
+        },
+        {
+          "Name": "SCALE_225_PERCENT",
+          "Value": "225"
+        },
+        {
+          "Name": "SCALE_250_PERCENT",
+          "Value": "250"
+        },
+        {
+          "Name": "SCALE_300_PERCENT",
+          "Value": "300"
+        },
+        {
+          "Name": "SCALE_350_PERCENT",
+          "Value": "350"
+        },
+        {
+          "Name": "SCALE_400_PERCENT",
+          "Value": "400"
+        },
+        {
+          "Name": "SCALE_450_PERCENT",
+          "Value": "450"
+        },
+        {
+          "Name": "SCALE_500_PERCENT",
+          "Value": "500"
+        }
+      ],
+      "Name": "DEVICE_SCALE_FACTOR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/shtypes/ne-shtypes-device_scale_factor"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "pcObjects",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCount",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectarray-getcount"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uiIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "riid",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "System",
+                "Type": "Guid"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppv",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetAt",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectarray-getat"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IObjectArray",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            2462752205,
+            22050,
+            19386,
+            168,
+            5,
+            94,
+            159,
+            84,
+            27,
+            216,
+            201
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/objectarray/nn-objectarray-iobjectarray"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "punk",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IUnknown"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddObject",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectcollection-addobject"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "poaSource",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.UI.Shell.Common",
+                "Type": "IObjectArray"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddFromArray",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectcollection-addfromarray"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "uiIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RemoveObjectAt",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectcollection-removeobjectat"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Clear",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/objectarray/nf-objectarray-iobjectcollection-clear"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "IObjectCollection",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1446162852,
+            58250,
+            16394,
+            146,
+            138,
+            212,
+            205,
+            99,
+            35,
+            2,
+            149
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+          "FixedParameters": [
+            "windows6.1"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/objectarray/nn-objectarray-iobjectcollection"
+          ]
+        }
+      ]
+    }
+  ]
+}

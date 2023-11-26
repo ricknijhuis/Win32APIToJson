@@ -1,0 +1,994 @@
+{
+  "Name": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ObjectType",
+      "Fields": [
+        {
+          "Name": "WNV_API_MAJOR_VERSION_1",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "WNV_API_MINOR_VERSION_0",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "WnvOpen",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windowsserver2012"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wnvapi/nf-wnvapi-wnvopen"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "WnvHandle",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HANDLE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "NotificationParam",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+                "Type": "WNV_NOTIFICATION_PARAM"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "Overlapped",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.IO",
+                "Type": "OVERLAPPED"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "BytesTransferred",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "WnvRequestNotification",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windowsserver2012"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/wnvapi/nf-wnvapi-wnvrequestnotification"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WnvPolicyMismatchType",
+          "Value": "0"
+        },
+        {
+          "Name": "WnvRedirectType",
+          "Value": "1"
+        },
+        {
+          "Name": "WnvObjectChangeType",
+          "Value": "2"
+        },
+        {
+          "Name": "WnvNotificationTypeMax",
+          "Value": "3"
+        }
+      ],
+      "Name": "WNV_NOTIFICATION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ne-wnvapi-wnv_notification_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WnvProviderAddressType",
+          "Value": "0"
+        },
+        {
+          "Name": "WnvCustomerAddressType",
+          "Value": "1"
+        },
+        {
+          "Name": "WnvObjectTypeMax",
+          "Value": "2"
+        }
+      ],
+      "Name": "WNV_OBJECT_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ne-wnvapi-wnv_object_type"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "WnvCustomerAddressAdded",
+          "Value": "0"
+        },
+        {
+          "Name": "WnvCustomerAddressDeleted",
+          "Value": "1"
+        },
+        {
+          "Name": "WnvCustomerAddressMoved",
+          "Value": "2"
+        },
+        {
+          "Name": "WnvCustomerAddressMax",
+          "Value": "3"
+        }
+      ],
+      "Name": "WNV_CA_NOTIFICATION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MajorVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MinorVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Size",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_OBJECT_HEADER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_object_header"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Header",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_OBJECT_HEADER"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_NOTIFICATION_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PendingNotifications",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Buffer",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_NOTIFICATION_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_notification_param"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "IP",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_IP_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "v4",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Networking.WinSock",
+                "Type": "IN_ADDR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "v6",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Networking.WinSock",
+                "Type": "IN6_ADDR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Addr",
+              "Type": {
+                "Kind": "ArrayType",
+                "Type": "Byte"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_IP_e__Union"
+        }
+      ],
+      "Name": "WNV_IP_ADDRESS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_ip_address"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "CAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VirtualSubnetId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_POLICY_MISMATCH_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_policy_mismatch_param"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "PAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "AddressState",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "NL_DAD_STATE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_PROVIDER_ADDRESS_CHANGE_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_provider_address_change_param"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "MACAddress",
+          "Type": {
+            "Kind": "UnionType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "DL_EUI48"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VirtualSubnetId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NotificationReason",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_CA_NOTIFICATION_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_CUSTOMER_ADDRESS_CHANGE_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "ObjectType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_OBJECT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ObjectParam",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_ObjectParam_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "ProviderAddressChange",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+                "Type": "WNV_PROVIDER_ADDRESS_CHANGE_PARAM"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "CustomerAddressChange",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+                "Type": "WNV_CUSTOMER_ADDRESS_CHANGE_PARAM"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_ObjectParam_e__Union"
+        }
+      ],
+      "Name": "WNV_OBJECT_CHANGE_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_object_change_param"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "CAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NewPAFamily",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Networking.WinSock",
+            "Type": "ADDRESS_FAMILY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "VirtualSubnetId",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "CA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "PA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "NewPA",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.NetworkManagement.WindowsNetworkVirtualization",
+            "Type": "WNV_IP_ADDRESS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "WNV_REDIRECT_PARAM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/wnvapi/ns-wnvapi-wnv_redirect_param"
+          ]
+        }
+      ]
+    }
+  ]
+}

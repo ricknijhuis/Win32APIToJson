@@ -1,0 +1,3520 @@
+{
+  "Name": "Windows.Win32.UI.InteractionContext",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "IntPtr"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "HINTERACTIONCONTEXT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            -1
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.InvalidHandleValueAttribute",
+          "FixedParameters": [
+            0
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.NativeTypedefAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INTERACTION_ID_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "INTERACTION_ID_MANIPULATION",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_ID_TAP",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_ID_SECONDARY_TAP",
+          "Value": "3"
+        },
+        {
+          "Name": "INTERACTION_ID_HOLD",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_ID_DRAG",
+          "Value": "5"
+        },
+        {
+          "Name": "INTERACTION_ID_CROSS_SLIDE",
+          "Value": "6"
+        },
+        {
+          "Name": "INTERACTION_ID_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "INTERACTION_ID",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-interaction_id"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INTERACTION_FLAG_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "INTERACTION_FLAG_BEGIN",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_FLAG_END",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_FLAG_CANCEL",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_FLAG_INERTIA",
+          "Value": "8"
+        },
+        {
+          "Name": "INTERACTION_FLAG_MAX",
+          "Value": "4294967295"
+        }
+      ],
+      "Name": "INTERACTION_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-interaction_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_TRANSLATION_X",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_TRANSLATION_Y",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_ROTATION",
+          "Value": "8"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_SCALING",
+          "Value": "16"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_TRANSLATION_INERTIA",
+          "Value": "32"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_ROTATION_INERTIA",
+          "Value": "64"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_SCALING_INERTIA",
+          "Value": "128"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_RAILS_X",
+          "Value": "256"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_RAILS_Y",
+          "Value": "512"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_EXACT",
+          "Value": "1024"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MANIPULATION_MULTIPLE_FINGER_PANNING",
+          "Value": "2048"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE_HORIZONTAL",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE_SELECT",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE_SPEED_BUMP",
+          "Value": "8"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE_REARRANGE",
+          "Value": "16"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_CROSS_SLIDE_EXACT",
+          "Value": "32"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_TAP",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_TAP_DOUBLE",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_TAP_MULTIPLE_FINGER",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_SECONDARY_TAP",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_HOLD",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_HOLD_MOUSE",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_HOLD_MULTIPLE_FINGER",
+          "Value": "4"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_DRAG",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONFIGURATION_FLAG_MAX",
+          "Value": "4294967295"
+        }
+      ],
+      "Name": "INTERACTION_CONFIGURATION_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-interaction_configuration_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INERTIA_PARAMETER_TRANSLATION_DECELERATION",
+          "Value": "1"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_TRANSLATION_DISPLACEMENT",
+          "Value": "2"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_ROTATION_DECELERATION",
+          "Value": "3"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_ROTATION_ANGLE",
+          "Value": "4"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_EXPANSION_DECELERATION",
+          "Value": "5"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_EXPANSION_EXPANSION",
+          "Value": "6"
+        },
+        {
+          "Name": "INERTIA_PARAMETER_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "INERTIA_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-inertia_parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INTERACTION_STATE_IDLE",
+          "Value": "0"
+        },
+        {
+          "Name": "INTERACTION_STATE_IN_INTERACTION",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_STATE_POSSIBLE_DOUBLE_TAP",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_STATE_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "INTERACTION_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-interaction_state"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "INTERACTION_CONTEXT_PROPERTY_MEASUREMENT_UNITS",
+          "Value": "1"
+        },
+        {
+          "Name": "INTERACTION_CONTEXT_PROPERTY_INTERACTION_UI_FEEDBACK",
+          "Value": "2"
+        },
+        {
+          "Name": "INTERACTION_CONTEXT_PROPERTY_FILTER_POINTERS",
+          "Value": "3"
+        },
+        {
+          "Name": "INTERACTION_CONTEXT_PROPERTY_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_PROPERTY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-interaction_context_property"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_SELECT_START",
+          "Value": "0"
+        },
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_SPEED_BUMP_START",
+          "Value": "1"
+        },
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_SPEED_BUMP_END",
+          "Value": "2"
+        },
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_REARRANGE_START",
+          "Value": "3"
+        },
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_COUNT",
+          "Value": "4"
+        },
+        {
+          "Name": "CROSS_SLIDE_THRESHOLD_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "CROSS_SLIDE_THRESHOLD",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-cross_slide_threshold"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CROSS_SLIDE_FLAGS_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "CROSS_SLIDE_FLAGS_SELECT",
+          "Value": "1"
+        },
+        {
+          "Name": "CROSS_SLIDE_FLAGS_SPEED_BUMP",
+          "Value": "2"
+        },
+        {
+          "Name": "CROSS_SLIDE_FLAGS_REARRANGE",
+          "Value": "4"
+        },
+        {
+          "Name": "CROSS_SLIDE_FLAGS_MAX",
+          "Value": "4294967295"
+        }
+      ],
+      "Name": "CROSS_SLIDE_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-cross_slide_flags"
+          ]
+        },
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_CHAR_TRANSLATION_X",
+          "Value": "1"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_CHAR_TRANSLATION_Y",
+          "Value": "2"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_DELTA_SCALE",
+          "Value": "3"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_DELTA_ROTATION",
+          "Value": "4"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_PAGE_TRANSLATION_X",
+          "Value": "5"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_PAGE_TRANSLATION_Y",
+          "Value": "6"
+        },
+        {
+          "Name": "MOUSE_WHEEL_PARAMETER_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "MOUSE_WHEEL_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-mouse_wheel_parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "TAP_PARAMETER_MIN_CONTACT_COUNT",
+          "Value": "0"
+        },
+        {
+          "Name": "TAP_PARAMETER_MAX_CONTACT_COUNT",
+          "Value": "1"
+        },
+        {
+          "Name": "TAP_PARAMETER_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "TAP_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "HOLD_PARAMETER_MIN_CONTACT_COUNT",
+          "Value": "0"
+        },
+        {
+          "Name": "HOLD_PARAMETER_MAX_CONTACT_COUNT",
+          "Value": "1"
+        },
+        {
+          "Name": "HOLD_PARAMETER_THRESHOLD_RADIUS",
+          "Value": "2"
+        },
+        {
+          "Name": "HOLD_PARAMETER_THRESHOLD_START_DELAY",
+          "Value": "3"
+        },
+        {
+          "Name": "HOLD_PARAMETER_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "HOLD_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "TRANSLATION_PARAMETER_MIN_CONTACT_COUNT",
+          "Value": "0"
+        },
+        {
+          "Name": "TRANSLATION_PARAMETER_MAX_CONTACT_COUNT",
+          "Value": "1"
+        },
+        {
+          "Name": "TRANSLATION_PARAMETER_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "TRANSLATION_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "MANIPULATION_RAILS_STATE_UNDECIDED",
+          "Value": "0"
+        },
+        {
+          "Name": "MANIPULATION_RAILS_STATE_FREE",
+          "Value": "1"
+        },
+        {
+          "Name": "MANIPULATION_RAILS_STATE_RAILED",
+          "Value": "2"
+        },
+        {
+          "Name": "MANIPULATION_RAILS_STATE_MAX",
+          "Value": "-1"
+        }
+      ],
+      "Name": "MANIPULATION_RAILS_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ne-interactioncontext-manipulation_rails_state"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "translationX",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "translationY",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "scale",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "expansion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "rotation",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "MANIPULATION_TRANSFORM",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-manipulation_transform"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "velocityX",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "velocityY",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "velocityExpansion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "velocityAngular",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "MANIPULATION_VELOCITY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-manipulation_velocity"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "delta",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "MANIPULATION_TRANSFORM"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "cumulative",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "MANIPULATION_TRANSFORM"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "velocity",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "MANIPULATION_VELOCITY"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "railsState",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "MANIPULATION_RAILS_STATE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_ARGUMENTS_MANIPULATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-interaction_arguments_manipulation"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "count",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_ARGUMENTS_TAP",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-interaction_arguments_tap"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "flags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "CROSS_SLIDE_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_ARGUMENTS_CROSS_SLIDE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-interaction_arguments_cross_slide"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "interactionId",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_ID"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "interactionFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "inputType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.WindowsAndMessaging",
+            "Type": "POINTER_INPUT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "x",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "y",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "arguments",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_arguments_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "manipulation",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_MANIPULATION"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "tap",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_TAP"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "crossSlide",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_CROSS_SLIDE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_arguments_e__Union"
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_OUTPUT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-interaction_context_output"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "interactionId",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_ID"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "interactionFlags",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "inputType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.WindowsAndMessaging",
+            "Type": "POINTER_INPUT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "contactCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "currentContactCount",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "x",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "y",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "arguments",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_arguments_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "manipulation",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_MANIPULATION"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "tap",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_TAP"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "crossSlide",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_ARGUMENTS_CROSS_SLIDE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_arguments_e__Union"
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_OUTPUT2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "interactionId",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_ID"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "enable",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_CONFIGURATION_FLAGS"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_CONFIGURATION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-interaction_context_configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "threshold",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "CROSS_SLIDE_THRESHOLD"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "distance",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "CROSS_SLIDE_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/interactioncontext/ns-interactioncontext-cross_slide_parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "clientData",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "output",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_CONTEXT_OUTPUT"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_OUTPUT_CALLBACK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "clientData",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "output",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.UI.InteractionContext",
+            "Type": "INTERACTION_CONTEXT_OUTPUT2"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        }
+      ],
+      "Name": "INTERACTION_CONTEXT_OUTPUT_CALLBACK2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-createinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DestroyInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-destroyinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "outputCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_OUTPUT_CALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "clientData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RegisterOutputCallbackInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-registeroutputcallbackinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "outputCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_OUTPUT_CALLBACK2"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "clientData",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RegisterOutputCallbackInteractionContext2"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "configurationCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "configuration",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_CONFIGURATION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetInteractionConfigurationInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setinteractionconfigurationinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "configurationCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "configuration",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_CONFIGURATION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetInteractionConfigurationInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getinteractionconfigurationinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "contextProperty",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_PROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetPropertyInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setpropertyinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "contextProperty",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_CONTEXT_PROPERTY"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPropertyInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getpropertyinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "inertiaParameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INERTIA_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetInertiaParameterInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setinertiaparameterinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "inertiaParameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INERTIA_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetInertiaParameterInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getinertiaparameterinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameterCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "crossSlideParameters",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "CROSS_SLIDE_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetCrossSlideParametersInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setcrossslideparametersinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "threshold",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "CROSS_SLIDE_THRESHOLD"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "distance",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCrossSlideParameterInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getcrossslideparameterinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "TAP_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetTapParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "TAP_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetTapParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HOLD_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetHoldParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HOLD_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetHoldParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "TRANSLATION_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetTranslationParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "TRANSLATION_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetTranslationParameterInteractionContext"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "MOUSE_WHEEL_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetMouseWheelParameterInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setmousewheelparameterinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "parameter",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "MOUSE_WHEEL_PARAMETER"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "value",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetMouseWheelParameterInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getmousewheelparameterinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ResetInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-resetinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.Input.Pointer",
+                "Type": "POINTER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "state",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "INTERACTION_STATE"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetStateInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-getstateinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AddPointerInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-addpointerinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "RemovePointerInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-removepointerinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "entriesCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.Input.Pointer",
+                "Type": "POINTER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ProcessPointerFramesInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-processpointerframesinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "entriesCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pointerInfo",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.UI.Input.Pointer",
+                "Type": "POINTER_INFO"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "BufferPointerPacketsInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-bufferpointerpacketsinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ProcessBufferedPacketsInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-processbufferedpacketsinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ProcessInertiaInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-processinertiainteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "StopInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-stopinteractioncontext"
+              ]
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "interactionContext",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.UI.InteractionContext",
+                "Type": "HINTERACTIONCONTEXT"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "x",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "y",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "radius",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetPivotInteractionContext",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/interactioncontext/nf-interactioncontext-setpivotinteractioncontext"
+              ]
+            }
+          ]
+        }
+      ],
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}

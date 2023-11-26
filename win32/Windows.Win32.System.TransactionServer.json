@@ -1,0 +1,1295 @@
+{
+  "Name": "Windows.Win32.System.TransactionServer",
+  "Assembly": "",
+  "Types": [
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bstrCollName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppCatalogCollection",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IDispatch"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCollection"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrConnectString",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ppCatalogCollection",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "IDispatch"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "Connect"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "retval",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract",
+            "SpecialName"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "get_MajorVersion"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "retval",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract",
+            "SpecialName"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "get_MinorVersion"
+        }
+      ],
+      "Name": "ICatalog",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169520,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bstrDLLFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrTypelibFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrProxyStubDLLFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "InstallComponent"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrCLSID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ImportComponent"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrProgID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ImportComponentByName"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrDLLFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrTypelibFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "aCLSIDs",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "SAFEARRAY"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetCLSIDs"
+        }
+      ],
+      "Name": "IComponentUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169523,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bstrPackageFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrInstallPath",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lOptions",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "InstallPackage"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrPackageID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrPackageFile",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "lOptions",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ExportPackage"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrPackageID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ShutdownPackage"
+        }
+      ],
+      "Name": "IPackageUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169524,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bstrServer",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrPackageID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrCLSID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "InstallRemoteComponent"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrServer",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrPackageName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bstrProgID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "InstallRemoteComponentByName"
+        }
+      ],
+      "Name": "IRemoteComponentUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169525,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bstrRoleID",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AssociateRole"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "bstrRoleName",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "BSTR"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "AssociateRoleByName"
+        }
+      ],
+      "Name": "IRoleAssociationUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169526,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "mtsInstallUsers",
+          "Value": "1"
+        }
+      ],
+      "Name": "MTSPackageInstallOptions",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "mtsExportUsers",
+          "Value": "1"
+        }
+      ],
+      "Name": "MTSPackageExportOptions",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "mtsErrObjectErrors",
+          "Value": "-2146368511"
+        },
+        {
+          "Name": "mtsErrObjectInvalid",
+          "Value": "-2146368510"
+        },
+        {
+          "Name": "mtsErrKeyMissing",
+          "Value": "-2146368509"
+        },
+        {
+          "Name": "mtsErrAlreadyInstalled",
+          "Value": "-2146368508"
+        },
+        {
+          "Name": "mtsErrDownloadFailed",
+          "Value": "-2146368507"
+        },
+        {
+          "Name": "mtsErrPDFWriteFail",
+          "Value": "-2146368505"
+        },
+        {
+          "Name": "mtsErrPDFReadFail",
+          "Value": "-2146368504"
+        },
+        {
+          "Name": "mtsErrPDFVersion",
+          "Value": "-2146368503"
+        },
+        {
+          "Name": "mtsErrCoReqCompInstalled",
+          "Value": "-2146368496"
+        },
+        {
+          "Name": "mtsErrBadPath",
+          "Value": "-2146368502"
+        },
+        {
+          "Name": "mtsErrPackageExists",
+          "Value": "-2146368501"
+        },
+        {
+          "Name": "mtsErrRoleExists",
+          "Value": "-2146368500"
+        },
+        {
+          "Name": "mtsErrCantCopyFile",
+          "Value": "-2146368499"
+        },
+        {
+          "Name": "mtsErrNoTypeLib",
+          "Value": "-2146368498"
+        },
+        {
+          "Name": "mtsErrNoUser",
+          "Value": "-2146368497"
+        },
+        {
+          "Name": "mtsErrInvalidUserids",
+          "Value": "-2146368496"
+        },
+        {
+          "Name": "mtsErrNoRegistryCLSID",
+          "Value": "-2146368495"
+        },
+        {
+          "Name": "mtsErrBadRegistryProgID",
+          "Value": "-2146368494"
+        },
+        {
+          "Name": "mtsErrAuthenticationLevel",
+          "Value": "-2146368493"
+        },
+        {
+          "Name": "mtsErrUserPasswdNotValid",
+          "Value": "-2146368492"
+        },
+        {
+          "Name": "mtsErrNoRegistryRead",
+          "Value": "-2146368491"
+        },
+        {
+          "Name": "mtsErrNoRegistryWrite",
+          "Value": "-2146368490"
+        },
+        {
+          "Name": "mtsErrNoRegistryRepair",
+          "Value": "-2146368489"
+        },
+        {
+          "Name": "mtsErrCLSIDOrIIDMismatch",
+          "Value": "-2146368488"
+        },
+        {
+          "Name": "mtsErrRemoteInterface",
+          "Value": "-2146368487"
+        },
+        {
+          "Name": "mtsErrDllRegisterServer",
+          "Value": "-2146368486"
+        },
+        {
+          "Name": "mtsErrNoServerShare",
+          "Value": "-2146368485"
+        },
+        {
+          "Name": "mtsErrNoAccessToUNC",
+          "Value": "-2146368484"
+        },
+        {
+          "Name": "mtsErrDllLoadFailed",
+          "Value": "-2146368483"
+        },
+        {
+          "Name": "mtsErrBadRegistryLibID",
+          "Value": "-2146368482"
+        },
+        {
+          "Name": "mtsErrPackDirNotFound",
+          "Value": "-2146368481"
+        },
+        {
+          "Name": "mtsErrTreatAs",
+          "Value": "-2146368480"
+        },
+        {
+          "Name": "mtsErrBadForward",
+          "Value": "-2146368479"
+        },
+        {
+          "Name": "mtsErrBadIID",
+          "Value": "-2146368478"
+        },
+        {
+          "Name": "mtsErrRegistrarFailed",
+          "Value": "-2146368477"
+        },
+        {
+          "Name": "mtsErrCompFileDoesNotExist",
+          "Value": "-2146368476"
+        },
+        {
+          "Name": "mtsErrCompFileLoadDLLFail",
+          "Value": "-2146368475"
+        },
+        {
+          "Name": "mtsErrCompFileGetClassObj",
+          "Value": "-2146368474"
+        },
+        {
+          "Name": "mtsErrCompFileClassNotAvail",
+          "Value": "-2146368473"
+        },
+        {
+          "Name": "mtsErrCompFileBadTLB",
+          "Value": "-2146368472"
+        },
+        {
+          "Name": "mtsErrCompFileNotInstallable",
+          "Value": "-2146368471"
+        },
+        {
+          "Name": "mtsErrNotChangeable",
+          "Value": "-2146368470"
+        },
+        {
+          "Name": "mtsErrNotDeletable",
+          "Value": "-2146368469"
+        },
+        {
+          "Name": "mtsErrSession",
+          "Value": "-2146368468"
+        },
+        {
+          "Name": "mtsErrCompFileNoRegistrar",
+          "Value": "-2146368460"
+        }
+      ],
+      "Name": "MTSAdminErrorCodes",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "Catalog",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169537,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "CatalogObject",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169538,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "CatalogCollection",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169539,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "ComponentUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169540,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "PackageUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169541,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "RemoteComponentUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169542,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Name": "RoleAssociationUtil",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            1857169543,
+            35353,
+            4560,
+            129,
+            182,
+            0,
+            160,
+            201,
+            35,
+            28,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ObjectType",
+      "Name": "Apis",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Abstract",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    }
+  ]
+}
