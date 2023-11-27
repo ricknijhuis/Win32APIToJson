@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 18 * * 5'  # every Friday at 18:00 (6:00 PM)
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   update-results:
@@ -35,6 +38,10 @@ jobs:
         winmd_path=$(find ./nuget-packages -name '*.winmd')
         echo "WinMD file located at: $winmd_path"
         echo "WINMD_PATH=$winmd_path" >> $GITHUB_ENV
+        
+    - name: List files
+      run: |
+        ls -R
 
     - name: Run WinmdToJson Application
       run: |
