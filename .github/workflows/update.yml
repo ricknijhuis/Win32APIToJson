@@ -11,6 +11,8 @@ on:
 jobs:
   update-results:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
     - name: Checkout Results Repository
       uses: actions/checkout@v2
@@ -52,8 +54,6 @@ jobs:
 
     - name: Create Pull Request
       if: steps.diff-check.outputs.changes_detected == 'true'
-      env:
-        GH_TOKEN: ${{ github.token }}
       run: |
         cd Win32APIToJson
         git config user.name "GitHub Actions Bot"
@@ -61,6 +61,7 @@ jobs:
         git checkout -b update/automated_run_${{ github.run_number }}
         git add .
         git commit -m "Update JSON results"
-        git push origin update/automated_run_${{ github.run_number }}
-        gh auth login --with-token <<< $GITHUB_TOKEN
-        gh pr create --title "Automated JSON Update" --body "Updated JSON results from latest win32metadata and WinmdToJson application." --base main --head update/automated_run_${{ github.run_number }}
+        git push -u origin update/automated_run_${{ github.run_number }}
+    - name: Create Pull Request
+      run: gh pr create --base main --title "Update win32tojson" --fill-first
+  
