@@ -38,7 +38,7 @@ jobs:
       run: |
         winmd_path=$(find ./nuget-packages -name '*.winmd')
         echo "WinMD file located at: $winmd_path"
-        echo "::set-output name=windm_path::$winmd_path"
+        echo "WINMD_PATH=$winmd_path" >> $GITHUB_OUTPUT
         
     - name: Run WinmdToJson Application
       run: |
