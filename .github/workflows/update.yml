@@ -28,7 +28,7 @@ jobs:
       run: |
         mkdir nuget-packages
         cd nuget-packages
-        nuget install Microsoft.Windows.SDK.Win32Metadata -ExcludeVersion
+        nuget install Microsoft.Windows.SDK.Win32Metadata -ExcludeVersion -PreRelease
 
     - name: Find WinMD File
       run: |
