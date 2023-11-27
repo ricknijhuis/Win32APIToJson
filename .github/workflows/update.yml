@@ -64,7 +64,7 @@ jobs:
         git push -u origin update/automated_run_${{ github.run_number }}
     - name: Create Pull Request
       if: steps.diff-check.outputs.changes_detected == 'true'
-      run: 
+      run: |
         cd Win32APIToJson
         gh pr create --base main --title "Update win32tojson" --fill-first
   
