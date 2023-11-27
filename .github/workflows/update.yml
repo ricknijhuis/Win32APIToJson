@@ -53,7 +53,7 @@ jobs:
     - name: Create Pull Request
       if: steps.diff-check.outputs.changes_detected == 'true'
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
       run: |
         cd Win32APIToJson
         git config user.name "GitHub Actions Bot"
