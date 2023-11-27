@@ -56,6 +56,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd Win32APIToJson
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
         git checkout -b update/automated_run_${{ github.run_number }}
         git add .
         git commit -m "Update JSON results"
