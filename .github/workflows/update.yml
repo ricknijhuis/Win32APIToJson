@@ -55,7 +55,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        cd results-repo
+        cd Win32APIToJson
         git checkout -b update/automated_run_${{ github.run_number }}
         git add .
         git commit -m "Update JSON results"
