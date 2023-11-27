@@ -34,18 +34,15 @@ jobs:
         nuget install Microsoft.Windows.SDK.Win32Metadata -ExcludeVersion -PreRelease
 
     - name: Find WinMD File
+      id: find_winmd_file
       run: |
         winmd_path=$(find ./nuget-packages -name '*.winmd')
         echo "WinMD file located at: $winmd_path"
-        echo "WINMD_PATH=$winmd_path" >> $GITHUB_ENV
+        echo "::set-output name=windm_path::$winmd_path"
         
-    - name: List files
-      run: |
-        ls -R
-
     - name: Run WinmdToJson Application
       run: |
-        dotnet run --project WinmdToJson/WinmdToJson.csproj -- $WINMD_PATH
+        dotnet run --project ./WinmdToJson/WinmdToJson/WinmdToJson.csproj --input ${{steps.find_winmd_file.outputs.winmd_path}} --output ./Win32APIToJson/win32
 
     - name: Check for Changes
       run: |
