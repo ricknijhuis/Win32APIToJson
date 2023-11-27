@@ -1,0 +1,60 @@
+name: Update JSON Results
+
+on:
+  schedule:
+    - cron: '0 18 * * 5'  # every Friday at 18:00 (6:00 PM)
+  workflow_dispatch:
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Results Repository
+      uses: actions/checkout@v2
+      with:
+        path: 'Win32APIToJson'
+
+    - name: Clone WinmdToJson Repository
+      uses: actions/checkout@v2
+      with:
+        repository: ricknijhuis/WinmdToJson
+        path: 'WinmdToJson'
+
+    - name: Install NuGet CLI
+      run: |
+        sudo apt-get install -y nuget
+
+    - name: Install Latest win32metadata NuGet Package
+      run: |
+        mkdir nuget-packages
+        cd nuget-packages
+        nuget install win32metadata -ExcludeVersion
+
+    - name: Find WinMD File
+      run: |
+        winmd_path=$(find ./nuget-packages -name '*.winmd')
+        echo "WinMD file located at: $winmd_path"
+        echo "WINMD_PATH=$winmd_path" >> $GITHUB_ENV
+
+    - name: Run WinmdToJson Application
+      run: |
+        dotnet run --project WinmdToJson/WinmdToJson.csproj -- $WINMD_PATH
+
+    - name: Check for Changes
+      run: |
+        cd results-repo
+        git diff --exit-code || echo "::set-output name=changes_detected::true"
+      id: diff-check
+
+    - name: Create Pull Request
+      if: steps.diff-check.outputs.changes_detected == 'true'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cd results-repo
+        git checkout -b update/automated_run_${{ github.run_number }}
+        git add .
+        git commit -m "Update JSON results"
+        git push origin update/automated_run_${{ github.run_number }}
+        gh auth login --with-token <<< $GITHUB_TOKEN
+        gh pr create --title "Automated JSON Update" --body "Updated JSON results from latest win32metadata and WinmdToJson application." --base main --head update/automated_run_${{ github.run_number }}
