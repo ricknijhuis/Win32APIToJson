@@ -38,7 +38,7 @@ jobs:
       run: |
         winmd_path=$(find ./nuget-packages -name '*.winmd')
         echo "WinMD file located at: $winmd_path"
-        echo "WINMD_PATH=$winmd_path" >> $GITHUB_OUTPUT
+        echo "winmd_path=$winmd_path" >> $GITHUB_OUTPUT
         
     - name: Run WinmdToJson Application
       run: |
@@ -46,8 +46,8 @@ jobs:
 
     - name: Check for Changes
       run: |
-        cd results-repo
-        git diff --exit-code || echo "::set-output name=changes_detected::true"
+        cd Win32APIToJson
+        git diff --exit-code || echo "changes_detected=true" >> $GITHUB_OUTPUT
       id: diff-check
 
     - name: Create Pull Request
