@@ -3664,6 +3664,40 @@
           ]
         },
         {
+          "Name": "OLESTREAM_CONVERSION_DEFAULT",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "OLESTREAM_CONVERSION_DISABLEOLELINK",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
           "Name": "IDC_OLEUIHELP",
           "Value": "99",
           "Type": {
@@ -33707,6 +33741,103 @@
           "Module": "ole32.dll",
           "Parameters": [
             {
+              "Name": "lpolestream",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "OLESTREAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pstg",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "IStorage"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "ptd",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "DVTARGETDEVICE"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "opt",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pvCallbackContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pQueryConvertOLELinkCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.Ole",
+                "Type": "OLESTREAMQUERYCONVERTOLELINKCALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OleConvertOLESTREAMToIStorage2"
+        },
+        {
+          "Module": "ole32.dll",
+          "Parameters": [
+            {
               "Name": "pStg",
               "Type": {
                 "Kind": "ComType",
@@ -33885,6 +34016,146 @@
               ]
             }
           ]
+        },
+        {
+          "Module": "ole32.dll",
+          "Parameters": [
+            {
+              "Name": "polestm",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "OLESTREAM"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pstg",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.System.Com.StructuredStorage",
+                "Type": "IStorage"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pcfFormat",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt16"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "plwWidth",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "plHeight",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Int32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pdwSize",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pmedium",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.System.Com",
+                "Type": "STGMEDIUM"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "opt",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pvCallbackContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Type": "Void"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "pQueryConvertOLELinkCallback",
+              "Type": {
+                "Kind": "FunctionPointerType",
+                "Namespace": "Windows.Win32.System.Ole",
+                "Type": "OLESTREAMQUERYCONVERTOLELINKCALLBACK"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "OleConvertOLESTREAMToIStorageEx2"
         },
         {
           "Module": "OLE32.dll",
@@ -52066,6 +52337,106 @@
       ]
     },
     {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
+        {
+          "Name": "pClsid",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "szClass",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "szTopicName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "szItemName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "szUNCName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "linkUpdatingOption",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        },
+        {
+          "Name": "pvContext",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In",
+            "Optional"
+          ]
+        }
+      ],
+      "Name": "OLESTREAMQUERYCONVERTOLELINKCALLBACK",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
       "Kind": "EnumType",
       "Type": {
         "Kind": "PrimitiveType",
@@ -59757,6 +60128,9 @@
           "Name": "Next",
           "CustomAttributes": [
             {
+              "Name": "Windows.Win32.Foundation.Metadata.CanReturnMultipleSuccessValuesAttribute"
+            },
+            {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
                 "https://learn.microsoft.com/windows/win32/api/ocidl/nf-ocidl-ienumoleundounits-next"
@@ -59991,6 +60365,9 @@
           ],
           "Name": "Close",
           "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.CanReturnMultipleSuccessValuesAttribute"
+            },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [

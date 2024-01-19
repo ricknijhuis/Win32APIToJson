@@ -144,6 +144,23 @@
             "Literal",
             "HasDefault"
           ]
+        },
+        {
+          "Name": "DWRITE_NO_PALETTE_INDEX",
+          "Value": "65535",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
         }
       ],
       "Methods": [
@@ -450,6 +467,10 @@
         {
           "Name": "DWRITE_GLYPH_IMAGE_FORMATS_PREMULTIPLIED_B8G8R8A8",
           "Value": "128"
+        },
+        {
+          "Name": "DWRITE_GLYPH_IMAGE_FORMATS_COLR_PAINT_TREE",
+          "Value": "256"
         }
       ],
       "Name": "DWRITE_GLYPH_IMAGE_FORMATS",
@@ -37909,6 +37930,2049 @@
           "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
           "FixedParameters": [
             "https://learn.microsoft.com/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontset4"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "width",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "height",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "pixels",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DWRITE_BITMAP_DATA_BGRA32",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "bitmapData",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_BITMAP_DATA_BGRA32"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetBitmapData"
+        }
+      ],
+      "Name": "IDWriteBitmapRenderTarget2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "c553a742-fc01-44da-a66e-b8b9ed6c3995"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DWRITE_PAINT_FEATURE_LEVEL_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "DWRITE_PAINT_FEATURE_LEVEL_COLR_V0",
+          "Value": "1"
+        },
+        {
+          "Name": "DWRITE_PAINT_FEATURE_LEVEL_COLR_V1",
+          "Value": "2"
+        }
+      ],
+      "Name": "DWRITE_PAINT_FEATURE_LEVEL",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DWRITE_PAINT_ATTRIBUTES_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "DWRITE_PAINT_ATTRIBUTES_USES_PALETTE",
+          "Value": "1"
+        },
+        {
+          "Name": "DWRITE_PAINT_ATTRIBUTES_USES_TEXT_COLOR",
+          "Value": "2"
+        }
+      ],
+      "Name": "DWRITE_PAINT_ATTRIBUTES",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "value",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Graphics.DirectWrite",
+            "Type": "DWRITE_COLOR_F"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "paletteEntryIndex",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "alphaMultiplier",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Single"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "colorAttributes",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Graphics.DirectWrite",
+            "Type": "DWRITE_PAINT_ATTRIBUTES"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DWRITE_PAINT_COLOR",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_CLEAR",
+          "Value": "0"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SRC",
+          "Value": "1"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DEST",
+          "Value": "2"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SRC_OVER",
+          "Value": "3"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DEST_OVER",
+          "Value": "4"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SRC_IN",
+          "Value": "5"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DEST_IN",
+          "Value": "6"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SRC_OUT",
+          "Value": "7"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DEST_OUT",
+          "Value": "8"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SRC_ATOP",
+          "Value": "9"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DEST_ATOP",
+          "Value": "10"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_XOR",
+          "Value": "11"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_PLUS",
+          "Value": "12"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SCREEN",
+          "Value": "13"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_OVERLAY",
+          "Value": "14"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DARKEN",
+          "Value": "15"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_LIGHTEN",
+          "Value": "16"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_COLOR_DODGE",
+          "Value": "17"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_COLOR_BURN",
+          "Value": "18"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_HARD_LIGHT",
+          "Value": "19"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_SOFT_LIGHT",
+          "Value": "20"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_DIFFERENCE",
+          "Value": "21"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_EXCLUSION",
+          "Value": "22"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_MULTIPLY",
+          "Value": "23"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_HSL_HUE",
+          "Value": "24"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_HSL_SATURATION",
+          "Value": "25"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_HSL_COLOR",
+          "Value": "26"
+        },
+        {
+          "Name": "DWRITE_COLOR_COMPOSITE_HSL_LUMINOSITY",
+          "Value": "27"
+        }
+      ],
+      "Name": "DWRITE_COLOR_COMPOSITE_MODE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DWRITE_PAINT_TYPE_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_LAYERS",
+          "Value": "1"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_SOLID_GLYPH",
+          "Value": "2"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_SOLID",
+          "Value": "3"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_LINEAR_GRADIENT",
+          "Value": "4"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_RADIAL_GRADIENT",
+          "Value": "5"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_SWEEP_GRADIENT",
+          "Value": "6"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_GLYPH",
+          "Value": "7"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_COLOR_GLYPH",
+          "Value": "8"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_TRANSFORM",
+          "Value": "9"
+        },
+        {
+          "Name": "DWRITE_PAINT_TYPE_COMPOSITE",
+          "Value": "10"
+        }
+      ],
+      "Name": "DWRITE_PAINT_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "paintType",
+          "Type": {
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Graphics.DirectWrite",
+            "Type": "DWRITE_PAINT_TYPE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "paint",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "PAINT_UNION"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "layers",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_LAYERS"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "solidGlyph",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_SOLID_GLYPH"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "solid",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_COLOR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "linearGradient",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_LINEAR_GRADIENT"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "radialGradient",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_RADIAL_GRADIENT"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "sweepGradient",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_SWEEP_GRADIENT"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "glyph",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_GLYPH"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "colorGlyph",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_COLOR_GLYPH"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "transform",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MATRIX"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "composite",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "PAINT_COMPOSITE"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "childCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_LAYERS"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "glyphIndex",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "color",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                    "Type": "DWRITE_PAINT_COLOR"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_SOLID_GLYPH"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "extendMode",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "gradientStopCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "x0",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "y0",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "x1",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "y1",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "x2",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "y2",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_LINEAR_GRADIENT"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "extendMode",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "gradientStopCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "x0",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "y0",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "radius0",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "x1",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "y1",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "radius1",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_RADIAL_GRADIENT"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "extendMode",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "gradientStopCount",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "centerX",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "centerY",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "startAngle",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "endAngle",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "Single"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_SWEEP_GRADIENT"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "glyphIndex",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_GLYPH"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "glyphIndex",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                },
+                {
+                  "Name": "clipBox",
+                  "Type": {
+                    "Kind": "StructType",
+                    "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                    "Type": "D2D_RECT_F"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_COLOR_GLYPH"
+            },
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "mode",
+                  "Type": {
+                    "Kind": "EnumType",
+                    "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                    "Type": "DWRITE_COLOR_COMPOSITE_MODE"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ]
+                }
+              ],
+              "Name": "PAINT_COMPOSITE"
+            }
+          ],
+          "Name": "PAINT_UNION"
+        }
+      ],
+      "Name": "DWRITE_PAINT_ELEMENT",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "glyphIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "paintElement",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_ELEMENT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "structSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "clipBox",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                "Type": "D2D_RECT_F"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "glyphAttributes",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_ATTRIBUTES"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetCurrentGlyph"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "textColor",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_COLOR_F"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetTextColor"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetColorPaletteIndex"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "paletteEntries",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_COLOR_F"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "paletteEntryCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "SetCustomColorPalette"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "paintElement",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_ELEMENT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "structSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MoveToFirstChild"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "paintElement",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_ELEMENT"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            },
+            {
+              "Name": "structSize",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MoveToNextSibling"
+        },
+        {
+          "Parameters": [],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "MoveToParent"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "firstGradientStopIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "gradientStopCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "gradientStops",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                "Type": "D2D1_GRADIENT_STOP"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetGradientStops"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "firstGradientStopIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "gradientStopCount",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "gradientStopColors",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_COLOR"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetGradientStopColors"
+        }
+      ],
+      "Name": "IDWritePaintReader",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "8128e912-3b97-42a5-ab6c-24aad3a86e54"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "glyphImageFormat",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_IMAGE_FORMATS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPaintFeatureLevel"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "glyphImageFormat",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_IMAGE_FORMATS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "paintFeatureLevel",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_FEATURE_LEVEL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "paintReader",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "IDWritePaintReader"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreatePaintReader"
+        }
+      ],
+      "Name": "IDWriteFontFace7",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "3945b85b-bc95-40f7-b72c-8b73bfc7e13b"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "baselineOrigin",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                "Type": "D2D_POINT_2F"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRun",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRunDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "desiredGlyphImageFormats",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_IMAGE_FORMATS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "paintFeatureLevel",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_PAINT_FEATURE_LEVEL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "measuringMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MEASURING_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "worldAndDpiTransform",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MATRIX"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "colorEnumerator",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "IDWriteColorGlyphRunEnumerator1"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "TranslateColorGlyphRun"
+        }
+      ],
+      "Name": "IDWriteFactory8",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "ee0a7fb5-def4-4c23-a454-c9c7dc878398"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPaintFeatureLevel"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "baselineOriginX",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "baselineOriginY",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "measuringMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MEASURING_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRun",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphImageFormat",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_IMAGE_FORMATS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "textColor",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "COLORREF"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "blackBoxRect",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "RECT"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DrawPaintGlyphRun"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "baselineOriginX",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "baselineOriginY",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "Single"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "measuringMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MEASURING_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRun",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "renderingParams",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "IDWriteRenderingParams"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "textColor",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "COLORREF"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "blackBoxRect",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "RECT"
+              },
+              "Attributes": [
+                "None",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DrawGlyphRunWithColorSupport"
+        }
+      ],
+      "Name": "IDWriteBitmapRenderTarget3",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "aeec37db-c337-40f1-8e2a-9a41b167b238"
           ]
         },
         {

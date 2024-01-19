@@ -25734,8 +25734,16 @@
           "Value": "9"
         },
         {
-          "Name": "ProcessInformationClassMax",
+          "Name": "ProcessOverrideSubsequentPrefetchParameter",
           "Value": "10"
+        },
+        {
+          "Name": "ProcessMaxOverridePrefetchParameter",
+          "Value": "11"
+        },
+        {
+          "Name": "ProcessInformationClassMax",
+          "Value": "12"
         }
       ],
       "Name": "PROCESS_INFORMATION_CLASS",
@@ -25933,6 +25941,32 @@
             "https://learn.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_machine_information"
           ]
         }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "OVERRIDE_PREFETCH_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
       ]
     },
     {
@@ -27280,8 +27314,12 @@
           "Value": "18"
         },
         {
-          "Name": "MaxProcessMitigationPolicy",
+          "Name": "ProcessActivationContextTrustPolicy",
           "Value": "19"
+        },
+        {
+          "Name": "MaxProcessMitigationPolicy",
+          "Value": "20"
         }
       ],
       "Name": "PROCESS_MITIGATION_POLICY",

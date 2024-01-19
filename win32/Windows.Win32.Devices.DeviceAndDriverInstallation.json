@@ -236,7 +236,7 @@
           "Value": "2"
         }
       ],
-      "Name": "SETUP_DI_BUILD_DRIVER_DRIVER_TYPE",
+      "Name": "SETUP_DI_DRIVER_TYPE",
       "Attributes": [
         "NotPublic",
         "Public",
@@ -43560,7 +43560,7 @@
               "Type": {
                 "Kind": "EnumType",
                 "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
-                "Type": "SETUP_DI_BUILD_DRIVER_DRIVER_TYPE"
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -43683,8 +43683,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -43784,8 +43785,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -44435,8 +44437,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -51404,6 +51407,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -51494,6 +51498,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -52054,6 +52059,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -52104,6 +52110,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             },
@@ -52181,6 +52188,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             },
@@ -89341,8 +89349,9 @@
         {
           "Name": "MR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "MD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -89822,8 +89831,9 @@
         {
           "Name": "IOR_RangeFlags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "IOD_DESFLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -90036,8 +90046,9 @@
         {
           "Name": "DR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "DD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -90224,8 +90235,9 @@
         {
           "Name": "IRQR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "IRQD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",

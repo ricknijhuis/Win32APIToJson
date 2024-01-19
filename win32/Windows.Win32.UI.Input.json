@@ -176,6 +176,50 @@
       ]
     },
     {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt16"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "MOUSE_MOVE_RELATIVE",
+          "Value": "0"
+        },
+        {
+          "Name": "MOUSE_MOVE_ABSOLUTE",
+          "Value": "1"
+        },
+        {
+          "Name": "MOUSE_VIRTUAL_DESKTOP",
+          "Value": "2"
+        },
+        {
+          "Name": "MOUSE_ATTRIBUTES_CHANGED",
+          "Value": "4"
+        },
+        {
+          "Name": "MOUSE_MOVE_NOCOALESCE",
+          "Value": "8"
+        }
+      ],
+      "Name": "MOUSE_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
       "Kind": "StructType",
       "Fields": [
         {
@@ -299,8 +343,9 @@
         {
           "Name": "usFlags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt16"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.Input",
+            "Type": "MOUSE_STATE"
           },
           "Attributes": [
             "PrivateScope",

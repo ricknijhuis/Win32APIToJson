@@ -14276,7 +14276,7 @@
           ]
         },
         {
-          "Name": "FSCTL_DELETE_LCN_WEAK_REFERENCE",
+          "Name": "FSCTL_CLEAR_LCN_WEAK_REFERENCE",
           "Value": "590948",
           "Type": {
             "Kind": "PrimitiveType",
@@ -14310,7 +14310,7 @@
           ]
         },
         {
-          "Name": "FSCTL_DELETE_LCN_WEAK_REFERENCES",
+          "Name": "FSCTL_CLEAR_ALL_LCN_WEAK_REFERENCES",
           "Value": "590956",
           "Type": {
             "Kind": "PrimitiveType",
@@ -14363,6 +14363,91 @@
         {
           "Name": "FSCTL_LMR_QUERY_INFO",
           "Value": "590968",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "FSCTL_REFS_CHECKPOINT_VOLUME",
+          "Value": "590972",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "FSCTL_REFS_QUERY_VOLUME_TOTAL_SHARED_LCNS",
+          "Value": "590976",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "FSCTL_UPGRADE_VOLUME",
+          "Value": "590980",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "FSCTL_REFS_SET_VOLUME_IO_METRICS_INFO",
+          "Value": "590984",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "FSCTL_REFS_QUERY_VOLUME_IO_METRICS_INFO",
+          "Value": "590988",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -17030,6 +17115,40 @@
           ]
         },
         {
+          "Name": "PERSISTENT_VOLUME_STATE_DEV_VOLUME",
+          "Value": "8192",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "PERSISTENT_VOLUME_STATE_TRUSTED_VOLUME",
+          "Value": "16384",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
           "Name": "OPLOCK_LEVEL_CACHE_READ",
           "Value": "1",
           "Type": {
@@ -17168,6 +17287,23 @@
         {
           "Name": "REQUEST_OPLOCK_OUTPUT_FLAG_MODES_PROVIDED",
           "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT",
+          "Value": "4",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -18051,23 +18187,6 @@
           ]
         },
         {
-          "Name": "CHECKSUM_TYPE_UNCHANGED",
-          "Value": "-1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
           "Name": "CHECKSUM_TYPE_NONE",
           "Value": "0",
           "Type": {
@@ -18136,8 +18255,25 @@
           ]
         },
         {
-          "Name": "CHECKSUM_TYPE_FIRST_UNUSED_TYPE",
+          "Name": "CHECKSUM_TYPE_SHA256",
           "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CHECKSUM_TYPE_FIRST_UNUSED_TYPE",
+          "Value": "5",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -46316,6 +46452,32 @@
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "MetadataChecksumType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Reserved0",
+          "Type": {
+            "Kind": "ArrayType",
+            "Type": "Byte"
           },
           "Attributes": [
             "PrivateScope",
