@@ -131,6 +131,42 @@
       ]
     },
     {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "LCS_CALIBRATED_RGB",
+          "Value": "0"
+        },
+        {
+          "Name": "LCS_sRGB",
+          "Value": "1934772034"
+        },
+        {
+          "Name": "LCS_WINDOWS_COLOR_SPACE",
+          "Value": "1466527264"
+        }
+      ],
+      "Name": "LCSCSTYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
       "Kind": "ObjectType",
       "Fields": [
         {
@@ -8725,6 +8761,9 @@
           "Name": "CMCreateProfileW",
           "CustomAttributes": [
             {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
                 "https://learn.microsoft.com/windows/win32/api/icm/nf-icm-cmcreateprofilew"
@@ -8790,6 +8829,9 @@
           "Name": "CMCreateTransform",
           "CustomAttributes": [
             {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
+            {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
                 "https://learn.microsoft.com/windows/win32/api/icm/nf-icm-cmcreatetransform"
@@ -8854,6 +8896,9 @@
           ],
           "Name": "CMCreateTransformW",
           "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
@@ -8930,6 +8975,9 @@
           ],
           "Name": "CMCreateTransformExt",
           "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
@@ -9061,6 +9109,9 @@
           ],
           "Name": "CMCreateProfile",
           "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+            },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
@@ -9345,6 +9396,9 @@
           ],
           "Name": "CMCreateTransformExtW",
           "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
@@ -10830,8 +10884,9 @@
         {
           "Name": "lcsCSType",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.ColorSystem",
+            "Type": "LCSCSTYPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -10986,8 +11041,9 @@
         {
           "Name": "lcsCSType",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.UI.ColorSystem",
+            "Type": "LCSCSTYPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -11225,6 +11281,9 @@
       ],
       "CustomAttributes": [
         {
+          "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
+        },
+        {
           "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
           "FixedParameters": [
             "https://learn.microsoft.com/windows/win32/api/wingdi/ns-wingdi-emrcreatecolorspace"
@@ -11330,6 +11389,9 @@
         "BeforeFieldInit"
       ],
       "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+        },
         {
           "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
           "FixedParameters": [

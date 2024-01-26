@@ -1932,74 +1932,6 @@
           ]
         },
         {
-          "Name": "DEVICE_STATE_ACTIVE",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DEVICE_STATE_DISABLED",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DEVICE_STATE_NOTPRESENT",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DEVICE_STATE_UNPLUGGED",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
           "Name": "DEVICE_STATEMASK_ALL",
           "Value": "15",
           "Type": {
@@ -19683,6 +19615,46 @@
       ]
     },
     {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DEVICE_STATE_ACTIVE",
+          "Value": "1"
+        },
+        {
+          "Name": "DEVICE_STATE_DISABLED",
+          "Value": "2"
+        },
+        {
+          "Name": "DEVICE_STATE_NOTPRESENT",
+          "Value": "4"
+        },
+        {
+          "Name": "DEVICE_STATE_UNPLUGGED",
+          "Value": "8"
+        }
+      ],
+      "Name": "DEVICE_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
       "Kind": "StructType",
       "Fields": [
         {
@@ -34171,8 +34143,9 @@
             {
               "Name": "dwNewState",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Media.Audio",
+                "Type": "DEVICE_STATE"
               },
               "Attributes": [
                 "None",
@@ -34896,8 +34869,9 @@
             {
               "Name": "dwStateMask",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Media.Audio",
+                "Type": "DEVICE_STATE"
               },
               "Attributes": [
                 "None",
