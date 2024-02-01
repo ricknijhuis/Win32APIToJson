@@ -1009,11 +1009,284 @@
       "Kind": "ObjectType",
       "Fields": [
         {
+          "Name": "CONDITION_VARIABLE_LOCKMODE_SHARED",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "INIT_ONCE_CHECK_ONLY",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "INIT_ONCE_ASYNC",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "INIT_ONCE_INIT_FAILED",
+          "Value": "4",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "INIT_ONCE_CTX_RESERVED_BITS",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "CONDITION_VARIABLE_INIT",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.Threading",
+            "Type": "CONDITION_VARIABLE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "SRWLOCK_INIT",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.System.Threading",
+            "Type": "SRWLOCK"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "INIT_ONCE_STATIC_INIT",
+          "Type": {
+            "Kind": "UnionType",
+            "Namespace": "Windows.Win32.System.Threading",
+            "Type": "INIT_ONCE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.ConstantAttribute",
+              "FixedParameters": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
           "Name": "ALL_PROCESSOR_GROUPS",
           "Value": "65535",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_FLAG_NO_DEBUG_INFO",
+          "Value": "16777216",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_FLAG_DYNAMIC_SPIN",
+          "Value": "33554432",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_FLAG_STATIC_INIT",
+          "Value": "67108864",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_FLAG_RESOURCE_TYPE",
+          "Value": "134217728",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_FLAG_FORCE_DEBUG_INFO",
+          "Value": "268435456",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_ALL_FLAG_BITS",
+          "Value": "4278190080",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "RTL_CRITICAL_SECTION_DEBUG_FLAG_STATIC_INIT",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
           },
           "Attributes": [
             "PrivateScope",
@@ -1265,91 +1538,6 @@
         },
         {
           "Name": "PROCESS_LEAP_SECOND_INFO_VALID_FLAGS",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "INIT_ONCE_CHECK_ONLY",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "INIT_ONCE_ASYNC",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "INIT_ONCE_INIT_FAILED",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "INIT_ONCE_CTX_RESERVED_BITS",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "CONDITION_VARIABLE_LOCKMODE_SHARED",
           "Value": "1",
           "Type": {
             "Kind": "PrimitiveType",
@@ -25734,8 +25922,16 @@
           "Value": "9"
         },
         {
-          "Name": "ProcessInformationClassMax",
+          "Name": "ProcessOverrideSubsequentPrefetchParameter",
           "Value": "10"
+        },
+        {
+          "Name": "ProcessMaxOverridePrefetchParameter",
+          "Value": "11"
+        },
+        {
+          "Name": "ProcessInformationClassMax",
+          "Value": "12"
         }
       ],
       "Name": "PROCESS_INFORMATION_CLASS",
@@ -25933,6 +26129,32 @@
             "https://learn.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_machine_information"
           ]
         }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Value",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "OVERRIDE_PREFETCH_PARAMETER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
       ]
     },
     {
@@ -27280,8 +27502,12 @@
           "Value": "18"
         },
         {
-          "Name": "MaxProcessMitigationPolicy",
+          "Name": "ProcessActivationContextTrustPolicy",
           "Value": "19"
+        },
+        {
+          "Name": "MaxProcessMitigationPolicy",
+          "Value": "20"
         }
       ],
       "Name": "PROCESS_MITIGATION_POLICY",

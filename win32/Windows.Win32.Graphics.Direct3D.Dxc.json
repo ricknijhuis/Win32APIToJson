@@ -3,44 +3,31 @@
   "Assembly": "",
   "Types": [
     {
-      "Kind": "EnumType",
-      "Type": {
-        "Kind": "PrimitiveType",
-        "Type": "UInt32"
-      },
-      "FieldAttributes": [
-        "PrivateScope",
-        "FamANDAssem",
-        "Family",
-        "Public",
-        "Static",
-        "Literal",
-        "HasDefault"
-      ],
-      "Fields": [
-        {
-          "Name": "DXC_CP_ACP",
-          "Value": "0"
-        },
-        {
-          "Name": "DXC_CP_UTF16",
-          "Value": "1200"
-        },
-        {
-          "Name": "DXC_CP_UTF8",
-          "Value": "65001"
-        }
-      ],
-      "Name": "DXC_CP",
-      "Attributes": [
-        "NotPublic",
-        "Public",
-        "Sealed"
-      ]
-    },
-    {
       "Kind": "ObjectType",
       "Fields": [
+        {
+          "Name": "CLSID_DxcUtils",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                "6245d6af-66e0-48fd-80b4-4d271796748c"
+              ]
+            }
+          ]
+        },
         {
           "Name": "DXC_HASHFLAG_INCLUDES_SOURCE",
           "Value": "1",
@@ -943,6 +930,42 @@
         "Sealed",
         "AutoClass",
         "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DXC_CP_ACP",
+          "Value": "0"
+        },
+        {
+          "Name": "DXC_CP_UTF16",
+          "Value": "1200"
+        },
+        {
+          "Name": "DXC_CP_UTF8",
+          "Value": "65001"
+        }
+      ],
+      "Name": "DXC_CP",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
       ]
     },
     {

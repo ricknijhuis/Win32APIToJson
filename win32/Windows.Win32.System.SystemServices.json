@@ -19554,6 +19554,23 @@
           ]
         },
         {
+          "Name": "IO_REPARSE_TAG_RESERVED_INVALID",
+          "Value": "-1073709056",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
           "Name": "IO_REPARSE_TAG_MOUNT_POINT",
           "Value": "2684354563",
           "Type": {
@@ -21784,7 +21801,7 @@
           ]
         },
         {
-          "Name": "GUID_HUPR_ADAPTIVE_DISPLAY_TIMEOUT",
+          "Name": "GUID_HUPR_ADAPTIVE_AWAY_DISPLAY_TIMEOUT",
           "Type": {
             "Kind": "BaseType",
             "Namespace": "System",
@@ -21807,7 +21824,7 @@
           ]
         },
         {
-          "Name": "GUID_HUPR_ADAPTIVE_DIM_TIMEOUT",
+          "Name": "GUID_HUPR_ADAPTIVE_INATTENTIVE_DIM_TIMEOUT",
           "Type": {
             "Kind": "BaseType",
             "Namespace": "System",
@@ -21825,6 +21842,52 @@
               "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
               "FixedParameters": [
                 "cf8c6097-12b8-4279-bbdd-44601ee5209d"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "GUID_HUPR_ADAPTIVE_INATTENTIVE_DISPLAY_TIMEOUT",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                "ee16691e-6ab3-4619-bb48-1c77c9357e5a"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "GUID_HUPR_ADAPTIVE_AWAY_DIM_TIMEOUT",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "System",
+            "Type": "Guid"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static"
+          ],
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+              "FixedParameters": [
+                "a79c8e0e-f271-482d-8f8a-5db9a18312de"
               ]
             }
           ]
@@ -35916,74 +35979,6 @@
           ]
         },
         {
-          "Name": "RTL_RUN_ONCE_CHECK_ONLY",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_RUN_ONCE_ASYNC",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_RUN_ONCE_INIT_FAILED",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_RUN_ONCE_CTX_RESERVED_BITS",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
           "Name": "FAST_FAIL_LEGACY_GS_VIOLATION",
           "Value": "0",
           "Type": {
@@ -37795,142 +37790,6 @@
         },
         {
           "Name": "RTL_VIRTUAL_UNWIND2_VALIDATE_PAC",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_FLAG_NO_DEBUG_INFO",
-          "Value": "16777216",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_FLAG_DYNAMIC_SPIN",
-          "Value": "33554432",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_FLAG_STATIC_INIT",
-          "Value": "67108864",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_FLAG_RESOURCE_TYPE",
-          "Value": "134217728",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_FLAG_FORCE_DEBUG_INFO",
-          "Value": "268435456",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_ALL_FLAG_BITS",
-          "Value": "4278190080",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CRITICAL_SECTION_DEBUG_FLAG_STATIC_INIT",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "RTL_CONDITION_VARIABLE_LOCKMODE_SHARED",
           "Value": "1",
           "Type": {
             "Kind": "PrimitiveType",
@@ -44340,9 +44199,25 @@
                     {
                       "Name": "Windows.Win32.Foundation.Metadata.NativeBitfieldAttribute",
                       "FixedParameters": [
-                        "ReservedFlags",
+                        "DisallowFsctlSystemCalls",
                         2,
-                        30
+                        1
+                      ]
+                    },
+                    {
+                      "Name": "Windows.Win32.Foundation.Metadata.NativeBitfieldAttribute",
+                      "FixedParameters": [
+                        "AuditDisallowFsctlSystemCalls",
+                        3,
+                        1
+                      ]
+                    },
+                    {
+                      "Name": "Windows.Win32.Foundation.Metadata.NativeBitfieldAttribute",
+                      "FixedParameters": [
+                        "ReservedFlags",
+                        4,
+                        28
                       ]
                     }
                   ]
@@ -46098,6 +45973,107 @@
             "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-process-mitigation-redirection-trust-policy"
           ]
         }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "Flags",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            },
+            {
+              "Name": "Anonymous",
+              "Type": {
+                "Kind": "BaseType",
+                "Namespace": "",
+                "Type": "_Anonymous_e__Struct"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Types": [
+            {
+              "Kind": "StructType",
+              "Fields": [
+                {
+                  "Name": "_bitfield",
+                  "Type": {
+                    "Kind": "PrimitiveType",
+                    "Type": "UInt32"
+                  },
+                  "Attributes": [
+                    "PrivateScope",
+                    "FamANDAssem",
+                    "Family",
+                    "Public"
+                  ],
+                  "CustomAttributes": [
+                    {
+                      "Name": "Windows.Win32.Foundation.Metadata.NativeBitfieldAttribute",
+                      "FixedParameters": [
+                        "AssemblyManifestRedirectionTrust",
+                        0,
+                        1
+                      ]
+                    },
+                    {
+                      "Name": "Windows.Win32.Foundation.Metadata.NativeBitfieldAttribute",
+                      "FixedParameters": [
+                        "ReservedFlags",
+                        1,
+                        31
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "Name": "_Anonymous_e__Struct"
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "PROCESS_MITIGATION_ACTIVATION_CONTEXT_TRUST_POLICY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
       ]
     },
     {

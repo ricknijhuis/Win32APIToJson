@@ -3054,6 +3054,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -5666,6 +5667,27 @@
           ]
         },
         {
+          "Module": "api-ms-win-core-sysinfo-l1-2-6.dll",
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetDeveloperDriveEnablementState"
+        },
+        {
           "Module": "KERNEL32.dll",
           "Parameters": [
             {
@@ -7262,6 +7284,46 @@
             "https://learn.microsoft.com/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format"
           ]
         }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DeveloperDriveEnablementStateError",
+          "Value": "0"
+        },
+        {
+          "Name": "DeveloperDriveEnabled",
+          "Value": "1"
+        },
+        {
+          "Name": "DeveloperDriveDisabledBySystemPolicy",
+          "Value": "2"
+        },
+        {
+          "Name": "DeveloperDriveDisabledByGroupPolicy",
+          "Value": "3"
+        }
+      ],
+      "Name": "DEVELOPER_DRIVE_ENABLEMENT_STATE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
       ]
     },
     {

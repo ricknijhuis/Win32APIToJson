@@ -3015,54 +3015,6 @@
       "Kind": "StructType",
       "Fields": [
         {
-          "Name": "position",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Single"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        },
-        {
-          "Name": "color",
-          "Type": {
-            "Kind": "StructType",
-            "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
-            "Type": "D2D1_COLOR_F"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        }
-      ],
-      "Name": "D2D1_GRADIENT_STOP",
-      "Attributes": [
-        "NotPublic",
-        "Public",
-        "SequentialLayout",
-        "Sealed",
-        "BeforeFieldInit"
-      ],
-      "CustomAttributes": [
-        {
-          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
-          "FixedParameters": [
-            "https://learn.microsoft.com/windows/win32/api/d2d1/ns-d2d1-d2d1_gradient_stop"
-          ]
-        }
-      ]
-    },
-    {
-      "Kind": "StructType",
-      "Fields": [
-        {
           "Name": "opacity",
           "Type": {
             "Kind": "PrimitiveType",
@@ -5467,7 +5419,7 @@
               "Name": "gradientStops",
               "Type": {
                 "Kind": "PointerType",
-                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
                 "Type": "D2D1_GRADIENT_STOP"
               },
               "Attributes": [
@@ -9886,7 +9838,7 @@
               "Name": "gradientStops",
               "Type": {
                 "Kind": "PointerType",
-                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
                 "Type": "D2D1_GRADIENT_STOP"
               },
               "Attributes": [
@@ -22651,7 +22603,7 @@
               "Name": "gradientStops",
               "Type": {
                 "Kind": "PointerType",
-                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
                 "Type": "D2D1_GRADIENT_STOP"
               },
               "Attributes": [
@@ -23418,7 +23370,7 @@
               "Name": "straightAlphaGradientStops",
               "Type": {
                 "Kind": "PointerType",
-                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
                 "Type": "D2D1_GRADIENT_STOP"
               },
               "Attributes": [
@@ -45238,6 +45190,405 @@
           "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
           "FixedParameters": [
             "https://learn.microsoft.com/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1factory7"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "Int32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "SpecialName",
+        "RTSpecialName"
+      ],
+      "Name": "DWRITE_PAINT_FEATURE_LEVEL",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "GetPaintFeatureLevel"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "baselineOrigin",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                "Type": "D2D_POINT_2F"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRun",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "defaultFillBrush",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1Brush"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "measuringMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MEASURING_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DrawPaintGlyphRun"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "baselineOrigin",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D.Common",
+                "Type": "D2D_POINT_2F"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRun",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "glyphRunDescription",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_GLYPH_RUN_DESCRIPTION"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "foregroundBrush",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1Brush"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "svgGlyphStyle",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1SvgGlyphStyle"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            },
+            {
+              "Name": "colorPaletteIndex",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "measuringMode",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.DirectWrite",
+                "Type": "DWRITE_MEASURING_MODE"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "bitmapSnapOption",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "D2D1_COLOR_BITMAP_GLYPH_SNAP_OPTION"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DrawGlyphRunWithColorSupport"
+        }
+      ],
+      "Name": "ID2D1DeviceContext7",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "ec891cf7-9b69-4851-9def-4e0915771e62"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": {
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "D2D1_DEVICE_CONTEXT_OPTIONS"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "deviceContext",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1DeviceContext7"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDeviceContext"
+        }
+      ],
+      "Name": "ID2D1Device7",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "f07c8968-dd4e-4ba6-9cbd-eb6d3752dcbb"
+          ]
+        },
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.AgileAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "dxgiDevice",
+              "Type": {
+                "Kind": "ComType",
+                "Namespace": "Windows.Win32.Graphics.Dxgi",
+                "Type": "IDXGIDevice"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "d2dDevice6",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Graphics.Direct2D",
+                "Type": "ID2D1Device7"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "CreateDevice"
+        }
+      ],
+      "Name": "ID2D1Factory8",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "677c9311-f36d-4b1f-ae86-86d1223ffd3a"
           ]
         },
         {

@@ -236,7 +236,7 @@
           "Value": "2"
         }
       ],
-      "Name": "SETUP_DI_BUILD_DRIVER_DRIVER_TYPE",
+      "Name": "SETUP_DI_DRIVER_TYPE",
       "Attributes": [
         "NotPublic",
         "Public",
@@ -2244,6 +2244,1164 @@
         }
       ],
       "Name": "PCD_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "SPDRP_DEVICEDESC",
+          "Value": "0"
+        },
+        {
+          "Name": "SPDRP_HARDWAREID",
+          "Value": "1"
+        },
+        {
+          "Name": "SPDRP_COMPATIBLEIDS",
+          "Value": "2"
+        },
+        {
+          "Name": "SPDRP_UNUSED0",
+          "Value": "3"
+        },
+        {
+          "Name": "SPDRP_SERVICE",
+          "Value": "4"
+        },
+        {
+          "Name": "SPDRP_UNUSED1",
+          "Value": "5"
+        },
+        {
+          "Name": "SPDRP_UNUSED2",
+          "Value": "6"
+        },
+        {
+          "Name": "SPDRP_CLASS",
+          "Value": "7"
+        },
+        {
+          "Name": "SPDRP_CLASSGUID",
+          "Value": "8"
+        },
+        {
+          "Name": "SPDRP_DRIVER",
+          "Value": "9"
+        },
+        {
+          "Name": "SPDRP_CONFIGFLAGS",
+          "Value": "10"
+        },
+        {
+          "Name": "SPDRP_MFG",
+          "Value": "11"
+        },
+        {
+          "Name": "SPDRP_FRIENDLYNAME",
+          "Value": "12"
+        },
+        {
+          "Name": "SPDRP_LOCATION_INFORMATION",
+          "Value": "13"
+        },
+        {
+          "Name": "SPDRP_PHYSICAL_DEVICE_OBJECT_NAME",
+          "Value": "14"
+        },
+        {
+          "Name": "SPDRP_CAPABILITIES",
+          "Value": "15"
+        },
+        {
+          "Name": "SPDRP_UI_NUMBER",
+          "Value": "16"
+        },
+        {
+          "Name": "SPDRP_UPPERFILTERS",
+          "Value": "17"
+        },
+        {
+          "Name": "SPDRP_LOWERFILTERS",
+          "Value": "18"
+        },
+        {
+          "Name": "SPDRP_BUSTYPEGUID",
+          "Value": "19"
+        },
+        {
+          "Name": "SPDRP_LEGACYBUSTYPE",
+          "Value": "20"
+        },
+        {
+          "Name": "SPDRP_BUSNUMBER",
+          "Value": "21"
+        },
+        {
+          "Name": "SPDRP_ENUMERATOR_NAME",
+          "Value": "22"
+        },
+        {
+          "Name": "SPDRP_SECURITY",
+          "Value": "23"
+        },
+        {
+          "Name": "SPDRP_SECURITY_SDS",
+          "Value": "24"
+        },
+        {
+          "Name": "SPDRP_DEVTYPE",
+          "Value": "25"
+        },
+        {
+          "Name": "SPDRP_EXCLUSIVE",
+          "Value": "26"
+        },
+        {
+          "Name": "SPDRP_CHARACTERISTICS",
+          "Value": "27"
+        },
+        {
+          "Name": "SPDRP_ADDRESS",
+          "Value": "28"
+        },
+        {
+          "Name": "SPDRP_UI_NUMBER_DESC_FORMAT",
+          "Value": "29"
+        },
+        {
+          "Name": "SPDRP_DEVICE_POWER_DATA",
+          "Value": "30"
+        },
+        {
+          "Name": "SPDRP_REMOVAL_POLICY",
+          "Value": "31"
+        },
+        {
+          "Name": "SPDRP_REMOVAL_POLICY_HW_DEFAULT",
+          "Value": "32"
+        },
+        {
+          "Name": "SPDRP_REMOVAL_POLICY_OVERRIDE",
+          "Value": "33"
+        },
+        {
+          "Name": "SPDRP_INSTALL_STATE",
+          "Value": "34"
+        },
+        {
+          "Name": "SPDRP_LOCATION_PATHS",
+          "Value": "35"
+        },
+        {
+          "Name": "SPDRP_BASE_CONTAINERID",
+          "Value": "36"
+        },
+        {
+          "Name": "SPDRP_MAXIMUM_PROPERTY",
+          "Value": "37"
+        }
+      ],
+      "Name": "SETUP_DI_REGISTRY_PROPERTY",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DICD_GENERATE_ID",
+          "Value": "1"
+        },
+        {
+          "Name": "DICD_INHERIT_CLASSDRVS",
+          "Value": "2"
+        }
+      ],
+      "Name": "SETUP_DI_DEVICE_CREATION_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DNF_DUPDESC",
+          "Value": "1"
+        },
+        {
+          "Name": "DNF_OLDDRIVER",
+          "Value": "2"
+        },
+        {
+          "Name": "DNF_EXCLUDEFROMLIST",
+          "Value": "4"
+        },
+        {
+          "Name": "DNF_NODRIVER",
+          "Value": "8"
+        },
+        {
+          "Name": "DNF_LEGACYINF",
+          "Value": "16"
+        },
+        {
+          "Name": "DNF_CLASS_DRIVER",
+          "Value": "32"
+        },
+        {
+          "Name": "DNF_COMPATIBLE_DRIVER",
+          "Value": "64"
+        },
+        {
+          "Name": "DNF_INET_DRIVER",
+          "Value": "128"
+        },
+        {
+          "Name": "DNF_UNUSED1",
+          "Value": "256"
+        },
+        {
+          "Name": "DNF_UNUSED2",
+          "Value": "512"
+        },
+        {
+          "Name": "DNF_OLD_INET_DRIVER",
+          "Value": "1024"
+        },
+        {
+          "Name": "DNF_BAD_DRIVER",
+          "Value": "2048"
+        },
+        {
+          "Name": "DNF_DUPPROVIDER",
+          "Value": "4096"
+        },
+        {
+          "Name": "DNF_INF_IS_SIGNED",
+          "Value": "8192"
+        },
+        {
+          "Name": "DNF_OEM_F6_INF",
+          "Value": "16384"
+        },
+        {
+          "Name": "DNF_DUPDRIVERVER",
+          "Value": "32768"
+        },
+        {
+          "Name": "DNF_BASIC_DRIVER",
+          "Value": "65536"
+        },
+        {
+          "Name": "DNF_AUTHENTICODE_SIGNED",
+          "Value": "131072"
+        },
+        {
+          "Name": "DNF_INSTALLEDDRIVER",
+          "Value": "262144"
+        },
+        {
+          "Name": "DNF_ALWAYSEXCLUDEFROMLIST",
+          "Value": "524288"
+        },
+        {
+          "Name": "DNF_INBOX_DRIVER",
+          "Value": "1048576"
+        },
+        {
+          "Name": "DNF_REQUESTADDITIONALSOFTWARE",
+          "Value": "2097152"
+        },
+        {
+          "Name": "DNF_UNUSED_22",
+          "Value": "4194304"
+        },
+        {
+          "Name": "DNF_UNUSED_23",
+          "Value": "8388608"
+        },
+        {
+          "Name": "DNF_UNUSED_24",
+          "Value": "16777216"
+        },
+        {
+          "Name": "DNF_UNUSED_25",
+          "Value": "33554432"
+        },
+        {
+          "Name": "DNF_UNUSED_26",
+          "Value": "67108864"
+        },
+        {
+          "Name": "DNF_UNUSED_27",
+          "Value": "134217728"
+        },
+        {
+          "Name": "DNF_UNUSED_28",
+          "Value": "268435456"
+        },
+        {
+          "Name": "DNF_UNUSED_29",
+          "Value": "536870912"
+        },
+        {
+          "Name": "DNF_UNUSED_30",
+          "Value": "1073741824"
+        },
+        {
+          "Name": "DNF_UNUSED_31",
+          "Value": "2147483648"
+        }
+      ],
+      "Name": "SETUP_DI_DRIVER_INSTALL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DICS_ENABLE",
+          "Value": "1"
+        },
+        {
+          "Name": "DICS_DISABLE",
+          "Value": "2"
+        },
+        {
+          "Name": "DICS_PROPCHANGE",
+          "Value": "3"
+        },
+        {
+          "Name": "DICS_START",
+          "Value": "4"
+        },
+        {
+          "Name": "DICS_STOP",
+          "Value": "5"
+        }
+      ],
+      "Name": "SETUP_DI_STATE_CHANGE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DICS_FLAG_GLOBAL",
+          "Value": "1"
+        },
+        {
+          "Name": "DICS_FLAG_CONFIGSPECIFIC",
+          "Value": "2"
+        },
+        {
+          "Name": "DICS_FLAG_CONFIGGENERAL",
+          "Value": "4"
+        }
+      ],
+      "Name": "SETUP_DI_PROPERTY_CHANGE_SCOPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DI_REMOVEDEVICE_GLOBAL",
+          "Value": "1"
+        },
+        {
+          "Name": "DI_REMOVEDEVICE_CONFIGSPECIFIC",
+          "Value": "2"
+        }
+      ],
+      "Name": "SETUP_DI_REMOVE_DEVICE_SCOPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DIGCF_DEFAULT",
+          "Value": "1"
+        },
+        {
+          "Name": "DIGCF_PRESENT",
+          "Value": "2"
+        },
+        {
+          "Name": "DIGCF_ALLCLASSES",
+          "Value": "4"
+        },
+        {
+          "Name": "DIGCF_PROFILE",
+          "Value": "8"
+        },
+        {
+          "Name": "DIGCF_DEVICEINTERFACE",
+          "Value": "16"
+        },
+        {
+          "Name": "DIGCF_INTERFACEDEVICE",
+          "Value": "16"
+        }
+      ],
+      "Name": "SETUP_DI_GET_CLASS_DEVS_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DIF_SELECTDEVICE",
+          "Value": "1"
+        },
+        {
+          "Name": "DIF_INSTALLDEVICE",
+          "Value": "2"
+        },
+        {
+          "Name": "DIF_ASSIGNRESOURCES",
+          "Value": "3"
+        },
+        {
+          "Name": "DIF_PROPERTIES",
+          "Value": "4"
+        },
+        {
+          "Name": "DIF_REMOVE",
+          "Value": "5"
+        },
+        {
+          "Name": "DIF_FIRSTTIMESETUP",
+          "Value": "6"
+        },
+        {
+          "Name": "DIF_FOUNDDEVICE",
+          "Value": "7"
+        },
+        {
+          "Name": "DIF_SELECTCLASSDRIVERS",
+          "Value": "8"
+        },
+        {
+          "Name": "DIF_VALIDATECLASSDRIVERS",
+          "Value": "9"
+        },
+        {
+          "Name": "DIF_INSTALLCLASSDRIVERS",
+          "Value": "10"
+        },
+        {
+          "Name": "DIF_CALCDISKSPACE",
+          "Value": "11"
+        },
+        {
+          "Name": "DIF_DESTROYPRIVATEDATA",
+          "Value": "12"
+        },
+        {
+          "Name": "DIF_VALIDATEDRIVER",
+          "Value": "13"
+        },
+        {
+          "Name": "DIF_DETECT",
+          "Value": "15"
+        },
+        {
+          "Name": "DIF_INSTALLWIZARD",
+          "Value": "16"
+        },
+        {
+          "Name": "DIF_DESTROYWIZARDDATA",
+          "Value": "17"
+        },
+        {
+          "Name": "DIF_PROPERTYCHANGE",
+          "Value": "18"
+        },
+        {
+          "Name": "DIF_ENABLECLASS",
+          "Value": "19"
+        },
+        {
+          "Name": "DIF_DETECTVERIFY",
+          "Value": "20"
+        },
+        {
+          "Name": "DIF_INSTALLDEVICEFILES",
+          "Value": "21"
+        },
+        {
+          "Name": "DIF_UNREMOVE",
+          "Value": "22"
+        },
+        {
+          "Name": "DIF_SELECTBESTCOMPATDRV",
+          "Value": "23"
+        },
+        {
+          "Name": "DIF_ALLOW_INSTALL",
+          "Value": "24"
+        },
+        {
+          "Name": "DIF_REGISTERDEVICE",
+          "Value": "25"
+        },
+        {
+          "Name": "DIF_NEWDEVICEWIZARD_PRESELECT",
+          "Value": "26"
+        },
+        {
+          "Name": "DIF_NEWDEVICEWIZARD_SELECT",
+          "Value": "27"
+        },
+        {
+          "Name": "DIF_NEWDEVICEWIZARD_PREANALYZE",
+          "Value": "28"
+        },
+        {
+          "Name": "DIF_NEWDEVICEWIZARD_POSTANALYZE",
+          "Value": "29"
+        },
+        {
+          "Name": "DIF_NEWDEVICEWIZARD_FINISHINSTALL",
+          "Value": "30"
+        },
+        {
+          "Name": "DIF_UNUSED1",
+          "Value": "31"
+        },
+        {
+          "Name": "DIF_INSTALLINTERFACES",
+          "Value": "32"
+        },
+        {
+          "Name": "DIF_DETECTCANCEL",
+          "Value": "33"
+        },
+        {
+          "Name": "DIF_REGISTER_COINSTALLERS",
+          "Value": "34"
+        },
+        {
+          "Name": "DIF_ADDPROPERTYPAGE_ADVANCED",
+          "Value": "35"
+        },
+        {
+          "Name": "DIF_ADDPROPERTYPAGE_BASIC",
+          "Value": "36"
+        },
+        {
+          "Name": "DIF_RESERVED1",
+          "Value": "37"
+        },
+        {
+          "Name": "DIF_TROUBLESHOOTER",
+          "Value": "38"
+        },
+        {
+          "Name": "DIF_POWERMESSAGEWAKE",
+          "Value": "39"
+        },
+        {
+          "Name": "DIF_ADDREMOTEPROPERTYPAGE_ADVANCED",
+          "Value": "40"
+        },
+        {
+          "Name": "DIF_UPDATEDRIVER_UI",
+          "Value": "41"
+        },
+        {
+          "Name": "DIF_FINISHINSTALL_ACTION",
+          "Value": "42"
+        },
+        {
+          "Name": "DIF_RESERVED2",
+          "Value": "48"
+        },
+        {
+          "Name": "DIF_MOVEDEVICE",
+          "Value": "14"
+        }
+      ],
+      "Name": "DI_FUNCTION",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DI_SHOWOEM",
+          "Value": "1"
+        },
+        {
+          "Name": "DI_SHOWCOMPAT",
+          "Value": "2"
+        },
+        {
+          "Name": "DI_SHOWCLASS",
+          "Value": "4"
+        },
+        {
+          "Name": "DI_SHOWALL",
+          "Value": "7"
+        },
+        {
+          "Name": "DI_NOVCP",
+          "Value": "8"
+        },
+        {
+          "Name": "DI_DIDCOMPAT",
+          "Value": "16"
+        },
+        {
+          "Name": "DI_DIDCLASS",
+          "Value": "32"
+        },
+        {
+          "Name": "DI_AUTOASSIGNRES",
+          "Value": "64"
+        },
+        {
+          "Name": "DI_NEEDRESTART",
+          "Value": "128"
+        },
+        {
+          "Name": "DI_NEEDREBOOT",
+          "Value": "256"
+        },
+        {
+          "Name": "DI_NOBROWSE",
+          "Value": "512"
+        },
+        {
+          "Name": "DI_MULTMFGS",
+          "Value": "1024"
+        },
+        {
+          "Name": "DI_DISABLED",
+          "Value": "2048"
+        },
+        {
+          "Name": "DI_GENERALPAGE_ADDED",
+          "Value": "4096"
+        },
+        {
+          "Name": "DI_RESOURCEPAGE_ADDED",
+          "Value": "8192"
+        },
+        {
+          "Name": "DI_PROPERTIES_CHANGE",
+          "Value": "16384"
+        },
+        {
+          "Name": "DI_INF_IS_SORTED",
+          "Value": "32768"
+        },
+        {
+          "Name": "DI_ENUMSINGLEINF",
+          "Value": "65536"
+        },
+        {
+          "Name": "DI_DONOTCALLCONFIGMG",
+          "Value": "131072"
+        },
+        {
+          "Name": "DI_INSTALLDISABLED",
+          "Value": "262144"
+        },
+        {
+          "Name": "DI_COMPAT_FROM_CLASS",
+          "Value": "524288"
+        },
+        {
+          "Name": "DI_CLASSINSTALLPARAMS",
+          "Value": "1048576"
+        },
+        {
+          "Name": "DI_NODI_DEFAULTACTION",
+          "Value": "2097152"
+        },
+        {
+          "Name": "DI_QUIETINSTALL",
+          "Value": "8388608"
+        },
+        {
+          "Name": "DI_NOFILECOPY",
+          "Value": "16777216"
+        },
+        {
+          "Name": "DI_FORCECOPY",
+          "Value": "33554432"
+        },
+        {
+          "Name": "DI_DRIVERPAGE_ADDED",
+          "Value": "67108864"
+        },
+        {
+          "Name": "DI_USECI_SELECTSTRINGS",
+          "Value": "134217728"
+        },
+        {
+          "Name": "DI_OVERRIDE_INFFLAGS",
+          "Value": "268435456"
+        },
+        {
+          "Name": "DI_PROPS_NOCHANGEUSAGE",
+          "Value": "536870912"
+        },
+        {
+          "Name": "DI_NOSELECTICONS",
+          "Value": "1073741824"
+        },
+        {
+          "Name": "DI_NOWRITE_IDS",
+          "Value": "2147483648"
+        },
+        {
+          "Name": "DI_UNREMOVEDEVICE_CONFIGSPECIFIC",
+          "Value": "2"
+        }
+      ],
+      "Name": "SETUP_DI_DEVICE_INSTALL_FLAGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "DI_FLAGSEX_RESERVED2",
+          "Value": "1"
+        },
+        {
+          "Name": "DI_FLAGSEX_RESERVED3",
+          "Value": "2"
+        },
+        {
+          "Name": "DI_FLAGSEX_CI_FAILED",
+          "Value": "4"
+        },
+        {
+          "Name": "DI_FLAGSEX_FINISHINSTALL_ACTION",
+          "Value": "8"
+        },
+        {
+          "Name": "DI_FLAGSEX_DIDINFOLIST",
+          "Value": "16"
+        },
+        {
+          "Name": "DI_FLAGSEX_DIDCOMPATINFO",
+          "Value": "32"
+        },
+        {
+          "Name": "DI_FLAGSEX_FILTERCLASSES",
+          "Value": "64"
+        },
+        {
+          "Name": "DI_FLAGSEX_SETFAILEDINSTALL",
+          "Value": "128"
+        },
+        {
+          "Name": "DI_FLAGSEX_DEVICECHANGE",
+          "Value": "256"
+        },
+        {
+          "Name": "DI_FLAGSEX_ALWAYSWRITEIDS",
+          "Value": "512"
+        },
+        {
+          "Name": "DI_FLAGSEX_PROPCHANGE_PENDING",
+          "Value": "1024"
+        },
+        {
+          "Name": "DI_FLAGSEX_ALLOWEXCLUDEDDRVS",
+          "Value": "2048"
+        },
+        {
+          "Name": "DI_FLAGSEX_NOUIONQUERYREMOVE",
+          "Value": "4096"
+        },
+        {
+          "Name": "DI_FLAGSEX_USECLASSFORCOMPAT",
+          "Value": "8192"
+        },
+        {
+          "Name": "DI_FLAGSEX_RESERVED4",
+          "Value": "16384"
+        },
+        {
+          "Name": "DI_FLAGSEX_NO_DRVREG_MODIFY",
+          "Value": "32768"
+        },
+        {
+          "Name": "DI_FLAGSEX_IN_SYSTEM_SETUP",
+          "Value": "65536"
+        },
+        {
+          "Name": "DI_FLAGSEX_INET_DRIVER",
+          "Value": "131072"
+        },
+        {
+          "Name": "DI_FLAGSEX_APPENDDRIVERLIST",
+          "Value": "262144"
+        },
+        {
+          "Name": "DI_FLAGSEX_PREINSTALLBACKUP",
+          "Value": "524288"
+        },
+        {
+          "Name": "DI_FLAGSEX_BACKUPONREPLACE",
+          "Value": "1048576"
+        },
+        {
+          "Name": "DI_FLAGSEX_DRIVERLIST_FROM_URL",
+          "Value": "2097152"
+        },
+        {
+          "Name": "DI_FLAGSEX_RESERVED1",
+          "Value": "4194304"
+        },
+        {
+          "Name": "DI_FLAGSEX_EXCLUDE_OLD_INET_DRIVERS",
+          "Value": "8388608"
+        },
+        {
+          "Name": "DI_FLAGSEX_POWERPAGE_ADDED",
+          "Value": "16777216"
+        },
+        {
+          "Name": "DI_FLAGSEX_FILTERSIMILARDRIVERS",
+          "Value": "33554432"
+        },
+        {
+          "Name": "DI_FLAGSEX_INSTALLEDDRIVER",
+          "Value": "67108864"
+        },
+        {
+          "Name": "DI_FLAGSEX_NO_CLASSLIST_NODE_MERGE",
+          "Value": "134217728"
+        },
+        {
+          "Name": "DI_FLAGSEX_ALTPLATFORM_DRVSEARCH",
+          "Value": "268435456"
+        },
+        {
+          "Name": "DI_FLAGSEX_RESTART_DEVICE_ONLY",
+          "Value": "536870912"
+        },
+        {
+          "Name": "DI_FLAGSEX_RECURSIVESEARCH",
+          "Value": "1073741824"
+        },
+        {
+          "Name": "DI_FLAGSEX_SEARCH_PUBLISHED_INFS",
+          "Value": "2147483648"
+        }
+      ],
+      "Name": "SETUP_DI_DEVICE_INSTALL_FLAGS_EX",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
+          "Name": "CONFIGFLAG_DISABLED",
+          "Value": "1"
+        },
+        {
+          "Name": "CONFIGFLAG_REMOVED",
+          "Value": "2"
+        },
+        {
+          "Name": "CONFIGFLAG_MANUAL_INSTALL",
+          "Value": "4"
+        },
+        {
+          "Name": "CONFIGFLAG_IGNORE_BOOT_LC",
+          "Value": "8"
+        },
+        {
+          "Name": "CONFIGFLAG_NET_BOOT",
+          "Value": "16"
+        },
+        {
+          "Name": "CONFIGFLAG_REINSTALL",
+          "Value": "32"
+        },
+        {
+          "Name": "CONFIGFLAG_FAILEDINSTALL",
+          "Value": "64"
+        },
+        {
+          "Name": "CONFIGFLAG_CANTSTOPACHILD",
+          "Value": "128"
+        },
+        {
+          "Name": "CONFIGFLAG_OKREMOVEROM",
+          "Value": "256"
+        },
+        {
+          "Name": "CONFIGFLAG_NOREMOVEEXIT",
+          "Value": "512"
+        },
+        {
+          "Name": "CONFIGFLAG_FINISH_INSTALL",
+          "Value": "1024"
+        },
+        {
+          "Name": "CONFIGFLAG_NEEDS_FORCED_CONFIG",
+          "Value": "2048"
+        },
+        {
+          "Name": "CONFIGFLAG_NETBOOT_CARD",
+          "Value": "4096"
+        },
+        {
+          "Name": "CONFIGFLAG_PARTIAL_LOG_CONF",
+          "Value": "8192"
+        },
+        {
+          "Name": "CONFIGFLAG_SUPPRESS_SURPRISE",
+          "Value": "16384"
+        },
+        {
+          "Name": "CONFIGFLAG_VERIFY_HARDWARE",
+          "Value": "32768"
+        },
+        {
+          "Name": "CONFIGFLAG_FINISHINSTALL_UI",
+          "Value": "65536"
+        },
+        {
+          "Name": "CONFIGFLAG_FINISHINSTALL_ACTION",
+          "Value": "131072"
+        },
+        {
+          "Name": "CONFIGFLAG_BOOT_DEVICE",
+          "Value": "262144"
+        },
+        {
+          "Name": "CONFIGFLAG_NEEDS_CLASS_CONFIG",
+          "Value": "524288"
+        }
+      ],
+      "Name": "SETUP_DI_DEVICE_CONFIGURATION_FLAGS",
       "Attributes": [
         "NotPublic",
         "Public",
@@ -7788,1825 +8946,6 @@
           ]
         },
         {
-          "Name": "DIF_SELECTDEVICE",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_INSTALLDEVICE",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ASSIGNRESOURCES",
-          "Value": "3",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_PROPERTIES",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_REMOVE",
-          "Value": "5",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_FIRSTTIMESETUP",
-          "Value": "6",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_FOUNDDEVICE",
-          "Value": "7",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_SELECTCLASSDRIVERS",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_VALIDATECLASSDRIVERS",
-          "Value": "9",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_INSTALLCLASSDRIVERS",
-          "Value": "10",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_CALCDISKSPACE",
-          "Value": "11",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_DESTROYPRIVATEDATA",
-          "Value": "12",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_VALIDATEDRIVER",
-          "Value": "13",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_DETECT",
-          "Value": "15",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_INSTALLWIZARD",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_DESTROYWIZARDDATA",
-          "Value": "17",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_PROPERTYCHANGE",
-          "Value": "18",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ENABLECLASS",
-          "Value": "19",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_DETECTVERIFY",
-          "Value": "20",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_INSTALLDEVICEFILES",
-          "Value": "21",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_UNREMOVE",
-          "Value": "22",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_SELECTBESTCOMPATDRV",
-          "Value": "23",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ALLOW_INSTALL",
-          "Value": "24",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_REGISTERDEVICE",
-          "Value": "25",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_NEWDEVICEWIZARD_PRESELECT",
-          "Value": "26",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_NEWDEVICEWIZARD_SELECT",
-          "Value": "27",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_NEWDEVICEWIZARD_PREANALYZE",
-          "Value": "28",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_NEWDEVICEWIZARD_POSTANALYZE",
-          "Value": "29",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_NEWDEVICEWIZARD_FINISHINSTALL",
-          "Value": "30",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_UNUSED1",
-          "Value": "31",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_INSTALLINTERFACES",
-          "Value": "32",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_DETECTCANCEL",
-          "Value": "33",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_REGISTER_COINSTALLERS",
-          "Value": "34",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ADDPROPERTYPAGE_ADVANCED",
-          "Value": "35",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ADDPROPERTYPAGE_BASIC",
-          "Value": "36",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_RESERVED1",
-          "Value": "37",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_TROUBLESHOOTER",
-          "Value": "38",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_POWERMESSAGEWAKE",
-          "Value": "39",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_ADDREMOTEPROPERTYPAGE_ADVANCED",
-          "Value": "40",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_UPDATEDRIVER_UI",
-          "Value": "41",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_FINISHINSTALL_ACTION",
-          "Value": "42",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_RESERVED2",
-          "Value": "48",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIF_MOVEDEVICE",
-          "Value": "14",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_SHOWOEM",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_SHOWCOMPAT",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_SHOWCLASS",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_SHOWALL",
-          "Value": "7",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NOVCP",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_DIDCOMPAT",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_DIDCLASS",
-          "Value": "32",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_AUTOASSIGNRES",
-          "Value": "64",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NEEDRESTART",
-          "Value": "128",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NEEDREBOOT",
-          "Value": "256",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NOBROWSE",
-          "Value": "512",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_MULTMFGS",
-          "Value": "1024",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_DISABLED",
-          "Value": "2048",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_GENERALPAGE_ADDED",
-          "Value": "4096",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_RESOURCEPAGE_ADDED",
-          "Value": "8192",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_PROPERTIES_CHANGE",
-          "Value": "16384",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_INF_IS_SORTED",
-          "Value": "32768",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_ENUMSINGLEINF",
-          "Value": "65536",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_DONOTCALLCONFIGMG",
-          "Value": "131072",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_INSTALLDISABLED",
-          "Value": "262144",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_COMPAT_FROM_CLASS",
-          "Value": "524288",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_CLASSINSTALLPARAMS",
-          "Value": "1048576",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NODI_DEFAULTACTION",
-          "Value": "2097152",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_QUIETINSTALL",
-          "Value": "8388608",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NOFILECOPY",
-          "Value": "16777216",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FORCECOPY",
-          "Value": "33554432",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_DRIVERPAGE_ADDED",
-          "Value": "67108864",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_USECI_SELECTSTRINGS",
-          "Value": "134217728",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_OVERRIDE_INFFLAGS",
-          "Value": "268435456",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_PROPS_NOCHANGEUSAGE",
-          "Value": "536870912",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NOSELECTICONS",
-          "Value": "1073741824",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_NOWRITE_IDS",
-          "Value": "-2147483648",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RESERVED2",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RESERVED3",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_CI_FAILED",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_FINISHINSTALL_ACTION",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_DIDINFOLIST",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_DIDCOMPATINFO",
-          "Value": "32",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_FILTERCLASSES",
-          "Value": "64",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_SETFAILEDINSTALL",
-          "Value": "128",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_DEVICECHANGE",
-          "Value": "256",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_ALWAYSWRITEIDS",
-          "Value": "512",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_PROPCHANGE_PENDING",
-          "Value": "1024",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_ALLOWEXCLUDEDDRVS",
-          "Value": "2048",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_NOUIONQUERYREMOVE",
-          "Value": "4096",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_USECLASSFORCOMPAT",
-          "Value": "8192",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RESERVED4",
-          "Value": "16384",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_NO_DRVREG_MODIFY",
-          "Value": "32768",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_IN_SYSTEM_SETUP",
-          "Value": "65536",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_INET_DRIVER",
-          "Value": "131072",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_APPENDDRIVERLIST",
-          "Value": "262144",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_PREINSTALLBACKUP",
-          "Value": "524288",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_BACKUPONREPLACE",
-          "Value": "1048576",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_DRIVERLIST_FROM_URL",
-          "Value": "2097152",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RESERVED1",
-          "Value": "4194304",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_EXCLUDE_OLD_INET_DRIVERS",
-          "Value": "8388608",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_POWERPAGE_ADDED",
-          "Value": "16777216",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_FILTERSIMILARDRIVERS",
-          "Value": "33554432",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_INSTALLEDDRIVER",
-          "Value": "67108864",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_NO_CLASSLIST_NODE_MERGE",
-          "Value": "134217728",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_ALTPLATFORM_DRVSEARCH",
-          "Value": "268435456",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RESTART_DEVICE_ONLY",
-          "Value": "536870912",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_RECURSIVESEARCH",
-          "Value": "1073741824",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_FLAGSEX_SEARCH_PUBLISHED_INFS",
-          "Value": "-2147483648",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
           "Name": "ENABLECLASS_QUERY",
           "Value": "0",
           "Type": {
@@ -9642,193 +8981,6 @@
         },
         {
           "Name": "ENABLECLASS_FAILURE",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_ENABLE",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_DISABLE",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_PROPCHANGE",
-          "Value": "3",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_START",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_STOP",
-          "Value": "5",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_FLAG_GLOBAL",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_FLAG_CONFIGSPECIFIC",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICS_FLAG_CONFIGGENERAL",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_REMOVEDEVICE_GLOBAL",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_REMOVEDEVICE_CONFIGSPECIFIC",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DI_UNREMOVEDEVICE_CONFIGSPECIFIC",
           "Value": "2",
           "Type": {
             "Kind": "PrimitiveType",
@@ -9884,40 +9036,6 @@
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "NDW_INSTALLFLAG_NEEDRESTART",
-          "Value": "128",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "NDW_INSTALLFLAG_NEEDREBOOT",
-          "Value": "256",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "Int32"
           },
           "Attributes": [
             "PrivateScope",
@@ -10408,550 +9526,6 @@
         {
           "Name": "IDD_DYNAWIZ_INSTALLDETECTED_NODEVS",
           "Value": "10008",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_DUPDESC",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_OLDDRIVER",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_EXCLUDEFROMLIST",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_NODRIVER",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_LEGACYINF",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_CLASS_DRIVER",
-          "Value": "32",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_COMPATIBLE_DRIVER",
-          "Value": "64",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_INET_DRIVER",
-          "Value": "128",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED1",
-          "Value": "256",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED2",
-          "Value": "512",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_OLD_INET_DRIVER",
-          "Value": "1024",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_BAD_DRIVER",
-          "Value": "2048",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_DUPPROVIDER",
-          "Value": "4096",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_INF_IS_SIGNED",
-          "Value": "8192",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_OEM_F6_INF",
-          "Value": "16384",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_DUPDRIVERVER",
-          "Value": "32768",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_BASIC_DRIVER",
-          "Value": "65536",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_AUTHENTICODE_SIGNED",
-          "Value": "131072",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_INSTALLEDDRIVER",
-          "Value": "262144",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_ALWAYSEXCLUDEFROMLIST",
-          "Value": "524288",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_INBOX_DRIVER",
-          "Value": "1048576",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_REQUESTADDITIONALSOFTWARE",
-          "Value": "2097152",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_22",
-          "Value": "4194304",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_23",
-          "Value": "8388608",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_24",
-          "Value": "16777216",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_25",
-          "Value": "33554432",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_26",
-          "Value": "67108864",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_27",
-          "Value": "134217728",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_28",
-          "Value": "268435456",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_29",
-          "Value": "536870912",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_30",
-          "Value": "1073741824",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DNF_UNUSED_31",
-          "Value": "2147483648",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -13279,40 +11853,6 @@
           ]
         },
         {
-          "Name": "DICD_GENERATE_ID",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DICD_INHERIT_CLASSDRVS",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
           "Name": "DIOD_INHERIT_CLASSDRVS",
           "Value": "2",
           "Type": {
@@ -13383,108 +11923,6 @@
         {
           "Name": "SPDIT_NODRIVER",
           "Value": "0",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_DEFAULT",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_PRESENT",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_ALLCLASSES",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_PROFILE",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_DEVICEINTERFACE",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "DIGCF_INTERFACEDEVICE",
-          "Value": "16",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -13638,652 +12076,6 @@
         {
           "Name": "DICLASSPROP_INTERFACE",
           "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_DEVICEDESC",
-          "Value": "0",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_HARDWAREID",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_COMPATIBLEIDS",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UNUSED0",
-          "Value": "3",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_SERVICE",
-          "Value": "4",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UNUSED1",
-          "Value": "5",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UNUSED2",
-          "Value": "6",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_CLASS",
-          "Value": "7",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_CLASSGUID",
-          "Value": "8",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_DRIVER",
-          "Value": "9",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_CONFIGFLAGS",
-          "Value": "10",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_MFG",
-          "Value": "11",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_FRIENDLYNAME",
-          "Value": "12",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_LOCATION_INFORMATION",
-          "Value": "13",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_PHYSICAL_DEVICE_OBJECT_NAME",
-          "Value": "14",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_CAPABILITIES",
-          "Value": "15",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UI_NUMBER",
-          "Value": "16",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UPPERFILTERS",
-          "Value": "17",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_LOWERFILTERS",
-          "Value": "18",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_BUSTYPEGUID",
-          "Value": "19",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_LEGACYBUSTYPE",
-          "Value": "20",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_BUSNUMBER",
-          "Value": "21",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_ENUMERATOR_NAME",
-          "Value": "22",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_SECURITY",
-          "Value": "23",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_SECURITY_SDS",
-          "Value": "24",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_DEVTYPE",
-          "Value": "25",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_EXCLUSIVE",
-          "Value": "26",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_CHARACTERISTICS",
-          "Value": "27",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_ADDRESS",
-          "Value": "28",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_UI_NUMBER_DESC_FORMAT",
-          "Value": "29",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_DEVICE_POWER_DATA",
-          "Value": "30",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_REMOVAL_POLICY",
-          "Value": "31",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_REMOVAL_POLICY_HW_DEFAULT",
-          "Value": "32",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_REMOVAL_POLICY_OVERRIDE",
-          "Value": "33",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_INSTALL_STATE",
-          "Value": "34",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_LOCATION_PATHS",
-          "Value": "35",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_BASE_CONTAINERID",
-          "Value": "36",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "SPDRP_MAXIMUM_PROPERTY",
-          "Value": "37",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -41532,8 +39324,9 @@
             {
               "Name": "CreationFlags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DEVICE_CREATION_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -41660,8 +39453,9 @@
             {
               "Name": "CreationFlags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DEVICE_CREATION_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -43560,7 +41354,7 @@
               "Type": {
                 "Kind": "EnumType",
                 "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
-                "Type": "SETUP_DI_BUILD_DRIVER_DRIVER_TYPE"
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -43683,8 +41477,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -43784,8 +41579,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -44435,8 +42231,9 @@
             {
               "Name": "DriverType",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_DRIVER_TYPE"
               },
               "Attributes": [
                 "None",
@@ -44523,8 +42320,9 @@
             {
               "Name": "Flags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_GET_CLASS_DEVS_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -44614,8 +42412,9 @@
             {
               "Name": "Flags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_GET_CLASS_DEVS_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -44705,8 +42504,9 @@
             {
               "Name": "Flags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_GET_CLASS_DEVS_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -44833,8 +42633,9 @@
             {
               "Name": "Flags",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_GET_CLASS_DEVS_FLAGS"
               },
               "Attributes": [
                 "None",
@@ -45828,8 +43629,9 @@
             {
               "Name": "InstallFunction",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "DI_FUNCTION"
               },
               "Attributes": [
                 "None",
@@ -49751,8 +47553,9 @@
             {
               "Name": "Property",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_REGISTRY_PROPERTY"
               },
               "Attributes": [
                 "None",
@@ -49874,8 +47677,9 @@
             {
               "Name": "Property",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_REGISTRY_PROPERTY"
               },
               "Attributes": [
                 "None",
@@ -50266,8 +48070,9 @@
             {
               "Name": "Property",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_REGISTRY_PROPERTY"
               },
               "Attributes": [
                 "None",
@@ -50366,8 +48171,9 @@
             {
               "Name": "Property",
               "Type": {
-                "Kind": "PrimitiveType",
-                "Type": "UInt32"
+                "Kind": "EnumType",
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "SETUP_DI_REGISTRY_PROPERTY"
               },
               "Attributes": [
                 "None",
@@ -51404,6 +49210,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -51494,6 +49301,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -52054,6 +49862,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             }
@@ -52104,6 +49913,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             },
@@ -52181,6 +49991,7 @@
               },
               "Attributes": [
                 "None",
+                "In",
                 "Out"
               ]
             },
@@ -76460,8 +74271,9 @@
         {
           "Name": "ProcessorArchitecture",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt16"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.SystemInformation",
+            "Type": "PROCESSOR_ARCHITECTURE"
           },
           "Attributes": [
             "PrivateScope",
@@ -79260,8 +77072,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -79273,8 +77086,9 @@
         {
           "Name": "FlagsEx",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS_EX"
           },
           "Attributes": [
             "PrivateScope",
@@ -79429,8 +77243,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -79442,8 +77257,9 @@
         {
           "Name": "FlagsEx",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS_EX"
           },
           "Attributes": [
             "PrivateScope",
@@ -79597,8 +77413,9 @@
         {
           "Name": "InstallFunction",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "DI_FUNCTION"
           },
           "Attributes": [
             "PrivateScope",
@@ -79719,8 +77536,9 @@
         {
           "Name": "StateChange",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_STATE_CHANGE"
           },
           "Attributes": [
             "PrivateScope",
@@ -79732,8 +77550,9 @@
         {
           "Name": "Scope",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_PROPERTY_CHANGE_SCOPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -79799,8 +77618,9 @@
         {
           "Name": "Scope",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_REMOVE_DEVICE_SCOPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -81298,8 +79118,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DRIVER_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -82689,8 +80510,9 @@
         {
           "Name": "ProcessorArchitecture",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt16"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.System.SystemInformation",
+            "Type": "PROCESSOR_ARCHITECTURE"
           },
           "Attributes": [
             "PrivateScope",
@@ -85603,8 +83425,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -85616,8 +83439,9 @@
         {
           "Name": "FlagsEx",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS_EX"
           },
           "Attributes": [
             "PrivateScope",
@@ -85772,8 +83596,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -85785,8 +83610,9 @@
         {
           "Name": "FlagsEx",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DEVICE_INSTALL_FLAGS_EX"
           },
           "Attributes": [
             "PrivateScope",
@@ -85940,8 +83766,9 @@
         {
           "Name": "InstallFunction",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "DI_FUNCTION"
           },
           "Attributes": [
             "PrivateScope",
@@ -86062,8 +83889,9 @@
         {
           "Name": "StateChange",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_STATE_CHANGE"
           },
           "Attributes": [
             "PrivateScope",
@@ -86075,8 +83903,9 @@
         {
           "Name": "Scope",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_PROPERTY_CHANGE_SCOPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -86142,8 +83971,9 @@
         {
           "Name": "Scope",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_REMOVE_DEVICE_SCOPE"
           },
           "Attributes": [
             "PrivateScope",
@@ -87901,8 +85731,9 @@
         {
           "Name": "Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "SETUP_DI_DRIVER_INSTALL_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -89341,8 +87172,9 @@
         {
           "Name": "MR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "MD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -89822,8 +87654,9 @@
         {
           "Name": "IOR_RangeFlags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "IOD_DESFLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -90036,8 +87869,9 @@
         {
           "Name": "DR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "DD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",
@@ -90224,8 +88058,9 @@
         {
           "Name": "IRQR_Flags",
           "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
+            "Kind": "EnumType",
+            "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+            "Type": "IRQD_FLAGS"
           },
           "Attributes": [
             "PrivateScope",

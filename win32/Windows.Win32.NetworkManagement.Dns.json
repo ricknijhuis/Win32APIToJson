@@ -421,6 +421,18 @@
         {
           "Name": "DNS_QUERY_REQUEST_VERSION3",
           "Value": "3"
+        },
+        {
+          "Name": "DNS_QUERY_RAW_RESULTS_VERSION1",
+          "Value": "1"
+        },
+        {
+          "Name": "DNS_QUERY_RAW_REQUEST_VERSION1",
+          "Value": "1"
+        },
+        {
+          "Name": "DNS_QUERY_RAW_OPTION_BEST_EFFORT_PARSE",
+          "Value": "1"
         }
       ],
       "Name": "DNS_QUERY_OPTIONS",
@@ -3907,6 +3919,91 @@
           ]
         },
         {
+          "Name": "DNS_PROTOCOL_UNSPECIFIED",
+          "Value": "0",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DNS_PROTOCOL_UDP",
+          "Value": "1",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DNS_PROTOCOL_TCP",
+          "Value": "2",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DNS_PROTOCOL_DOH",
+          "Value": "3",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
+          "Name": "DNS_PROTOCOL_NO_WIRE",
+          "Value": "5",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "Literal",
+            "HasDefault"
+          ]
+        },
+        {
           "Name": "DNS_UPDATE_SECURITY_USE_DEFAULT",
           "Value": "0",
           "Type": {
@@ -5274,131 +5371,6 @@
           "Module": "DNSAPI.dll",
           "Parameters": [
             {
-              "Name": "pQueryRequest",
-              "Type": {
-                "Kind": "PointerType",
-                "Namespace": "Windows.Win32.NetworkManagement.Dns",
-                "Type": "DNS_QUERY_REQUEST"
-              },
-              "Attributes": [
-                "None",
-                "In"
-              ]
-            },
-            {
-              "Name": "pQueryResults",
-              "Type": {
-                "Kind": "PointerType",
-                "Namespace": "Windows.Win32.NetworkManagement.Dns",
-                "Type": "DNS_QUERY_RESULT"
-              },
-              "Attributes": [
-                "None",
-                "In",
-                "Out"
-              ]
-            },
-            {
-              "Name": "pCancelHandle",
-              "Type": {
-                "Kind": "PointerType",
-                "Namespace": "Windows.Win32.NetworkManagement.Dns",
-                "Type": "DNS_QUERY_CANCEL"
-              },
-              "Attributes": [
-                "None",
-                "In",
-                "Out",
-                "Optional"
-              ]
-            }
-          ],
-          "MethodAttributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "HideBySig",
-            "PinvokeImpl"
-          ],
-          "ImportAttributes": [
-            "None",
-            "ExactSpelling",
-            "CallingConventionWinApi"
-          ],
-          "ImplAttributes": [
-            "IL"
-          ],
-          "Name": "DnsQueryEx",
-          "CustomAttributes": [
-            {
-              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
-              "FixedParameters": [
-                "windows8.0"
-              ]
-            },
-            {
-              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
-              "FixedParameters": [
-                "https://learn.microsoft.com/windows/win32/api/windns/nf-windns-dnsqueryex"
-              ]
-            }
-          ]
-        },
-        {
-          "Module": "DNSAPI.dll",
-          "Parameters": [
-            {
-              "Name": "pCancelHandle",
-              "Type": {
-                "Kind": "PointerType",
-                "Namespace": "Windows.Win32.NetworkManagement.Dns",
-                "Type": "DNS_QUERY_CANCEL"
-              },
-              "Attributes": [
-                "None",
-                "In"
-              ]
-            }
-          ],
-          "MethodAttributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "HideBySig",
-            "PinvokeImpl"
-          ],
-          "ImportAttributes": [
-            "None",
-            "ExactSpelling",
-            "CallingConventionWinApi"
-          ],
-          "ImplAttributes": [
-            "IL"
-          ],
-          "Name": "DnsCancelQuery",
-          "CustomAttributes": [
-            {
-              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
-              "FixedParameters": [
-                "windows8.0"
-              ]
-            },
-            {
-              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
-              "FixedParameters": [
-                "https://learn.microsoft.com/windows/win32/api/windns/nf-windns-dnscancelquery"
-              ]
-            }
-          ]
-        },
-        {
-          "Module": "DNSAPI.dll",
-          "Parameters": [
-            {
               "Name": "pcServers",
               "Type": {
                 "Kind": "PointerType",
@@ -5584,6 +5556,250 @@
               ]
             }
           ]
+        },
+        {
+          "Module": "DNSAPI.dll",
+          "Parameters": [
+            {
+              "Name": "pQueryRequest",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_REQUEST"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "pQueryResults",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_RESULT"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            },
+            {
+              "Name": "pCancelHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_CANCEL"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DnsQueryEx",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/windns/nf-windns-dnsqueryex"
+              ]
+            }
+          ]
+        },
+        {
+          "Module": "DNSAPI.dll",
+          "Parameters": [
+            {
+              "Name": "pCancelHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_CANCEL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DnsCancelQuery",
+          "CustomAttributes": [
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.SupportedOSPlatformAttribute",
+              "FixedParameters": [
+                "windows8.0"
+              ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+              "FixedParameters": [
+                "https://learn.microsoft.com/windows/win32/api/windns/nf-windns-dnscancelquery"
+              ]
+            }
+          ]
+        },
+        {
+          "Module": "DNSAPI.dll",
+          "Parameters": [
+            {
+              "Name": "queryResults",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_RAW_RESULT"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Optional"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DnsQueryRawResultFree"
+        },
+        {
+          "Module": "DNSAPI.dll",
+          "Parameters": [
+            {
+              "Name": "queryRequest",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_RAW_REQUEST"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "cancelHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_RAW_CANCEL"
+              },
+              "Attributes": [
+                "None",
+                "In",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DnsQueryRaw"
+        },
+        {
+          "Module": "DNSAPI.dll",
+          "Parameters": [
+            {
+              "Name": "cancelHandle",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.NetworkManagement.Dns",
+                "Type": "DNS_QUERY_RAW_CANCEL"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Static",
+            "HideBySig",
+            "PinvokeImpl"
+          ],
+          "ImportAttributes": [
+            "None",
+            "ExactSpelling",
+            "CallingConventionWinApi"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "DnsCancelQueryRaw"
         },
         {
           "Module": "DNSAPI.dll",
@@ -17546,6 +17762,170 @@
       "Kind": "StructType",
       "Fields": [
         {
+          "Name": "dwServerType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "ullFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous1",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous1_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous2",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous2_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "pwszTemplate",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "PWSTR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous1_e__Union"
+        },
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "MaxSa",
+              "Type": {
+                "Kind": "ArrayType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "CHAR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous2_e__Union"
+        }
+      ],
+      "Name": "DNS_CUSTOM_SERVER",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/windns/ns-windns-dns_custom_server"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "Version",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Flags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DNS_APPLICATION_SETTINGS",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
+          "FixedParameters": [
+            "https://learn.microsoft.com/windows/win32/api/windns/ns-windns-dns_application_settings"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
           "Name": "Version",
           "Type": {
             "Kind": "PrimitiveType",
@@ -17706,123 +18086,6 @@
           "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
           "FixedParameters": [
             "https://learn.microsoft.com/windows/win32/api/windns/ns-windns-dns_query_cancel"
-          ]
-        }
-      ]
-    },
-    {
-      "Kind": "StructType",
-      "Fields": [
-        {
-          "Name": "dwServerType",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        },
-        {
-          "Name": "ullFlags",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt64"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        },
-        {
-          "Name": "Anonymous1",
-          "Type": {
-            "Kind": "BaseType",
-            "Namespace": "",
-            "Type": "_Anonymous1_e__Union"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        },
-        {
-          "Name": "Anonymous2",
-          "Type": {
-            "Kind": "BaseType",
-            "Namespace": "",
-            "Type": "_Anonymous2_e__Union"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public"
-          ]
-        }
-      ],
-      "Types": [
-        {
-          "Kind": "UnionType",
-          "Fields": [
-            {
-              "Name": "pwszTemplate",
-              "Type": {
-                "Kind": "StructType",
-                "Namespace": "Windows.Win32.Foundation",
-                "Type": "PWSTR"
-              },
-              "Attributes": [
-                "PrivateScope",
-                "FamANDAssem",
-                "Family",
-                "Public"
-              ]
-            }
-          ],
-          "Name": "_Anonymous1_e__Union"
-        },
-        {
-          "Kind": "UnionType",
-          "Fields": [
-            {
-              "Name": "MaxSa",
-              "Type": {
-                "Kind": "ArrayType",
-                "Namespace": "Windows.Win32.Foundation",
-                "Type": "CHAR"
-              },
-              "Attributes": [
-                "PrivateScope",
-                "FamANDAssem",
-                "Family",
-                "Public"
-              ]
-            }
-          ],
-          "Name": "_Anonymous2_e__Union"
-        }
-      ],
-      "Name": "DNS_CUSTOM_SERVER",
-      "Attributes": [
-        "NotPublic",
-        "Public",
-        "SequentialLayout",
-        "Sealed",
-        "BeforeFieldInit"
-      ],
-      "CustomAttributes": [
-        {
-          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
-          "FixedParameters": [
-            "https://learn.microsoft.com/windows/win32/api/windns/ns-windns-dns_custom_server"
           ]
         }
       ]
@@ -18018,7 +18281,7 @@
       "Kind": "StructType",
       "Fields": [
         {
-          "Name": "Version",
+          "Name": "version",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -18031,7 +18294,20 @@
           ]
         },
         {
-          "Name": "Flags",
+          "Name": "queryStatus",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "Int32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryOptions",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt64"
@@ -18042,23 +18318,427 @@
             "Family",
             "Public"
           ]
+        },
+        {
+          "Name": "queryRawOptions",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "responseFlags",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryRawResponseSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryRawResponse",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryRecords",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.Dns",
+            "Type": "DNS_RECORDA"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "protocol",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
         }
       ],
-      "Name": "DNS_APPLICATION_SETTINGS",
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "maxSa",
+              "Type": {
+                "Kind": "ArrayType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "CHAR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "DNS_QUERY_RAW_RESULT",
       "Attributes": [
         "NotPublic",
         "Public",
         "SequentialLayout",
         "Sealed",
         "BeforeFieldInit"
-      ],
-      "CustomAttributes": [
+      ]
+    },
+    {
+      "Kind": "FunctionPointerType",
+      "Parameters": [
         {
-          "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
-          "FixedParameters": [
-            "https://learn.microsoft.com/windows/win32/api/windns/ns-windns-dns_application_settings"
+          "Name": "queryContext",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "None",
+            "In"
+          ]
+        },
+        {
+          "Name": "queryResults",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.Dns",
+            "Type": "DNS_QUERY_RAW_RESULT"
+          },
+          "Attributes": [
+            "None",
+            "In"
           ]
         }
+      ],
+      "Name": "DNS_QUERY_RAW_COMPLETION_ROUTINE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed",
+        "AutoClass",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "version",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "resultsVersion",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dnsQueryRawSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dnsQueryRaw",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Byte"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dnsQueryName",
+          "Type": {
+            "Kind": "StructType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "PWSTR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "dnsQueryType",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt16"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryOptions",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "interfaceIndex",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryCompletionCallback",
+          "Type": {
+            "Kind": "FunctionPointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.Dns",
+            "Type": "DNS_QUERY_RAW_COMPLETION_ROUTINE"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryContext",
+          "Type": {
+            "Kind": "PointerType",
+            "Type": "Void"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "queryRawOptions",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt64"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "customServersSize",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "customServers",
+          "Type": {
+            "Kind": "PointerType",
+            "Namespace": "Windows.Win32.NetworkManagement.Dns",
+            "Type": "DNS_CUSTOM_SERVER"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "protocol",
+          "Type": {
+            "Kind": "PrimitiveType",
+            "Type": "UInt32"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Type": {
+            "Kind": "BaseType",
+            "Namespace": "",
+            "Type": "_Anonymous_e__Union"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Types": [
+        {
+          "Kind": "UnionType",
+          "Fields": [
+            {
+              "Name": "maxSa",
+              "Type": {
+                "Kind": "ArrayType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "CHAR"
+              },
+              "Attributes": [
+                "PrivateScope",
+                "FamANDAssem",
+                "Family",
+                "Public"
+              ]
+            }
+          ],
+          "Name": "_Anonymous_e__Union"
+        }
+      ],
+      "Name": "DNS_QUERY_RAW_REQUEST",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
+      ]
+    },
+    {
+      "Kind": "StructType",
+      "Fields": [
+        {
+          "Name": "reserved",
+          "Type": {
+            "Kind": "ArrayType",
+            "Namespace": "Windows.Win32.Foundation",
+            "Type": "CHAR"
+          },
+          "Attributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public"
+          ]
+        }
+      ],
+      "Name": "DNS_QUERY_RAW_CANCEL",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "SequentialLayout",
+        "Sealed",
+        "BeforeFieldInit"
       ]
     },
     {

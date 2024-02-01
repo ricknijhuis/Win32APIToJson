@@ -3148,6 +3148,9 @@
               ]
             },
             {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
                 "https://learn.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-rooriginateerrorw"
@@ -3208,6 +3211,9 @@
               "FixedParameters": [
                 "windows8.0"
               ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
             },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
@@ -3295,6 +3301,9 @@
               ]
             },
             {
+              "Name": "Windows.Win32.Foundation.Metadata.UnicodeAttribute"
+            },
+            {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
               "FixedParameters": [
                 "https://learn.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-rotransformerrorw"
@@ -3367,6 +3376,9 @@
               "FixedParameters": [
                 "windows8.0"
               ]
+            },
+            {
+              "Name": "Windows.Win32.Foundation.Metadata.AnsiAttribute"
             },
             {
               "Name": "Windows.Win32.Foundation.Metadata.DocumentationAttribute",
@@ -9656,6 +9668,104 @@
           "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
           "FixedParameters": [
             "7a5b6fd1-cd73-4b6c-9cf4-2e869eaf470a"
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "ComType",
+      "Methods": [
+        {
+          "Parameters": [
+            {
+              "Name": "window",
+              "Type": {
+                "Kind": "PointerType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HWND"
+              },
+              "Attributes": [
+                "None",
+                "Out"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract",
+            "SpecialName"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "get_WindowHandle"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "newParentWindow",
+              "Type": {
+                "Kind": "StructType",
+                "Namespace": "Windows.Win32.Foundation",
+                "Type": "HWND"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            },
+            {
+              "Name": "newViewInstanceId",
+              "Type": {
+                "Kind": "PrimitiveType",
+                "Type": "UInt32"
+              },
+              "Attributes": [
+                "None",
+                "In"
+              ]
+            }
+          ],
+          "MethodAttributes": [
+            "PrivateScope",
+            "FamANDAssem",
+            "Family",
+            "Public",
+            "Virtual",
+            "HideBySig",
+            "VtableLayoutMask",
+            "Abstract"
+          ],
+          "ImportAttributes": [
+            "None"
+          ],
+          "ImplAttributes": [
+            "IL"
+          ],
+          "Name": "ChangeHostingContext"
+        }
+      ],
+      "Name": "ICoreInputInterop2",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "ClassSemanticsMask",
+        "Abstract"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "Windows.Win32.Foundation.Metadata.GuidAttribute",
+          "FixedParameters": [
+            "b8a2acd7-a0f0-40ee-8ee7-c82f59cc5cd4"
           ]
         }
       ]
