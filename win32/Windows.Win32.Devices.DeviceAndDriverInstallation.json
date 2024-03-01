@@ -3430,6 +3430,51 @@
       ],
       "Fields": [
         {
+          "Name": "FILE_COMPRESSION_NONE",
+          "Value": "0"
+        },
+        {
+          "Name": "FILE_COMPRESSION_WINLZA",
+          "Value": "1"
+        },
+        {
+          "Name": "FILE_COMPRESSION_MSZIP",
+          "Value": "2"
+        },
+        {
+          "Name": "FILE_COMPRESSION_NTCAB",
+          "Value": "3"
+        }
+      ],
+      "Name": "FILE_COMPRESSION_TYPE",
+      "Attributes": [
+        "NotPublic",
+        "Public",
+        "Sealed"
+      ],
+      "CustomAttributes": [
+        {
+          "Name": "System.FlagsAttribute"
+        }
+      ]
+    },
+    {
+      "Kind": "EnumType",
+      "Type": {
+        "Kind": "PrimitiveType",
+        "Type": "UInt32"
+      },
+      "FieldAttributes": [
+        "PrivateScope",
+        "FamANDAssem",
+        "Family",
+        "Public",
+        "Static",
+        "Literal",
+        "HasDefault"
+      ],
+      "Fields": [
+        {
           "Name": "CR_SUCCESS",
           "Value": "0"
         },
@@ -9815,74 +9860,6 @@
         {
           "Name": "INFINFO_INF_PATH_LIST_SEARCH",
           "Value": "5",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "FILE_COMPRESSION_NONE",
-          "Value": "0",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "FILE_COMPRESSION_WINLZA",
-          "Value": "1",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "FILE_COMPRESSION_MSZIP",
-          "Value": "2",
-          "Type": {
-            "Kind": "PrimitiveType",
-            "Type": "UInt32"
-          },
-          "Attributes": [
-            "PrivateScope",
-            "FamANDAssem",
-            "Family",
-            "Public",
-            "Static",
-            "Literal",
-            "HasDefault"
-          ]
-        },
-        {
-          "Name": "FILE_COMPRESSION_NTCAB",
-          "Value": "3",
           "Type": {
             "Kind": "PrimitiveType",
             "Type": "UInt32"
@@ -25547,7 +25524,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
@@ -25645,7 +25623,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
@@ -25767,7 +25746,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
@@ -25889,7 +25869,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
@@ -25965,7 +25946,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
@@ -26042,7 +26024,8 @@
               "Name": "CompressionType",
               "Type": {
                 "Kind": "PointerType",
-                "Type": "UInt32"
+                "Namespace": "Windows.Win32.Devices.DeviceAndDriverInstallation",
+                "Type": "FILE_COMPRESSION_TYPE"
               },
               "Attributes": [
                 "None",
